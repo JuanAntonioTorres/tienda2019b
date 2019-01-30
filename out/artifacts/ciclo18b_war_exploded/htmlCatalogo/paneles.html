@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>paneles | Catálogo por piezas 2017-2018</title>
+		<link href="../css/catalogoEstilo.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+	<style>
+		.padrePanel{
+			width:17%;
+			min-height:50px;
+		}
+		.padrePanelLateral{
+			width:100%;
+			height:20%;
+		}
+		.menu{
+			height:100px;
+
+		}
+		p{
+			text-align:center;
+		}
+		@media(max-width:500px){
+			p{
+				font-size:12px;
+			}
+			.icon-menu{
+				font-size:16px;
+				margin-bottom:5px;
+			}
+		}
+	</style>
+	</head>
+
+
+
+
+	<body style = "height:0.9vh">
+	<header class="cabecera" style="width:90%;z-index:1;">
+		<a class="subtitulo" href="../html/catalogo.html">Catálogo Web</a>
+		<h5 class="titulo">Paneles</h5>
+	</header>
+	<div class = "contenedorFila" style="height:70px;width:90%;margin:auto">
+		<div class="padrePanel"><div class="panel top d1"><div class= "menu" ></div></div></div>
+		<div class="padrePanel"><div class="panel top d2"><div class= "menu" ></div></div></div>
+		<div class="padrePanel"><div class="panel top d9"><div class= "menu" ></div></div></div>
+		<div class="padrePanel"><div class="panel top d12"><div class= "menu" ></div></div></div>
+	</div>
+	<div class="contenedorFila" style="height:70px;width:90%;margin:auto">
+		<p>panel top d1</p>
+		<p>panel top d2</p>
+		<p>panel top d9</p>
+		<p>panel top d12</p>
+	</div>
+
+
+	<div class="contenedorFila"style="height:70%; width:100%">
+		<div class = "contenedorColumna"style="height:100%; width:60px">
+			<div class="padrePanelLateral "><div class="panel left d7"><div class= "menu" ></div></div></div>
+			<div class="padrePanelLateral "><div class="panel left d8"><div class= "menu" ></div></div></div>
+			<div class="padrePanelLateral "><div class="panel left d5"><div class= "menu" ></div></div></div>
+			<div class="padrePanelLateral "><div class="panel left d6"><div class= "menu" ></div></div></div>
+		</div>
+		<div class="contenedorColumna" style = "height:100%;width:20%;justify-content:space-around;">
+			<p style = "text-align:left">panel left d7</p>
+			<p style = "text-align:left">panel left d8</p>
+			<p style = "text-align:left">panel left d5</p>
+			<p style = "text-align:left">panel left d6</p>
+		</div>
+		<div class = "contenedorColumna"style="height:100%; width:80%;justify-content:center">
+			<h6 class="descripcion">Para utilizar alguno de los siguietes diseños tan solo tiene que
+				utilizar el nombre de clase que se especifica en el modelo.</h6>
+			<h5 class="descripcion">Estructura HTML recomendada</h5>
+			<h5 class="descripcion">
+				<label><<span>div class="panel top d1"><</span>/div></label>
+			</h5>
+		</div>
+	</div>
+	</body>
+
+	<script src="../js/jscss/panel.js"></script>
+
+
+</html>

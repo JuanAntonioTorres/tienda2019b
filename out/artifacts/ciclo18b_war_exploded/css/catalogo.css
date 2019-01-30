@@ -1,0 +1,82 @@
+.contenedor{
+	width:15%;
+}
+.contenedorMenu{
+	width:15%;
+	height:300px;
+	text-align:center;
+}
+.contenedorMenuEjemplo{
+	width:80%;
+	height:70%;
+	max-width:450px;
+	text-align:center;
+}
+.grande{
+    font-size: 12em;
+}
+.medio{
+     font-size: 6em;
+}
+.peque{
+     font-size: 3em;
+}
+.tabla{
+	display:flex;
+	justify-content:space-around;	
+	flex-direction:column;
+}
+.fila{
+    display:flex;
+	justify-content:space-around;
+	margin-top:50px;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+
+p{font-size:12px;}
+
+.barra{
+	display:flex;
+	justify-content:space-around;
+	background-color:orange;
+	height:5%;
+}
+.barraLetras{
+	display:flex;
+	justify-content:space-around;
+	background-color:white;
+	height:5%;
+}
+.contenedorPrincipal{
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+}
+.barraLateral{
+	width:50%;
+	background-color:orange;
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+}
+.barraLateralExterior{
+	display:flex;
+	height:79%;
+	width:50px;
+}
+.barraLateralCodigo>div>p{
+	text-align:center;
+	font-size:10px;
+}
+.barraLateralCodigo{
+	width:50%;
+	background-color:white;
+	display:flex;
+	justify-content:space-around;
+	flex-direction:column;
+}
+body{
+	max-width:100%;
+}

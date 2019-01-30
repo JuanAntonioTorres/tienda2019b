@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="pagina2018vista@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.11">
+    <root id="1"/>
+    <schema id="2" parent="1" name="pagina2018vista">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="ciclo2016"/>
+    <schema id="4" parent="1" name="ciclo2017"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="movies"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="pagina2018b"/>
+    <schema id="9" parent="1" name="performance_schema"/>
+    <schema id="10" parent="1" name="phpmyadmin"/>
+    <schema id="11" parent="1" name="test"/>
+    <view id="12" parent="2" name="alumno">
+      <Comment>VIEW</Comment>
+    </view>
+    <view id="13" parent="2" name="alumnos1">
+      <Comment>VIEW</Comment>
+    </view>
+    <view id="14" parent="2" name="alumnos2">
+      <Comment>VIEW</Comment>
+    </view>
+    <view id="15" parent="2" name="js">
+      <Comment>VIEW</Comment>
+    </view>
+    <view id="16" parent="2" name="pagina">
+      <Comment>VIEW</Comment>
+    </view>
+    <view id="17" parent="2" name="persona">
+      <Comment>VIEW</Comment>
+    </view>
+    <routine id="18" parent="2" name="add_usuario">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="19" parent="2" name="check_usuario">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="20" parent="2" name="enable_usuario">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="21" parent="2" name="get_arbol">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="22" parent="2" name="get_claveBloqueo">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="23" parent="2" name="get_idEstado">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="24" parent="2" name="get_idPerfil">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="25" parent="2" name="get_tiempo_bloqueo">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="26" parent="2" name="get_usuario">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="27" parent="2" name="is_delete">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="28" parent="2" name="is_email">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="29" parent="2" name="is_email_alumno">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="30" parent="2" name="is_email_familia">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="31" parent="2" name="is_email_profesor">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="32" parent="2" name="is_email_visitante">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="33" parent="2" name="is_locked">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="34" parent="2" name="is_login">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="35" parent="2" name="locked">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="36" parent="2" name="unlock_user">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="37" parent="13" name="nombre">
+      <Position>1</Position>
+      <DataType>varchar(152)|0s</DataType>
+    </column>
+    <column id="38" parent="14" name="nombre">
+      <Position>1</Position>
+      <DataType>varchar(152)|0s</DataType>
+    </column>
+    <column id="39" parent="15" name="pagina">
+      <Position>1</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="15" name="js">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="15" name="ruta">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="15" name="orden">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="16" name="titulo">
+      <Position>1</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="16" name="estilo">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="16" name="ruta">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="16" name="ordenEstilo">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="16" name="meta">
+      <Position>5</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="16" name="CodigoPagina">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="16" name="NombrePagina">
+      <Position>7</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="17" name="NIF">
+      <Position>1</Position>
+      <DataType>varchar(9)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="17" name="Apellidos">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="17" name="Nombre">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="17" name="CodigoPostal">
+      <Position>4</Position>
+      <DataType>varchar(5)|0s</DataType>
+    </column>
+    <column id="54" parent="17" name="Domicilio">
+      <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+    </column>
+    <column id="55" parent="17" name="FechaNacimiento">
+      <Position>6</Position>
+      <DataType>date|0s</DataType>
+    </column>
+    <column id="56" parent="17" name="TelefonoFijo">
+      <Position>7</Position>
+      <DataType>varchar(20)|0s</DataType>
+    </column>
+    <column id="57" parent="17" name="TelefonoMovil">
+      <Position>8</Position>
+      <DataType>varchar(20)|0s</DataType>
+    </column>
+    <column id="58" parent="17" name="Email">
+      <Position>9</Position>
+      <DataType>varchar(150)|0s</DataType>
+    </column>
+    <column id="59" parent="17" name="imagen">
+      <Position>10</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <argument id="60" parent="18" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="61" parent="18" name="password">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="62" parent="18" name="idPerfil">
+      <DataType>int(11)|0s</DataType>
+    </argument>
+    <argument id="63" parent="18" name="mensa">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="64" parent="19" name="email2">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="65" parent="19" name="contrasena2">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="66" parent="19" name="estado2">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>int(11)|0s</DataType>
+    </argument>
+    <argument id="67" parent="20" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="68" parent="20" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="69" parent="21" name="body2">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>varchar(2000)|0s</DataType>
+    </argument>
+    <argument id="70" parent="21" name="pagina2">
+      <DataType>int(11)|0s</DataType>
+    </argument>
+    <argument id="71" parent="22" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="72" parent="22" name="clave">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="73" parent="23" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="74" parent="23" name="pass">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="75" parent="23" name="estado">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>varchar(30)|0s</DataType>
+    </argument>
+    <argument id="76" parent="24" name="tipoPerfil">
+      <DataType>varchar(20)|0s</DataType>
+    </argument>
+    <argument id="77" parent="24" name="mensa">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>int(11)|0s</DataType>
+    </argument>
+    <argument id="78" parent="25" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="79" parent="25" name="tiempo">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>datetime|0s</DataType>
+    </argument>
+    <argument id="80" parent="26" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="81" parent="27" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="82" parent="27" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="83" parent="28" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="84" parent="28" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="85" parent="29" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="86" parent="29" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="87" parent="30" name="email">
+      <DataType>varchar(200)|0s</DataType>
+    </argument>
+    <argument id="88" parent="30" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="89" parent="31" name="email">
+      <DataType>varchar(200)|0s</DataType>
+    </argument>
+    <argument id="90" parent="31" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="91" parent="32" name="email">
+      <DataType>varchar(200)|0s</DataType>
+    </argument>
+    <argument id="92" parent="32" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="93" parent="33" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="94" parent="33" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="95" parent="34" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="96" parent="34" name="password">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="97" parent="34" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="98" parent="35" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="99" parent="35" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="100" parent="35" name="clave">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+    <argument id="101" parent="36" name="mensaje">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>tinyint(1)|0s</DataType>
+    </argument>
+    <argument id="102" parent="36" name="email">
+      <DataType>varchar(100)|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>

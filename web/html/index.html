@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Tienda Harnina</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="../css/catalogoEstilo.css">
+    <link type="text/css" rel="stylesheet" href="../css/miscontenedores.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <header class="cabecera"><a class="subtitulo" href="catalogo.html">DAM: ACCESO A DATOS</a>
+      <h5 class="titulo">Tienda Harnina</h5>
+    </header>
+    <div class="contenido01">
+      <div class="medio dadoCatalogo">
+        <div class="dado d1 informatica"></div>
+      </div>
+      <div class="medio dadoCatalogo">
+        <div class="dado d3 harnina"></div>
+      </div>
+    </div>
+    <div class="contenido01">
+      <form id="client_register" method="POST" action="/vali">
+        <div class="menu s3 caja03">
+          <h4>New Client</h4>
+          <div id="div_clientFirstName">
+            <label class="labelInput" for="clientFirstName">First name:</label>
+            <input class="etiqueta s8" id="clientFirstName" type="text" data-functioncallback="ValidacionExpresionRegular.validarLetrasSinEspacio" size="24" minlength="3" maxlength="80" required placeholder="input your FirstName" title="3 to 50 characters">
+          </div>
+          <div id="div_clientLastName">
+            <label class="labelInput" for="clientLastName">Last name:</label>
+            <input class="etiqueta s8" id="clientLastName" type="text" data-functioncallback="ValidacionExpresionRegular.validarLetrasConEspacio" minlength="5" maxlength="100" required placeholder="input your LastName" title="3 to 70 characters">
+          </div>
+          <div id="div_clientCP">
+            <label class="labelInput" for="clientCP">C P:</label>
+            <input class="etiqueta s8" id="clientCP" type="text" data-functioncallback="ValidacionExpresionRegular.validarCodigoPostal" required placeholder="input your cp" title="5 characters">
+          </div>
+          <div id="div_numeroMovil">
+            <label for="numeroMovil">Numero móvil:</label>
+            <select id="prefijo"></select>
+            <input class="etiqueta s8" id="numeroMovil" type="tel" data-functioncallback="ValidacionExpresionRegular.validarNumeroMovil" size="20" required placeholder="longitud" title="">
+          </div>
+          <div id="div_emailCliente">
+            <label for="emailCliente">Email:</label>
+            <input class="etiqueta s8" id="emailCliente" type="text" data-functioncallback="ValidacionExpresionRegular.validarEmail" required placeholder="input your Email" title="Email">
+          </div>
+          <div id="div_dniCliente">
+            <label for="dniCliente">dni:</label>
+            <input class="etiqueta s8" id="dniCliente" type="text" data-functioncallback="ValidacionExpresionRegular.validarDni" required placeholder="input your dni" title="dni">
+          </div>
+          <div id="div_password">
+            <label for="password">Password:</label>
+            <input class="etiqueta s8" id="password" type="password" placeholder="Contraseña" data-functioncallback="ValidacionExpresionRegular.validarPassword">
+          </div>
+          <div id="div_clientSexo">
+            <label class="labelInput" for="clientSexo">Sexo:</label>
+            <select class="etiqueta s8 file" id="clientSexo" name="clientSexo" data-functioncallback="ValidarListaValores.validarSexo">
+              <option value="">-- Select Sexo --</option>
+              <option value="m">Hombre</option>
+              <option value="f">Mujer</option>
+            </select>
+          </div>
+          <div class="fileinputs etiqueta s8" id="div_clientImage">
+            <input class="etiqueta s8 file" id="clientImage" type="file" data-functioncallback="ValidarFicheroName.validarImagenName" required accept="image/png, image/jpeg" placeholder="input your Avatar" title="3 to 120 characters">
+            <div class="fakefile">
+              <label class="labelInput" for="clientImage">Elije tu foto</label>
+              <input id="idFile">
+            </div>
+          </div>
+          <div class="etiqueta errorColor" id="alertaError">Error:</div>
+          <button id="submit" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<script src="../js/jscss/dado.js"></script>
+<script src="../js/jsStore/store.js"></script>
+<script src="../js/jsStore/prefijos.js"></script>
+<script src="../js/jsStore/color.js"></script>
+<script src="../js/jsStore/lista.js"></script>
+<script src="../js/jsStore/file.js"></script>
+<script src="../js/jsStore/error.js"></script>
+<script src="../js/jsStore/submit.js"></script>
+<script src="../js/jsStore/validate.js"></script>
+<script src="../js/jsStore/clienteStrategyOne.js"></script>

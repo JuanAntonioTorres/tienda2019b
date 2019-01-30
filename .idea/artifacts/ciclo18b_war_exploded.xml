@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ciclo18b:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ciclo18b/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ciclo18b" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 5.2.12-5.2.12" />
+          <element id="library" level="project" name="JPA 2.0-2.0" />
+          <element id="library" level="project" name="javax.json.processing-1.0" />
+          <element id="library" level="project" name="Mojarra-2.2.1" />
+          <element id="library" level="project" name="mysql:mysql-connector-java:6.0.5" />
+          <element id="library" level="project" name="jstl-1.2" />
+          <element id="library" level="project" name="mysql:mysql-connector-java:5.1.45" />
+          <element id="library" level="project" name="com.googlecode.json-simple:json-simple:1.1.1" />
+          <element id="library" level="project" name="com.sun.mail:javax.mail:1.4.7" />
+          <element id="library" level="project" name="mail" />
+          <element id="library" level="project" name="org.codehaus.jackson:jackson-xc:1.9.13" />
+          <element id="library" level="project" name="jackson:jackson-asl:0.9.3" />
+          <element id="library" level="project" name="com.google.code.gson:gson:2.8.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

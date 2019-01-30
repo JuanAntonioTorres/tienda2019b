@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Hola Mundo Javascript</title>
+		
+	</head>
+	<body>	
+    
+    
+	    <input type="button" id="boton" value="Click me">  	    
+	    <button onclick="miEdad()">Ver edad</button>                   
+    </body> </html>		
+	<script>
+        var edad;
+        function saludo()
+            {   
+                alert("Hola Mundo"); //informativa
+                edad = prompt("Escribe tu edad",20); 
+                alert(edad);
+               alert(confirm("Te vienes a la nieve")); // Respuesta s/n
+            }
+        function miEdad()
+            {
+               alert(edad); 
+            }
+        
+        var boton = document.getElementById("boton");	
+		
+		boton.onclick = saludo;
+		      
+    </script>
