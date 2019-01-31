@@ -7,6 +7,7 @@ import dto.PersonalData;
 import error.Error;
 import procedures.ProceduresClient;
 import reflection.ObjectTransferSession;
+import reflection.ObjectsTransferObject;
 import reflection.SessionTransferObject;
 import validators.LoginValidator;
 import javax.servlet.RequestDispatcher;
@@ -23,6 +24,9 @@ import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 @WebServlet("/validateSession")
 public class ValidateSessionController extends HttpServlet {
@@ -31,21 +35,32 @@ public class ValidateSessionController extends HttpServlet {
     private static final int INTENTOSPERMITIDOS = 3;
     private HttpSession session;
     private HttpServletRequest request;
-    private String opcion;
+    private HttpServletResponse response;
     private RequestDispatcher requestDispatcher;
     private Login login;
+    private JSONObject oneJson = new JSONObject();
+    private JSONArray arrayJson = new JSONArray();
+    private String mensaje = "";
+
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
         try {
-            iniciarDatos(request);
+
+            iniciarDatos(request,response);
+
+            Login login = new Login();
+
+            new ObjectsTransferObject().transferir(login,(Object) new JSONParser().parse(request.getParameter("json")));
+
             if (comprobarLogin()) {
                 gestionarLoginCorrecto();
             } else {
                 gestionarLoginIncorrecto();
             }
             this.requestDispatcher.forward(request, response);
-        } catch (IllegalAccessException | InvocationTargetException | InstantiationException | ClassNotFoundException | SQLException | ParseException e) {
+        } catch (IllegalAccessException | InvocationTargetException | InstantiationException | ClassNotFoundException | SQLException | ParseException | org.json.simple.parser.ParseException e) {
             e.printStackTrace();
         }
     }
@@ -60,23 +75,17 @@ public class ValidateSessionController extends HttpServlet {
     }
 
     private void bloquear(HttpServletRequest request) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
-        if (opcion.equals("index")) {
+        if (login.getNif()!=null) {
             bloquearSinBaseDatos(request);
         } else {
             bloquearEnBaseDatos(request, login);
         }
     }
 
-    private void gestionarLoginCorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
+    private void gestionarLoginCorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
         String nif = getNifDeDataBase();
-        if (nif != null) {
-            session.setAttribute("nif", nif);
-            prepararMensaje(("Hola ").concat(nif));
-        }
-        if (opcion.equals("updatePersonalData")) {
-            obtenerYcargarDaperEnSession(request);
-        }
-        seleccionarRequest("client/" + opcion + ".jsp");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(String.valueOf(login.getUserName()));
     }
 
     private void bloquearEnBaseDatos(HttpServletRequest request, Login login) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
@@ -103,12 +112,11 @@ public class ValidateSessionController extends HttpServlet {
         new ObjectTransferSession().convertir(new GenericDao().execProcedure(ProceduresClient.GET_CLIENTE.getName(), personalData), session);
     }
 
-    private void iniciarDatos(HttpServletRequest request) throws UnsupportedEncodingException, InvocationTargetException, IllegalAccessException {
+    private void iniciarDatos(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, InvocationTargetException, IllegalAccessException {
         this.request = request;
         this.session = request.getSession();
-        this.opcion = request.getParameter("opcion");
         this.request.setCharacterEncoding("UTF-8");
-        this.requestDispatcher = request.getRequestDispatcher("client/login.jsp");
+        this.response = response;
         this.login = new Login();
         new SessionTransferObject(session,this.login);
     }
