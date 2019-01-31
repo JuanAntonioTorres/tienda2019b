@@ -82,7 +82,7 @@ STORE.clientTemplate.insertTemplate = "<input type='hidden' value='unoAuno' id='
 
 STORE.namespace('STORE.clientTemplate.loginTemplate');
 STORE.clientTemplate.loginTemplate = "<div class='contenido01'>\n" +
-        "    <form id='client_register' autocomplete='off'>\n" +
+        "    <form id='client_register'>\n" +
         "\n" +
         "        <input type='hidden' value = '<%=opcion%>' name = 'opcion'>\n" +
         "\n" +
