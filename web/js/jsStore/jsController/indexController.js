@@ -24,26 +24,27 @@ function ponerListenerEnSubmit(rutaControlador, funcionControladora) {
         for (i = 0; i < STORE.list_input.length; i++) {
             eval("Json.prototype." + STORE.list_input[i].id + "= '" + STORE.list_input[i].value + "'");
         }
-        llamada = new ajax.CargadorContenidos(rutaControlador, funcionControladora, json);
+        llamada = new ajax.CargadorContenidos(rutaControlador, funcionControladora, JSON.stringify(json));
     })
 }
 
-function funcionControladoraLogin () {
+function funcionControladoraLogin() {
 
     var estado = JSON.parse(llamada.req.responseText);
 
-    if (estado === 0) {
+    if (estado === "") {
         alert(estado);
     }// No está en la BB DD
     else if (estado.type === 'number') {
         alert(estado);// registro valido
     }
-
-    tratarErrores(estado);
+    else {
+        tratarErrores(estado);
+    }
 
 }
 
-function tratarErrores(estado){
+function tratarErrores(estado) {
     estado.forEach(function (error) {
         //$(error.control).style.backgroundColor = STORE.Error.get_colorError();
         $(error.control).setAttribute('style', 'backgroundColor:' + STORE.Error.get_colorError() + ' !important');
@@ -52,7 +53,7 @@ function tratarErrores(estado){
     });
 }
 
-function funcionControladoraInsert () {
+function funcionControladoraInsert() {
     var estado = JSON.parse(llamada.req.responseText);
 
     if (typeof estado === "number") {

@@ -5,10 +5,10 @@ import dto.Login;
 import dto.LoginBloqueo;
 import dto.PersonalData;
 import error.Error;
+import org.json.simple.parser.JSONParser;
 import procedures.ProceduresClient;
 import reflection.ObjectTransferSession;
 import reflection.ObjectsTransferObject;
-import reflection.SessionTransferObject;
 import validators.LoginValidator;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -26,7 +26,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 
 @WebServlet("/validateSession")
 public class ValidateSessionController extends HttpServlet {
@@ -45,21 +44,16 @@ public class ValidateSessionController extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
         try {
 
             iniciarDatos(request,response);
-
-            Login login = new Login();
-
-            new ObjectsTransferObject().transferir(login,(Object) new JSONParser().parse(request.getParameter("json")));
+            new ObjectsTransferObject().transferir(login,(JSONObject) new JSONParser().parse(request.getParameter("json")));
 
             if (comprobarLogin()) {
                 gestionarLoginCorrecto();
             } else {
                 gestionarLoginIncorrecto();
             }
-            this.requestDispatcher.forward(request, response);
         } catch (IllegalAccessException | InvocationTargetException | InstantiationException | ClassNotFoundException | SQLException | ParseException | org.json.simple.parser.ParseException e) {
             e.printStackTrace();
         }
@@ -85,7 +79,8 @@ public class ValidateSessionController extends HttpServlet {
     private void gestionarLoginCorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
         String nif = getNifDeDataBase();
         response.setCharacterEncoding("UTF-8");
-        response.getWriter().write(String.valueOf(login.getUserName()));
+        System.out.println(nif);
+        response.getWriter().write(String.valueOf(nif));
     }
 
     private void bloquearEnBaseDatos(HttpServletRequest request, Login login) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
@@ -118,7 +113,6 @@ public class ValidateSessionController extends HttpServlet {
         this.request.setCharacterEncoding("UTF-8");
         this.response = response;
         this.login = new Login();
-        new SessionTransferObject(session,this.login);
     }
 
     private boolean comprobarLogin() throws IllegalAccessException, InstantiationException, InvocationTargetException, ParseException, SQLException, ClassNotFoundException {
