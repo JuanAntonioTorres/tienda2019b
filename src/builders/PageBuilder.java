@@ -23,8 +23,6 @@ public class PageBuilder {
         page.setLinkAll((String) genericDao.execProcedure(ProceduresPage.GET_LINKALL.getName(), page));
         page.setBody((String) genericDao.execProcedure(ProceduresPage.GET_BODY.getName(), page));
         page.setJsAll((List<PageCss>) genericDao.execProcedure(ProceduresPage.GET_JSALL.getName(),new PageCss(), page));
-
-
     }
 
     public String buildPage(Page page) {

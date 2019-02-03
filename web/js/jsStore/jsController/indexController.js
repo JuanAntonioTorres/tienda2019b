@@ -18,11 +18,10 @@ $("op_initSession").addEventListener("click", function () {
 
 function ponerListenerEnSubmit(rutaControlador, funcionControladora) {
     $("submit").addEventListener("click", function () {
-        function Json() {
-        };
-        var json = new Json();
+        var json = {};
         for (i = 0; i < STORE.list_input.length; i++) {
-            eval("Json.prototype." + STORE.list_input[i].id + "= '" + STORE.list_input[i].value + "'");
+            json[STORE.list_input[i].id] = STORE.list_input[i].value;
+            console.dir(json);
         }
         llamada = new ajax.CargadorContenidos(rutaControlador, funcionControladora, JSON.stringify(json));
     })

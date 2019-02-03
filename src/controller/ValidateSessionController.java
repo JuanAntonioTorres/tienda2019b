@@ -7,6 +7,7 @@ import dto.PersonalData;
 import error.Error;
 import org.json.simple.parser.JSONParser;
 import procedures.ProceduresClient;
+import reflection.JsonTransferObject;
 import reflection.ObjectTransferSession;
 import reflection.ObjectsTransferObject;
 import validators.LoginValidator;
@@ -47,7 +48,9 @@ public class ValidateSessionController extends HttpServlet {
         try {
 
             iniciarDatos(request,response);
-            new ObjectsTransferObject().transferir(login,(JSONObject) new JSONParser().parse(request.getParameter("json")));
+            System.out.println(request.getParameter("json"));
+            System.out.println(new JSONParser().parse(request.getParameter("json")));
+            new JsonTransferObject().transferir(login,(JSONObject) new JSONParser().parse(request.getParameter("json")));
 
             if (comprobarLogin()) {
                 gestionarLoginCorrecto();

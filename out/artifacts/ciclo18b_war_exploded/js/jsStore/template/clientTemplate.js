@@ -89,9 +89,9 @@ STORE.clientTemplate.loginTemplate = "<div class='contenido01'>\n" +
         "        <div class='menu s3 caja03'>\n" +
         "            <h4><%=operacion%> Session</h4>\n" +
         "\n" +
-        "            <div id='div_clientUsuario'>\n" +
-        "                <label class='labelInput' for='clientUsuario'>Usuario:</label>\n" +
-        "                <input class='etiqueta s8' id='clientUsuario' name ='userName'  type='text' data-functioncallback='ValidacionExpresionRegular.validarUsuario' size='24' minlength='7' maxlength='7' required placeholder='input your User' title='3 to 50 characters'>\n" +
+        "            <div id='div_userName'>\n" +
+        "                <label class='labelInput' for='userName'>Usuario:</label>\n" +
+        "                <input class='etiqueta s8' id='userName' name ='userName'  type='text' data-functioncallback='ValidacionExpresionRegular.validarUsuario' size='24' minlength='7' maxlength='7' required placeholder='input your User' title='3 to 50 characters'>\n" +
         "            </div>\n" +
         "\n" +
         "            <div id='div_userPassword'>\n" +
