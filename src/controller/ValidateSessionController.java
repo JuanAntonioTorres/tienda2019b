@@ -1,17 +1,14 @@
 package controller;
 
+import client.ComandValidateLogin;
 import dao.GenericDao;
 import dto.Login;
-import dto.LoginBloqueo;
-import dto.PersonalData;
 import error.Error;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import procedures.ProceduresClient;
 import reflection.JsonTransferObject;
-import reflection.ObjectTransferSession;
-import validators.LoginValidator;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,10 +19,9 @@ import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.Date;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import java.util.HashMap;
+import java.util.Map;
 
 @WebServlet("/validateSession")
 public class ValidateSessionController extends HttpServlet {
@@ -33,16 +29,12 @@ public class ValidateSessionController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final int INTENTOSPERMITIDOS = 3;
     private HttpSession session;
-    private HttpServletRequest request;
     private HttpServletResponse response;
-    private RequestDispatcher requestDispatcher;
     private Login login;
-    private JSONObject oneJson = new JSONObject();
-    private JSONArray arrayJson = new JSONArray();
-    private String mensaje = "";
+    private JSONObject oneJson;
+    private JSONArray arrayJson;
 
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         try {
             iniciarDatos(request,response);
@@ -57,7 +49,7 @@ public class ValidateSessionController extends HttpServlet {
         }
     }
 
-    private void gestionarLoginIncorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
+    private void gestionarLoginIncorrecto() throws IOException {
         incrementarIntento();
         if (!disponibilidadIntento()) {
             session.setAttribute("horaBloqueo", new Date());
@@ -81,44 +73,26 @@ public class ValidateSessionController extends HttpServlet {
         }
     }
 
-    private void bloquearEnBaseDatos(HttpServletRequest request, Login login) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
-        new GenericDao().execProcedure(ProceduresClient.BLOCK_CLIENT.getName(), new LoginBloqueo(login));
-        this.requestDispatcher = request.getRequestDispatcher("Mail");
-    }
-
-    private void bloquearSinBaseDatos(HttpServletRequest request) {
-        session.setAttribute("horaBloqueo", new Date());
-        request.setAttribute("mensaje", "Cliente: Intentos Agotados");
-        seleccionarRequest("cliente/clientBlocking.jsp");
-    }
-
-    private void prepararMensaje(String textoMensaje) throws IOException {
-        response.setCharacterEncoding("UTF-8");
-        oneJson.put("mensaje" , textoMensaje);
-        response.getWriter().write(oneJson.toJSONString());
-    }
-
-    private void seleccionarRequest(String rutaDispatcher) {
-        this.requestDispatcher = request.getRequestDispatcher(rutaDispatcher);
-    }
-
-    private void obtenerYcargarDaperEnSession(HttpServletRequest request) throws IllegalAccessException, InstantiationException, InvocationTargetException, ClassNotFoundException, SQLException, ParseException {
-        PersonalData personalData = new PersonalData(request, session);
-        new ObjectTransferSession().convertir(new GenericDao().execProcedure(ProceduresClient.GET_CLIENTE.getName(), personalData), session);
-    }
-
-    private void iniciarDatos(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, InvocationTargetException, IllegalAccessException {
-        this.request = request;
+    private void iniciarDatos(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
         this.session = request.getSession();
-        this.request.setCharacterEncoding("UTF-8");
         this.response = response;
         this.login = new Login();
+        this.oneJson = new JSONObject();
+        this.arrayJson = new JSONArray();
     }
 
-    private boolean comprobarLogin() throws IllegalAccessException, InstantiationException, InvocationTargetException, ParseException, SQLException, ClassNotFoundException {
-        LoginValidator loginValidator = new LoginValidator();
-        ArrayList<Error> errors = loginValidator.validate(login);
-        return errors.isEmpty();
+    private boolean comprobarLogin() throws IOException {
+        HashMap <String,Error> errors = new ComandValidateLogin(login).useCommands();
+        if(!errors.isEmpty()){
+            for(Map.Entry<String, Error> entry : errors.entrySet()) {
+                oneJson.put("control" ,entry.getKey());
+                oneJson.put("mensajeError" , entry.getValue().getMessage());
+                arrayJson.add(oneJson);
+            }
+            response.setCharacterEncoding("UTF-8");
+            response.getWriter().write(arrayJson.toJSONString());
+        }
+        return true;
     }
 
     private String getNifDeDataBase() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException, InvocationTargetException, ParseException {
@@ -135,8 +109,7 @@ public class ValidateSessionController extends HttpServlet {
         else session.setAttribute("intento", (int) session.getAttribute("intento") + 1);
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws
-            ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request, response);
     }
 

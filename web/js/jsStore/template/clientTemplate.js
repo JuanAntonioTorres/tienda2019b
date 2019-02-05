@@ -75,7 +75,7 @@ STORE.clientTemplate.insertTemplate = "<input type='hidden' value='unoAuno' id='
     "                </div>\n" +
     "            </div>\n" +
     "            <div class='etiqueta errorColor' id='alertaError'>Error:</div>\n" +
-    "            <button id='submit' type='submit'>Enviar</button>\n" +
+    "            <button id='submit'>Enviar</button>\n" +
     "        </div>\n" +
     "    </form>\n" +
     "</div>";
@@ -99,7 +99,7 @@ STORE.clientTemplate.loginTemplate = "<div class='contenido01'>\n" +
         "                <input class='etiqueta s8' id='userPassword' name ='userPassword' type='userPassword' placeholder='Contraseña' data-functioncallback='ValidacionExpresionRegular.validarPassword'>\n" +
         "            </div>\n" +
         "            <div class='etiqueta errorColor' id='alertaError'>Error:</div>\n" +
-        "            <button id='submit' type='submit'>Enviar</button>\n" +
+        "            <button id='submit'>Enviar</button>\n" +
         "        </div>\n" +
         "    </form>\n" +
         "</div>";

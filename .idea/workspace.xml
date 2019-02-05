@@ -7,8 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3eccf59-06cc-414e-9a46-d5560c812b6d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/client/ComandValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/ComandValidateLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/ComandValidatePersonalData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/RegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/UpdateLoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/ValidateSessionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/validators/LoginValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/UpdateLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ValidateSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ValidateSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validators/LoginValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,7 +135,7 @@
     <session id="39613355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.101" value="1" />
@@ -138,6 +150,7 @@
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.75" value="1" />
+          <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.79" value="1" />
           <entry key="project.open.time.80" value="1" />
           <entry key="project.open.time.81" value="1" />
@@ -145,38 +158,38 @@
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.92" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="10" />
-          <entry key="java" value="207" />
-          <entry key="js" value="90" />
+          <entry key="java" value="233" />
+          <entry key="js" value="94" />
           <entry key="jsp" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="10" />
-          <entry key="JAVA" value="207" />
+          <entry key="JAVA" value="233" />
           <entry key="JSP" value="8" />
-          <entry key="JavaScript" value="90" />
+          <entry key="JavaScript" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="15" />
-          <entry key="java" value="2730" />
-          <entry key="js" value="2116" />
+          <entry key="java" value="3418" />
+          <entry key="js" value="2149" />
           <entry key="jsp" value="186" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2730" />
+          <entry key="JAVA" value="3418" />
           <entry key="JSP" value="186" />
-          <entry key="JavaScript" value="2116" />
+          <entry key="JavaScript" value="2149" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
@@ -184,11 +197,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+            <state relative-caret-position="289">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+              <folding>
+                <element signature="e#178#344#0" />
+                <element signature="e#406#577#0" />
+                <element signature="n#!!block;n#ponerListenerEnSubmit#0" />
+                <element signature="n#!!block;n#funcionControladoraLogin#0" />
+                <element signature="e#1177#1268#0" />
+                <element signature="e#1319#1458#0" />
+                <element signature="e#1468#2513#0" />
+                <element signature="n#!!block;n#tratarErrores#0" />
+                <element signature="n#!!block;n#funcionControladoraInsert#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/RegisterController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="75" column="48" lean-forward="true" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,59 +232,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/ValidateSessionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/OffLocked.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/PaginaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dto/Page.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/builders/PageBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="236">
+              <caret line="71" column="63" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="71" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -262,8 +247,8 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -274,6 +259,7 @@
       <find>k</find>
       <find>intentos</find>
       <find>INTENTOS</find>
+      <find>submit</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -286,10 +272,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/dao/usuarioDAO/UsuarioDAO.java" />
-        <option value="$PROJECT_DIR$/src/dao/AccesoDB.java" />
-        <option value="$PROJECT_DIR$/src/model/dto/PostalCode.java" />
-        <option value="$PROJECT_DIR$/src/utils/ImageCharger.java" />
         <option value="$PROJECT_DIR$/src/dao/paginaDAO/IPaginaDao.java" />
         <option value="$PROJECT_DIR$/src/dao/paginaDAO/PaginaDao.java" />
         <option value="$PROJECT_DIR$/src/utils/Procedures.java" />
@@ -320,8 +302,6 @@
         <option value="$PROJECT_DIR$/src/dto/PostalCode.java" />
         <option value="$PROJECT_DIR$/src/validators/ClientValidator.java" />
         <option value="$PROJECT_DIR$/src/controller/DeleteController.java" />
-        <option value="$PROJECT_DIR$/src/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/src/controller/UpdateLoginController.java" />
         <option value="$PROJECT_DIR$/src/controller/UpdatePersonalDataController.java" />
         <option value="$PROJECT_DIR$/src/validators/LoginValidator.java" />
         <option value="$PROJECT_DIR$/src/dto/LoginBloqueo.java" />
@@ -332,11 +312,17 @@
         <option value="$PROJECT_DIR$/src/reflection/JsonTransferObject.java" />
         <option value="$PROJECT_DIR$/src/dao/rol/LoginRol.java" />
         <option value="$PROJECT_DIR$/src/dao/GenericDao.java" />
-        <option value="$PROJECT_DIR$/src/controller/ValidateSessionController.java" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" />
         <option value="$PROJECT_DIR$/src/controller/ClientBlockController.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" />
+        <option value="$PROJECT_DIR$/src/client/ComandValidate.java" />
+        <option value="$PROJECT_DIR$/src/validators/UserValidator.java" />
+        <option value="$PROJECT_DIR$/src/client/ComandValidateLogin.java" />
+        <option value="$PROJECT_DIR$/src/controller/UpdateLoginController.java" />
+        <option value="$PROJECT_DIR$/src/client/ComandValidatePersonalData.java" />
+        <option value="$PROJECT_DIR$/src/controller/ValidateSessionController.java" />
+        <option value="$PROJECT_DIR$/src/controller/RegisterController.java" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" />
       </list>
     </option>
   </component>
@@ -360,10 +346,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-479" />
-    <option name="y" value="338" />
-    <option name="width" value="1364" />
-    <option name="height" value="726" />
+    <option name="width" value="1378" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -393,6 +377,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -408,45 +393,33 @@
             <path>
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="builders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="poolConexion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="rol" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="jsController" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -457,7 +430,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549325262336" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549392777434" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -468,6 +441,11 @@
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="client" />
+      <recent name="utils" />
+      <recent name="controlador.profesor" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="entity" />
     </key>
@@ -477,18 +455,12 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\js\jsStore\util" />
-      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\lib" />
-      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\util" />
-      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\controlador" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\client" />
       <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src" />
       <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\dto" />
       <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\controller" />
       <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\js\jsStore\util" />
-      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\js\jsStore\jsController" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="reflection" />
@@ -497,9 +469,11 @@
       <recent name="error" />
       <recent name="entity.loginState" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="utils" />
-      <recent name="controlador.profesor" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\js\jsStore\util" />
+      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\lib" />
+      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\util" />
+      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\controlador" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1253,29 +1227,31 @@
       <workItem from="1549038268936" duration="14583000" />
       <workItem from="1549306518714" duration="15050000" />
       <workItem from="1549351157628" duration="1629000" />
+      <workItem from="1549362737681" duration="18059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="685318000" />
+    <option name="totallyTimeSpent" value="703377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49099836" visible="true" weight="0.2397882" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48924732" visible="true" weight="0.24810892" />
       <window_info id="Structure" order="1" sideWeight="0.4942717" weight="0.24962178" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Image Layers" order="5" />
-      <window_info id="Persistence" order="6" sideWeight="0.5090016" side_tool="true" weight="0.21860817" />
+      <window_info id="Persistence" order="6" sideWeight="0.5107527" side_tool="true" weight="0.2397882" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="JavaEE:App" order="8" side_tool="true" />
       <window_info id="Favorites" order="9" side_tool="true" />
       <window_info id="Capture Tool" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35679215" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39116204" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3747954" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1285,10 +1261,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.25531915" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.6420168" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.25531915" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.24962063" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" visible="true" weight="0.14750378" />
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.24962063" />
@@ -1317,16 +1293,16 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/ValidateSessionController.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/index.jsp</url>
           <line>4</line>
           <properties />
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/ValidateSessionController.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1345,47 +1321,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dto/PersonalData.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/error/Error.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/Validator.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/DNINIECIFValidator.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/EmailValidator.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/ImageNameValidatorI.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/ValidacionNIFCIF.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/VerificacionCodigoPostal.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/ValidacionLetrasConEspacio.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/DNINIFValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dto/PostalCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/DeleteController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -1393,38 +1328,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/UpdateAvatarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/ClientValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/validators/CompositeValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="68" column="51" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/UpdateLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1479,9 +1386,6 @@
           <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/insertController.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/TiempoDiferencia.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1542,20 +1446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/UserValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/LoginValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/procedures/ProceduresClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -1609,37 +1499,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
+    <entry file="file://$PROJECT_DIR$/src/controller/PaginaController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="187">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
+    <entry file="file://$PROJECT_DIR$/src/dto/Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/OffLocked.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ValidateSessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -1650,24 +1520,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dto/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/PaginaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="42">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/UpdateAvatarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/ImageCharger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validators/LoginValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ComandValidateDataClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validators/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validators/PasswordValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ComandValidateDataUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/DataLoginCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ComandValidate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ComandValidateLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/error/Error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/OffLocked.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/insertController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/UpdateLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validators/UserValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validators/ClientValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dto/PersonalData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ComandValidatePersonalData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="36" column="72" lean-forward="true" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
+          <folding>
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ValidateSessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="71" column="63" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="71" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="75" column="48" lean-forward="true" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#178#344#0" />
+            <element signature="e#406#577#0" />
+            <element signature="n#!!block;n#ponerListenerEnSubmit#0" />
+            <element signature="n#!!block;n#funcionControladoraLogin#0" />
+            <element signature="e#1177#1268#0" />
+            <element signature="e#1319#1458#0" />
+            <element signature="e#1468#2513#0" />
+            <element signature="n#!!block;n#tratarErrores#0" />
+            <element signature="n#!!block;n#funcionControladoraInsert#0" />
+          </folding>
         </state>
       </provider>
     </entry>

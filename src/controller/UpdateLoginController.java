@@ -1,10 +1,11 @@
 package controller;
 
+import client.ComandValidateLogin;
 import dao.GenericDao;
 import dto.Login;
 import error.Error;
 import procedures.ProceduresClient;
-import validators.LoginValidator;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -18,7 +19,7 @@ import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.util.ArrayList;
+import java.util.HashMap;
 
 @WebServlet("/valiCliUpdateLogin")
 @MultipartConfig
@@ -58,8 +59,8 @@ public class UpdateLoginController extends HttpServlet {
     }
 
     private boolean validarLogin(Login login) throws IllegalAccessException, InstantiationException, InvocationTargetException {
-        ArrayList<Error> errors = null;
-        errors = new LoginValidator().validate(login);
+        HashMap<String, Error> errors;
+        errors = new ComandValidateLogin(login).useCommands();
         return errors.isEmpty();
     }
 
