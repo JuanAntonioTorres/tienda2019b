@@ -3,6 +3,7 @@
 
 <%
     session = request.getSession();
+    String miPagina = null;
     if(session.getAttribute("pageName") == null){
         session.setAttribute("pageName", "index");
         session.setAttribute("idSesion", session.getId());
@@ -12,6 +13,7 @@
     }
     if(session.getAttribute("idSesion") == session.getId())
     {
-        new PaginaController().getPage(String.valueOf(session.getAttribute("pageName")));
+        miPagina = new PaginaController().getPage(String.valueOf(session.getAttribute("pageName")));
     }
 %>
+<%=miPagina%>
