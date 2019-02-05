@@ -98,7 +98,6 @@ public class GenericDao {
 		while (rs.next()) {
 			contador++;
 		}
-        System.out.println("asdsadassasadsadsadasd" + contador);
 		return contador;
 	}
 

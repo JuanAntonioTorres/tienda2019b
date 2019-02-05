@@ -9,7 +9,6 @@ import org.json.simple.parser.JSONParser;
 import procedures.ProceduresClient;
 import reflection.JsonTransferObject;
 import reflection.ObjectTransferSession;
-import reflection.ObjectsTransferObject;
 import validators.LoginValidator;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -46,12 +45,8 @@ public class ValidateSessionController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         try {
-
             iniciarDatos(request,response);
-            System.out.println(request.getParameter("json"));
-            System.out.println(new JSONParser().parse(request.getParameter("json")));
             new JsonTransferObject().transferir(login,(JSONObject) new JSONParser().parse(request.getParameter("json")));
-
             if (comprobarLogin()) {
                 gestionarLoginCorrecto();
             } else {
@@ -62,28 +57,28 @@ public class ValidateSessionController extends HttpServlet {
         }
     }
 
-    private void gestionarLoginIncorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
+    private void gestionarLoginIncorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
         incrementarIntento();
-        if (disponibilidadIntento()) {
-            prepararMensaje("Cliente: Intentalo otra vez");
-        } else {
-            bloquear(request);
+        if (!disponibilidadIntento()) {
+            session.setAttribute("horaBloqueo", new Date());
+            oneJson.put("tiempoMaximoBloqueo",session.getAttribute("tiempoMaximoBloqueo"));
         }
-    }
 
-    private void bloquear(HttpServletRequest request) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
-        if (login.getNif()!=null) {
-            bloquearSinBaseDatos(request);
-        } else {
-            bloquearEnBaseDatos(request, login);
-        }
+        oneJson.put("maxIntento", session.getAttribute("maxIntento"));
+        oneJson.put("intento", session.getAttribute("intento"));
+
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(oneJson.toJSONString());
     }
 
     private void gestionarLoginCorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
-        String nif = getNifDeDataBase();
-        response.setCharacterEncoding("UTF-8");
-        System.out.println(nif);
-        response.getWriter().write(String.valueOf(nif));
+        login.setNif(getNifDeDataBase());
+        if(login.getNif()!=null){
+            session.setAttribute("pageName","client");
+            response.setCharacterEncoding("UTF-8");
+            oneJson.put("nif" , login.getNif());
+            response.getWriter().write(oneJson.toJSONString());
+        }
     }
 
     private void bloquearEnBaseDatos(HttpServletRequest request, Login login) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
@@ -97,8 +92,10 @@ public class ValidateSessionController extends HttpServlet {
         seleccionarRequest("cliente/clientBlocking.jsp");
     }
 
-    private void prepararMensaje(String textoMensaje) {
-        request.setAttribute("mensaje", textoMensaje);
+    private void prepararMensaje(String textoMensaje) throws IOException {
+        response.setCharacterEncoding("UTF-8");
+        oneJson.put("mensaje" , textoMensaje);
+        response.getWriter().write(oneJson.toJSONString());
     }
 
     private void seleccionarRequest(String rutaDispatcher) {
@@ -121,7 +118,7 @@ public class ValidateSessionController extends HttpServlet {
     private boolean comprobarLogin() throws IllegalAccessException, InstantiationException, InvocationTargetException, ParseException, SQLException, ClassNotFoundException {
         LoginValidator loginValidator = new LoginValidator();
         ArrayList<Error> errors = loginValidator.validate(login);
-        return errors.isEmpty() && getNifDeDataBase() != null;
+        return errors.isEmpty();
     }
 
     private String getNifDeDataBase() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException, InvocationTargetException, ParseException {
@@ -129,13 +126,13 @@ public class ValidateSessionController extends HttpServlet {
     }
 
     private boolean disponibilidadIntento() {
-        return session.getAttribute("intentos") != null &&
-                INTENTOSPERMITIDOS < (int) session.getAttribute("intentos");
+        return session.getAttribute("intento") != null &&
+                INTENTOSPERMITIDOS < (int) session.getAttribute("intento");
     }
 
     private void incrementarIntento() {
-        if (session.getAttribute("intentos") == null) session.setAttribute("intentos", 1);
-        else session.setAttribute("intentos", (int) session.getAttribute("intentos") + 1);
+        if (session.getAttribute("intento") == null) session.setAttribute("intento", 1);
+        else session.setAttribute("intento", (int) session.getAttribute("intento") + 1);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws

@@ -29,19 +29,48 @@ function ponerListenerEnSubmit(rutaControlador, funcionControladora) {
 
 function funcionControladoraLogin() {
 
-    var estado = JSON.parse(llamada.req.responseText);
+    //preguntar por que se pasa JSON.dateParser
+    var estado = JSON.parse(llamada.req.responseText, JSON.dateParser);
 
-    if (estado === "") {
-        alert(estado);
-    }// No está en la BB DD
-    else if (estado.type === 'number') {
-        alert(estado);// registro valido
+    if (estado.nif != undefined) {
+        sessionStorage.setItem('idCliente', estado.nif);
+        location.reload();
+    }
+
+    else if (estado.intento < estado.maxIntento) {
+        tratarErrores(estado);
+        STORE.Error.set_message("Te quedan " + (estado.maxIntento - estado.intento) + " intento(s)")
     }
     else {
-        tratarErrores(estado);
-    }
+        $("menuPrincipal").style.display = "none";
+        $("cuerpo").innerHTML = STORE.clientTemplate.formSessionLocked;
+        STORE.Error = STORE.managementError();
+        $("locked").style.display = "none";
+        var seconds = 0;
+        var intervalId = null;
+        var locked = function () {
+            if (seconds >= estado.tiempoMaximoBloqueo) {
+                STORE.Error.set_message("Pulsa Botón para desbloqueo");
+                $("locked").style.display = "";
+                clearInterval(intervalId);
+                $("locked").addEventListener("click", function () {
+                    llamada = new ajax.CargadorContenidos("/offLocked", function () {
+                        location.reload();
+                    });
 
-}
+                });
+            }
+            else {
+                seconds = seconds + 1;
+                STORE.Error.set_message("Estas Bloqueado. Te quedan " + (estado.tiempoMaximoBloqueo - seconds) + " seconds");
+            }
+        };
+        intervalId = setInterval(locked, 1000);
+    }
+    STORE.Error.on();
+
+};
+
 
 function tratarErrores(estado) {
     estado.forEach(function (error) {

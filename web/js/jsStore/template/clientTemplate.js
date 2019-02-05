@@ -103,3 +103,10 @@ STORE.clientTemplate.loginTemplate = "<div class='contenido01'>\n" +
         "        </div>\n" +
         "    </form>\n" +
         "</div>";
+STORE.namespace('STORE.clientTemplate.loginTemplate');
+STORE.clientTemplate.formSessionLocked ="<div class='contenido01'>" +
+    "<div class='menu s3 caja03'>" +
+    "<div class='etiqueta errorColor' id='alertaError'>Error:</div>" +
+    "<button id='locked'>Locked</button>" +
+    "</div>" +
+    "</div>";

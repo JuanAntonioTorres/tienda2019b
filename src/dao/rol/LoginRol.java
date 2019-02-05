@@ -1,7 +1,6 @@
 package dao.rol;
 
-import dao.poolConexion.PageMySqlConnectionPool;
-
+import dao.poolConexion.ClienteMySqlConnectionPool;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -14,7 +13,7 @@ public class LoginRol extends Rol {
 
     //este constructor es usado por la reflexion en GenericDao
     public LoginRol() throws SQLException, ClassNotFoundException {
-        super(usuario,pass,conexionesIniciales,conexionesMaximas,new PageMySqlConnectionPool());
+        super(usuario,pass,conexionesIniciales,conexionesMaximas,new ClienteMySqlConnectionPool());
     }
 
     public Connection getConnection () throws SQLException, ClassNotFoundException {
