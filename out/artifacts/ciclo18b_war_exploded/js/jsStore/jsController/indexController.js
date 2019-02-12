@@ -6,12 +6,16 @@ var llamada;
 
 $("op_addClient").addEventListener("click", function () {
     $("cuerpo").innerHTML = STORE.clientTemplate.insertTemplate;
+    STORE.Error = STORE.managementError();
+    STORE.Submit = STORE.managementSubmit();
     STORE.clientStrategyOne();
     ponerListenerEnSubmit("/register", funcionControladoraInsert);
 });
 
 $("op_initSession").addEventListener("click", function () {
     $("cuerpo").innerHTML = STORE.clientTemplate.loginTemplate;
+    STORE.Error = STORE.managementError();
+    STORE.Submit = STORE.managementSubmit();
     STORE.clientStrategyOne();
     ponerListenerEnSubmit("/validateSession", funcionControladoraLogin);
 });
@@ -21,7 +25,6 @@ function ponerListenerEnSubmit(rutaControlador, funcionControladora) {
         var json = {};
         for (i = 0; i < STORE.list_input.length; i++) {
             json[STORE.list_input[i].id] = STORE.list_input[i].value;
-            console.dir(json);
         }
         llamada = new ajax.CargadorContenidos(rutaControlador, funcionControladora, JSON.stringify(json));
     })
@@ -33,44 +36,39 @@ function funcionControladoraLogin() {
     var estado = JSON.parse(llamada.req.responseText, JSON.dateParser);
 
     if (estado.nif != undefined) {
+        //TODO cambiar todo lo del nif por un id
         sessionStorage.setItem('idCliente', estado.nif);
         location.reload();
     }
 
     else if (estado.intento < estado.maxIntento) {
         tratarErrores(estado);
-        STORE.Error.set_message("Te quedan " + (estado.maxIntento - estado.intento) + " intento(s)")
+        STORE.Error.on();
+        STORE.Error.set_message("Te quedan " + (estado.maxIntento - estado.intento) + " intento(s)");
     }
-    else {
-        $("menuPrincipal").style.display = "none";
-        $("cuerpo").innerHTML = STORE.clientTemplate.formSessionLocked;
-        STORE.Error = STORE.managementError();
-        $("locked").style.display = "none";
-        var seconds = 0;
-        var intervalId = null;
-        var locked = function () {
-            if (seconds >= estado.tiempoMaximoBloqueo) {
-                STORE.Error.set_message("Pulsa Botón para desbloqueo");
-                $("locked").style.display = "";
-                clearInterval(intervalId);
-                $("locked").addEventListener("click", function () {
-                    llamada = new ajax.CargadorContenidos("/offLocked", function () {
-                        location.reload();
-                    });
 
-                });
-            }
-            else {
-                seconds = seconds + 1;
-                STORE.Error.set_message("Estas Bloqueado. Te quedan " + (estado.tiempoMaximoBloqueo - seconds) + " seconds");
-            }
-        };
-        intervalId = setInterval(locked, 1000);
+    else {
+        $("cuerpo").innerHTML = STORE.clientTemplate.formSessionLocked;
+        STORE.Error.on();
+        $("locked").style.display = "none";
+        for (let tiempoBloqueo = 30; i >= 0; tiempoBloqueo--) {
+            setTimeout(1000);
+            STORE.Error.set_message("Estas Bloqueado. Te quedan " + tiempoBloqueo + " seconds");
+            if (tiempoBloqueo==0)desbloquear();
+        }
     }
-    STORE.Error.on();
 
 };
 
+function desbloquear() {
+    STORE.Error.set_message("Pulsa Botón para desbloqueo");
+    $("locked").style.display = "";
+    $("locked").addEventListener("click", function () {
+        llamada = new ajax.CargadorContenidos("/offLocked", function () {
+            location.reload();
+        });
+    });
+}
 
 function tratarErrores(estado) {
     estado.forEach(function (error) {
@@ -84,15 +82,10 @@ function tratarErrores(estado) {
 function funcionControladoraInsert() {
     var estado = JSON.parse(llamada.req.responseText);
 
-    if (typeof estado === "number") {
-        if (estado == 0) {
-            alert(estado);//cliente no insertado
-        }
-        else alert(estado); //cliente insertado
-
+    if (estado.nif != "undefined") {
+        location.reload();
     }
     else {
         tratarErrores(estado);
-
     }
 }

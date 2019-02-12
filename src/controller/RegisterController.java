@@ -45,7 +45,7 @@ public class RegisterController extends HttpServlet {
 
         try {
             iniciarDatos(request, response);
-            new JsonTransferObject().transferir(login, (JSONObject) new JSONParser().parse(request.getParameter("json")));
+            new JsonTransferObject().transferir(personalData, (JSONObject) new JSONParser().parse(request.getParameter("json")));
             new JsonTransferObject().transferir(login, (JSONObject) new JSONParser().parse(request.getParameter("json")));
             if (comprobarDatos()) {
                 gestionarDatosCorrecto();

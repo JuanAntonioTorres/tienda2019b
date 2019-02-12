@@ -14,8 +14,6 @@ public class JsonTransferObject {
             if (metodosMolde[i].getName().substring(0, 3).equals("set")) {
                 for (int j = 0; j < jsons.length; j++) {
                     String nombreParametroBuscado = prepararNombreParametro(metodosMolde[i].getName().substring(3));
-                    System.out.println("JsonTransfer buscando..."+nombreParametroBuscado);
-                    System.out.println("JsonTransferValor "+jsons[j].get(nombreParametroBuscado));
                     if (jsons[j].get(nombreParametroBuscado) != null) {
                         metodosMolde[i].invoke(object, jsons[j].get(nombreParametroBuscado));
                     }

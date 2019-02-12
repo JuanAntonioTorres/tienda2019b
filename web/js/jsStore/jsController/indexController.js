@@ -6,12 +6,16 @@ var llamada;
 
 $("op_addClient").addEventListener("click", function () {
     $("cuerpo").innerHTML = STORE.clientTemplate.insertTemplate;
+    STORE.Error = STORE.managementError();
+    STORE.Submit = STORE.managementSubmit();
     STORE.clientStrategyOne();
     ponerListenerEnSubmit("/register", funcionControladoraInsert);
 });
 
 $("op_initSession").addEventListener("click", function () {
     $("cuerpo").innerHTML = STORE.clientTemplate.loginTemplate;
+    STORE.Error = STORE.managementError();
+    STORE.Submit = STORE.managementSubmit();
     STORE.clientStrategyOne();
     ponerListenerEnSubmit("/validateSession", funcionControladoraLogin);
 });
@@ -32,52 +36,53 @@ function funcionControladoraLogin() {
     var estado = JSON.parse(llamada.req.responseText, JSON.dateParser);
 
     if (estado.nif != undefined) {
+        //TODO cambiar todo lo del nif por un id
         sessionStorage.setItem('idCliente', estado.nif);
         location.reload();
     }
 
     else if (estado.intento < estado.maxIntento) {
         tratarErrores(estado);
-        STORE.Error.set_message("Te quedan " + (estado.maxIntento - estado.intento) + " intento(s)")
+        STORE.Error.on();
+        STORE.Error.set_message("Te quedan " + (estado.maxIntento - estado.intento) + " intento(s)");
     }
 
     else {
-        $("menuPrincipal").style.display = "none";
         $("cuerpo").innerHTML = STORE.clientTemplate.formSessionLocked;
-        STORE.Error = STORE.managementError();
+        STORE.Error.on();
         $("locked").style.display = "none";
-        var seconds = 0;
-        var intervalId = null;
-        var locked = function () {
-            if (seconds >= estado.tiempoMaximoBloqueo) {
-                STORE.Error.set_message("Pulsa Botón para desbloqueo");
-                $("locked").style.display = "";
-                clearInterval(intervalId);
-                $("locked").addEventListener("click", function () {
-                    llamada = new ajax.CargadorContenidos("/offLocked", function () {
-                        location.reload();
-                    });
-
-                });
-            }
-            else {
-                seconds = seconds + 1;
-                STORE.Error.set_message("Estas Bloqueado. Te quedan " + (estado.tiempoMaximoBloqueo - seconds) + " seconds");
-            }
-        };
-        intervalId = setInterval(locked, 1000);
+        for (let tiempoBloqueo = 30; i >= 0; tiempoBloqueo--) {
+            setTimeout(1000);
+            STORE.Error.set_message("Estas Bloqueado. Te quedan " + tiempoBloqueo + " seconds");
+            if (tiempoBloqueo == 0) desbloquear();
+        }
     }
-    STORE.Error.on();
 
 };
 
-function tratarErrores(estado) {
-    estado.forEach(function (error) {
-        //$(error.control).style.backgroundColor = STORE.Error.get_colorError();
-        $(error.control).setAttribute('style', 'backgroundColor:' + STORE.Error.get_colorError() + ' !important');
-        $("alertaError").innerText = error.mensajeError;
-        STORE.Error.on();
+function desbloquear() {
+    STORE.Error.set_message("Pulsa Botón para desbloqueo");
+    $("locked").style.display = "";
+    $("locked").addEventListener("click", function () {
+        llamada = new ajax.CargadorContenidos("/offLocked", function () {
+            location.reload();
+        });
     });
+}
+
+function tratarErrores(estado) {
+    if (estado.errorVerificacion != undefined) {
+        STORE.Error.on();
+        STORE.Error.set_message(estado.errorVerificacion);
+    }
+    else {
+        estado.forEach(function (error) {
+            //$(error.control).style.backgroundColor = STORE.Error.get_colorError();
+            $(error.control).setAttribute('style', 'backgroundColor:' + STORE.Error.get_colorError() + ' !important');
+            $("alertaError").innerText = error.mensajeError;
+            STORE.Error.on();
+        });
+    }
 }
 
 function funcionControladoraInsert() {

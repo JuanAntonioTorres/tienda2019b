@@ -1,10 +1,5 @@
 package dto;
 
-import builders.PageBuilder;
-
-import java.lang.reflect.InvocationTargetException;
-import java.sql.SQLException;
-import java.text.ParseException;
 import java.util.List;
 
 public class Page implements IPaginaDao {
@@ -17,18 +12,17 @@ public class Page implements IPaginaDao {
     private String body;
     private List<PageCss> jsAll;
 
-    public Page(String pageName) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
+    public Page(String pageName) {
         this.pageName = pageName;
-        new PageBuilder().fillPageDataFromDB(this);
     }
-
+    //constructor para reflection
     public Page() {
     }
-
+    //reflection
     public String getPageName() {
         return pageName;
     }
-
+    //reflection
     public void setPageName(String pageName) {
         this.pageName = pageName;
     }

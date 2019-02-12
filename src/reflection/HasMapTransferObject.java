@@ -23,11 +23,9 @@ public class HasMapTransferObject {
         for (int i = 0; i < metodosDeclarados.length; i++) {
 
             for (int j = 0; j < atributos.length; j++) {
-                System.out.println("metodo: " + metodosDeclarados[i].getName() + "\t|atributo: " + atributos[j].getName() + "\t|dato: " + datosFila.get(atributos[j].getName().toString()));//datosFila.get(atributos[j].getName().toString()));  //.toString()));
 
                 if (metodosDeclarados[i].getName().toLowerCase().contains("set" + atributos[j].getName().toLowerCase())) {
 
-                    System.out.println("metodo: " + metodosDeclarados[i].getName() + "\t|atributo: " + atributos[j].getName() + "\t|dato: " + datosFila.get(atributos[j].getName().toString()));//datosFila.get(atributos[j].getName().toString()));  //.toString()));
                     try {
                         metodosDeclarados[i].invoke(genericObject, datosFila.get(atributos[j].getName().toLowerCase())); //.toString()));
                     }catch (IllegalArgumentException e){

@@ -9,8 +9,8 @@ public class PageCssRol extends Rol {
 
     private static final String usuario = "root";
     private static final String pass = "";
-    private static final int conexionesIniciales = 3;
-    private static final int conexionesMaximas = 5;
+    private static final int conexionesIniciales = 1;
+    private static final int conexionesMaximas = 1;
 
     //este constructor es usado por la reflexion en GenericDao
     public PageCssRol() throws SQLException, ClassNotFoundException {

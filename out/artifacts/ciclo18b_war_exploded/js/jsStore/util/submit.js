@@ -1,38 +1,44 @@
-/**
- * Created by Luciano on 16/10/2018.
- */
-STORE.namespace('STORE.Submit');
+STORE.namespace('STORE.managementSubmit');
 
-'use strict';
+STORE.managementSubmit = function(){
 
-STORE.Submit.off = function () {
+    'use strict';
 
-    $("submit").style.display = "none";
-};
+    var submit = $("submit");
 
-STORE.Submit.on = function () {
+    return {
 
-    var i = 0;
+        off  : function(){
 
-    while (i < STORE.list_input.length) {
+            submit.style.display="none";
+        },
 
-        if (STORE.list_input[i].style.backgroundColor === STORE.Error.get_colorError()) {
+        on  : function(){
 
-            i = STORE.list_input.length;
+            var i = 0;
+
+            while (i < STORE.list_input.length) {
+
+                if (STORE.list_input[i].style.backgroundColor === STORE.Error.get_colorError()) {
+
+                    i = STORE.list_input.length;
+
+                }
+                i++;
+            }
+
+            if (i > STORE.list_input.length) {
+
+                submit.style.display = "none";
+
+            } else {
+
+                submit.style.display = "";
+
+            }
 
         }
-        i++;
-    }
 
-    if (i > STORE.list_input.length) {
+    };
 
-        $("submit").style.display = "none";
-
-    } else {
-
-        $("submit").style.display = "";
-
-    }
-
-}
-
+};

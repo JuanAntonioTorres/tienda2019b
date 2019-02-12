@@ -15,7 +15,6 @@ public class ObjectTransferSession {
             String atributoActual = atributosObjetos[i].getName();
             for (int j = 0; j < metodosObjetos.length; j++) {
                 if(metodosObjetos[j].getName().toLowerCase().equals("get"+atributoActual.toLowerCase())){
-                    System.out.println("ENTRA ENTRA ENTRA ENTRA");
                     session.setAttribute(atributoActual,metodosObjetos[j].invoke(object));
                 }
             }

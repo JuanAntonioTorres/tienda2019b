@@ -15,8 +15,7 @@ public enum ProceduresClient {
     GET_EMAIL("getEmail"),
     GET_CLAVE("getClave"),
     IS_LOCKED("isLocked"),
-    CHECK_LOGIN("checkogin"),
-    UNLOCK_CLIENT("unlockClient");
+    UNLOCK_CLIENT("unblockClient");
 
     private final String name;
 

@@ -7,7 +7,6 @@ import procedures.ProceduresPage;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.util.HashMap;
 import java.util.List;
 
 public class PageBuilder {
@@ -15,46 +14,39 @@ public class PageBuilder {
     public PageBuilder() {
     }
 
-    public void fillPageDataFromDB(Page page) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
-        GenericDao genericDao = new GenericDao();
-        page.setTitle((String) genericDao.execProcedure(ProceduresPage.GET_TITLE.getName() , page));
-        page.setMetaAll((String) genericDao.execProcedure(ProceduresPage.GET_METAALL.getName(), page));
-        page.setCssAll((List<PageCss>) genericDao.execProcedure(ProceduresPage.GET_CSSALL.getName(), new PageCss(), page));
-        page.setLinkAll((String) genericDao.execProcedure(ProceduresPage.GET_LINKALL.getName(), page));
-        page.setBody((String) genericDao.execProcedure(ProceduresPage.GET_BODY.getName(), page));
-        page.setJsAll((List<PageCss>) genericDao.execProcedure(ProceduresPage.GET_JSALL.getName(),new PageCss(), page));
-    }
-
-    public String buildPage(Page page) {
+    public String buildPage(String pageName) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
+        Page page = new Page(pageName);
+        fillPageDataFromDB(page);
         StringBuilder domBuilding = new StringBuilder();
         domBuilding.append("<HTML>");
         domBuilding.append(getHead(page));
         domBuilding.append(getBody(page));
         domBuilding.append("</HTML>");
         domBuilding.append(getJs(page));
-        System.out.println(domBuilding);
         return new String(domBuilding);
     }
 
+    private void fillPageDataFromDB(Page page) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
+        GenericDao genericDao = new GenericDao();
+        page.setTitle((String) genericDao.execProcedure(ProceduresPage.GET_TITLE.getName(), page));
+        page.setMetaAll((String) genericDao.execProcedure(ProceduresPage.GET_METAALL.getName(), page));
+        page.setCssAll((List<PageCss>) genericDao.execProcedure(ProceduresPage.GET_CSSALL.getName(), new PageCss(), page));
+        page.setLinkAll((String) genericDao.execProcedure(ProceduresPage.GET_LINKALL.getName(), page));
+        page.setBody((String) genericDao.execProcedure(ProceduresPage.GET_BODY.getName(), page));
+        page.setJsAll((List<PageCss>) genericDao.execProcedure(ProceduresPage.GET_JSALL.getName(), new PageCss(), page));
+    }
+
     private String getHead(Page page) {
-
         String head = "<head>";
-
         head += "<title>" + page.getTitle() + "</title>";
-
         head += page.getMetaAll();
-
         head += page.getLinkAll();
-
         head += "</head>";
-
         List<PageCss> cssAll = page.getCssAll();
         for (PageCss css : cssAll) {
             head += "<link rel='stylesheet' href='" + css.getPath() + "/" + css.getName() + ".css'>";
         }
-
         return head;
-
     }
 
     private String getBody(Page page) {

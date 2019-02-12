@@ -109,8 +109,6 @@ public class GenericDao {
 			String nombreParametro = buscarNombreParametro(conexion, posicionParametro, nombreProcedure);
 			for (int i = 0; i < declaredMethod.length; i++) {
 				if (declaredMethod[i].getName().toLowerCase().equals("get" + nombreParametro.toLowerCase())) {
-					System.out.println("nombre parametro buscado " + nombreParametro);
-					System.out.println("nombre metodo buscado " + declaredMethod[i].getName().toLowerCase().substring(3));
 					return declaredMethod[i].invoke(objects[objPosition]);
 				}
 			}

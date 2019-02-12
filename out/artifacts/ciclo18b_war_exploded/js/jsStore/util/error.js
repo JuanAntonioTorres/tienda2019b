@@ -1,24 +1,30 @@
-/**
- * Created by Luciano on 16/10/2018.
- */
-STORE.namespace('STORE.Error');
+STORE.namespace('STORE.managementError');
 
-'use strict';
+STORE.managementError = function(){
 
-STORE.Error.on = function () {
-    $("alertaError").style.display = "";
+    'use strict';
+
+    var error = $("alertaError");
+
+    return {
+
+        on  : function(){
+            error.style.display = "";
+        },
+
+        off  : function(){
+            error.style.display = "none";
+        },
+
+        set_message : function(message){
+            error.innerHTML = message;
+        },
+
+        get_colorError : function(){
+
+            return STORE.Color.colorError;
+        }
+
+    };
+
 };
-
-STORE.Error.off = function () {
-    $("alertaError").style.display = "none";
-};
-
-STORE.Error.set_message = function (message) {
-    $("alertaError").innerHTML = message;
-};
-
-STORE.Error.get_colorError = function () {
-
-    return STORE.Color.colorError;
-};
-
