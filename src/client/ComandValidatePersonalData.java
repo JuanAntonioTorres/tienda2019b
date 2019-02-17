@@ -21,7 +21,7 @@ public class ComandValidatePersonalData implements ComandValidate {
     public HashMap<String, Error> useCommands() throws SQLException, ClassNotFoundException, InvocationTargetException, InstantiationException, ParseException, IllegalAccessException {
         HashMap<String,Error> errors = new HashMap<>();
         errors.put("nif",new DNINIECIFValidator(personalData.getNif()).validate());
-        errors.put("",new ValidacionLetrasConEspacio(personalData.getFirstName()).validate());
+        errors.put("firstName",new ValidacionLetrasConEspacio(personalData.getFirstName()).validate());
         errors.put("firstName",new LengthValidator(personalData.getFirstName(), 3, 50).validate());
         errors.put("lastName",new ValidacionLetrasConEspacio(personalData.getLastName()).validate());
         errors.put("lastName",new LengthValidator(personalData.getLastName(), 15, 100).validate());

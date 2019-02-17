@@ -1,4 +1,7 @@
 <%@ page import="controller.PaginaController" %>
+<%@ page import="dto.PersonalData" %>
+<%@ page import="dao.GenericDao" %>
+<%@ page import="procedures.ProceduresClient" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%

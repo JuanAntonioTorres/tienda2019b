@@ -18,8 +18,8 @@ public class ComandValidateLogin implements ComandValidate {
     public HashMap<String, Error> useCommands() {
 
         HashMap<String, Error> errors = new HashMap<>();
-        errors.put("user", new UserValidator(login.getUserName()).validate());
-        errors.put("password", new PasswordValidator(login.getUserPassword()).validate());
+        errors.put("userName", new UserValidator(login.getUserName()).validate());
+        errors.put("userPassword", new PasswordValidator(login.getUserPassword()).validate());
         errors.entrySet().removeIf(entries -> entries.getValue() == null);
 
         return errors;

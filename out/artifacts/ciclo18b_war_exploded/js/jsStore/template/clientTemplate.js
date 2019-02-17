@@ -3,7 +3,7 @@ STORE.namespace('STORE.clientTemplate.insertTemplate');
 STORE.clientTemplate.insertTemplate = "<input type='hidden' id='estrategia'>\n" +
     "\n" +
     "<div class='contenido01'>\n" +
-    "    <form id='client_register'>\n" +
+    "    <div id='client_register'>\n" +
     "        <div class='menu s3 caja03'>\n" +
     "            <h4>New Client</h4>\n" +
     "\n" +
@@ -77,34 +77,34 @@ STORE.clientTemplate.insertTemplate = "<input type='hidden' id='estrategia'>\n" 
     "            <div class='etiqueta errorColor' id='alertaError'>Error:</div>\n" +
     "            <button id='submit'>Enviar</button>\n" +
     "        </div>\n" +
-    "    </form>\n" +
-    "</div>";
+    "    </div>\n" +
+    "</div></div>";
 
 STORE.namespace('STORE.clientTemplate.loginTemplate');
 STORE.clientTemplate.loginTemplate = "<div class='contenido01'>\n" +
-        "    <form id='client_register'>\n" +
-        "\n" +
-        "        <input type='hidden' name = 'opcion'>\n" +
-        "\n" +
-        "        <div class='menu s3 caja03'>\n" +
-        "            <h4>Session</h4>\n" +
-        "\n" +
-        "            <div id='div_userName'>\n" +
-        "                <label class='labelInput' for='userName'>Usuario:</label>\n" +
-        "                <input class='etiqueta s8' id='userName' name ='userName'  type='text' data-functioncallback='ValidacionExpresionRegular.validarUsuario' size='24' minlength='7' maxlength='7' required placeholder='input your User' title='3 to 50 characters'>\n" +
-        "            </div>\n" +
-        "\n" +
-        "            <div id='div_userPassword'>\n" +
-        "                <label for='userPassword'>Password:</label>\n" +
-        "                <input class='etiqueta s8' id='userPassword' name ='userPassword' type='userPassword' placeholder='Contraseña' data-functioncallback='ValidacionExpresionRegular.validarPassword'>\n" +
-        "            </div>\n" +
-        "            <div class='etiqueta errorColor' id='alertaError'>Error:</div>\n" +
-        "            <button id='submit'>Enviar</button>\n" +
-        "        </div>\n" +
-        "    </form>\n" +
-        "</div>";
+    "    <div id='client_register'>\n" +
+    "\n" +
+    "        <input type='hidden' name = 'opcion'>\n" +
+    "\n" +
+    "        <div class='menu s3 caja03'>\n" +
+    "            <h4>Session</h4>\n" +
+    "\n" +
+    "            <div id='div_userName'>\n" +
+    "                <label class='labelInput' for='userName'>Usuario:</label>\n" +
+    "                <input class='etiqueta s8' id='userName' name ='userName'  type='text' data-functioncallback='ValidacionExpresionRegular.validarUsuario' size='24' minlength='7' maxlength='7' required placeholder='input your User' title='3 to 50 characters'>\n" +
+    "            </div>\n" +
+    "\n" +
+    "            <div id='div_userPassword'>\n" +
+    "                <label for='userPassword'>Password:</label>\n" +
+    "                <input class='etiqueta s8' id='userPassword' name ='userPassword' type='userPassword' placeholder='Contraseña' data-functioncallback='ValidacionExpresionRegular.validarPassword'>\n" +
+    "            </div>\n" +
+    "            <div class='etiqueta errorColor' id='alertaError'>Error:</div>\n" +
+    "            <button id='submit'>Enviar</button>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "</div></div>";
 STORE.namespace('STORE.clientTemplate.loginTemplate');
-STORE.clientTemplate.formSessionLocked ="<div class='contenido01'>" +
+STORE.clientTemplate.formSessionLocked = "<div class='contenido01'>" +
     "<div class='menu s3 caja03'>" +
     "<div class='etiqueta errorColor' id='alertaError'>Error:</div>" +
     "<button id='locked'>Locked</button>" +

@@ -3,6 +3,7 @@ package controller;
 import client.ComandValidateLogin;
 import dao.GenericDao;
 import dto.Login;
+import dto.PersonalData;
 import error.Error;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -20,7 +21,6 @@ import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,7 +28,7 @@ import java.util.Map;
 public class ValidateSessionController extends HttpServlet {
 
     //TODO posibles parametros del Json METER EN ENUM si hay tiempo y hacer lo mismo con los de session
-    private static final String ERROR = "mensajeError", ERRORVERIFICACION ="errorVerificacion",
+    private static final String ERROR = "mensajeError", ERRORVERIFICACION = "errorVerificacion",
             MAX_INTENTO = "maxIntento", INTENTO = "intento", NIF = "nif", CONTROL = "control";
 
     private static final long serialVersionUID = 1L;
@@ -43,11 +43,9 @@ public class ValidateSessionController extends HttpServlet {
 
         try {
             iniciarDatos(request, response);
-            transferJsonToObject(request,login);
+            transferJsonToObject(request, login);
             if (validarLogin() && verificarLogin()) {
                 gestionarLoginCorrecto();
-            } else {
-                gestionarLoginIncorrecto();
             }//chin pum
         } catch (IllegalAccessException | InvocationTargetException | InstantiationException | ClassNotFoundException | SQLException | ParseException | org.json.simple.parser.ParseException e) {
             e.printStackTrace();
@@ -61,7 +59,11 @@ public class ValidateSessionController extends HttpServlet {
     private boolean verificarLogin() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
         login.setNif(getNifDeDataBase());
         if (login.getNif() == null) {
-            oneJson.put(ERRORVERIFICACION,"error de verificacion");
+            oneJson.put(ERRORVERIFICACION, "error de verificacion");
+            incrementarIntento();
+            oneJson.put(MAX_INTENTO, String.valueOf(INTENTOSPERMITIDOS));
+            oneJson.put(INTENTO, String.valueOf(session.getAttribute("intento")));
+            llamadaAjax(oneJson.toJSONString());
             return false;
         }
         return true;
@@ -72,12 +74,6 @@ public class ValidateSessionController extends HttpServlet {
         response.getWriter().write(s);
     }
 
-    private void gestionarLoginIncorrecto() throws IOException {
-        incrementarIntento();
-        oneJson.put(MAX_INTENTO, INTENTOSPERMITIDOS);
-        oneJson.put(INTENTO, session.getAttribute("intento"));
-        llamadaAjax(oneJson.toJSONString());
-    }
 
     private void gestionarLoginCorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
         session.setAttribute("pageName", "client");

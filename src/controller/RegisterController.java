@@ -45,8 +45,11 @@ public class RegisterController extends HttpServlet {
 
         try {
             iniciarDatos(request, response);
-            new JsonTransferObject().transferir(personalData, (JSONObject) new JSONParser().parse(request.getParameter("json")));
+            System.out.println("1");
             new JsonTransferObject().transferir(login, (JSONObject) new JSONParser().parse(request.getParameter("json")));
+            System.out.println("2");
+            new JsonTransferObject().transferir(personalData, (JSONObject) new JSONParser().parse(request.getParameter("json")));
+            System.out.println("3");
             if (comprobarDatos()) {
                 gestionarDatosCorrecto();
             } else {
@@ -62,6 +65,7 @@ public class RegisterController extends HttpServlet {
             System.out.println("JSON Errores");
             oneJson.put("control", entry.getKey());
             oneJson.put("mensajeError", entry.getValue().getMessage());
+            System.out.println("eeeeeeeeeeeeeeeeeee"+oneJson.toJSONString());
             arrayJson.add(oneJson);
         }
         response.setCharacterEncoding("UTF-8");
@@ -74,11 +78,13 @@ public class RegisterController extends HttpServlet {
             session.setAttribute("pageName", "client");
             response.setCharacterEncoding("UTF-8");
             oneJson.put("nif" , login.getNif());
+            System.out.println("aaaaaaaaaaaaaaaaaaa"+oneJson.toJSONString());
             response.getWriter().write(oneJson.toJSONString());
         }
     }
 
     private boolean comprobarDatos() throws IOException, IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
+        System.out.println("info"+personalData.toString());
         HashMap<String, Error> errors = new ComandValidateLogin(login).useCommands();
         errors.putAll(new ComandValidatePersonalData(personalData).useCommands());
         if (!errors.isEmpty()) {
@@ -108,4 +114,3 @@ public class RegisterController extends HttpServlet {
     }
 
 }
-

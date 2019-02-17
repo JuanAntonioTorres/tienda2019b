@@ -17,7 +17,6 @@ public class RsTransferArrayList {
         while (rs.next()) {
             HashMap<String, Object> datosFila = new HashMap<>();
             for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
-                System.out.println(rs.getMetaData().getColumnName(i).toLowerCase() +" " + rs.getString(i));
                 datosFila.put(rs.getMetaData().getColumnName(i).toLowerCase(), rs.getString(i)); // rs.getString(i)); // rs.getObject(i));
             }
             filas.add(new HasMapTransferObject().crearPojo(datosFila, clase));
