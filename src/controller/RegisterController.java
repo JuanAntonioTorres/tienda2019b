@@ -11,7 +11,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import procedures.ProceduresClient;
 import reflection.JsonTransferObject;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -45,11 +44,8 @@ public class RegisterController extends HttpServlet {
 
         try {
             iniciarDatos(request, response);
-            System.out.println("1");
             new JsonTransferObject().transferir(login, (JSONObject) new JSONParser().parse(request.getParameter("json")));
-            System.out.println("2");
             new JsonTransferObject().transferir(personalData, (JSONObject) new JSONParser().parse(request.getParameter("json")));
-            System.out.println("3");
             if (comprobarDatos()) {
                 gestionarDatosCorrecto();
             } else {
@@ -62,10 +58,8 @@ public class RegisterController extends HttpServlet {
 
     private void gestionarDatosIncorrecto() throws IOException {
         for (Map.Entry<String, Error> entry : listaErrores.entrySet()) {
-            System.out.println("JSON Errores");
             oneJson.put("control", entry.getKey());
             oneJson.put("mensajeError", entry.getValue().getMessage());
-            System.out.println("eeeeeeeeeeeeeeeeeee"+oneJson.toJSONString());
             arrayJson.add(oneJson);
         }
         response.setCharacterEncoding("UTF-8");
@@ -78,7 +72,6 @@ public class RegisterController extends HttpServlet {
             session.setAttribute("pageName", "client");
             response.setCharacterEncoding("UTF-8");
             oneJson.put("nif" , login.getNif());
-            System.out.println("aaaaaaaaaaaaaaaaaaa"+oneJson.toJSONString());
             response.getWriter().write(oneJson.toJSONString());
         }
     }

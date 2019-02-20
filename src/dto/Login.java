@@ -32,6 +32,10 @@ public class Login {
         new SessionTransferObject(session, this);
     }
 
+    public Login(String nif) {
+        this.nif = nif;
+    }
+
     public String getNif() {
         return nif;
     }

@@ -2,29 +2,20 @@
 
     var ajax = STORE.Ajax;
     var llamada;
-    var instertClientListener;
-    var loginClientListener ;
-    var activarEstrategias ;
-    var ponerListenerEnSubmit ;
-    var funcionControladoraLogin ;
-    var funcionControladoraInsert ;
-    var desbloquear ;
-    var tratarErrores ;
 
-
-    instertClientListener = function() {
+    var instertClientListener = function() {
         $("cuerpo").innerHTML = STORE.clientTemplate.insertTemplate;
          activarEstrategias();
          ponerListenerEnSubmit("/register",  funcionControladoraInsert);
     }
 
-    loginClientListener = function(){
+    var loginClientListener = function(){
         $("cuerpo").innerHTML = STORE.clientTemplate.loginTemplate;
         activarEstrategias();
         ponerListenerEnSubmit("/validateSession", funcionControladoraLogin);
     };
 
-    desbloquear = function () {
+    var desbloquear = function () {
         STORE.Error.set_message("Pulsa Botón para desbloqueo");
         $("locked").style.display = "";
         $("locked").addEventListener("click", function () {
@@ -34,13 +25,13 @@
         });
     }
 
-    activarEstrategias = function (){
+    var activarEstrategias = function (){
         STORE.Error = STORE.managementError();
         STORE.Submit = STORE.managementSubmit();
         STORE.clientStrategyOne();
     }
 
-    ponerListenerEnSubmit = function (rutaControlador, funcionControladora) {
+    var ponerListenerEnSubmit = function (rutaControlador, funcionControladora) {
         $("submit").addEventListener("click", function () {
             var json = {};
             for (i = 0; i < STORE.list_input.length; i++) {
@@ -50,9 +41,7 @@
         })
     }
 
-    funcionControladoraLogin = function () {
-        alert("voy a petar");
-        //preguntar por que se pasa JSON.dateParser
+    var funcionControladoraLogin = function () {
         var estado = JSON.parse(llamada.req.responseText);
 
         if (estado.nif != undefined) {
@@ -81,7 +70,7 @@
         }
     };
 
-    tratarErrores = function (estado) {
+    var tratarErrores = function (estado) {
         if (estado.errorVerificacion != undefined) {
             STORE.Error.on();
             STORE.Error.set_message(estado.errorVerificacion);
@@ -96,7 +85,7 @@
         }
     }
 
-    funcionControladoraInsert = function () {
+    var funcionControladoraInsert = function () {
         var estado = JSON.parse(llamada.req.responseText);
 
         if (estado.nif != "undefined") {
@@ -106,6 +95,9 @@
             tratarErrores(estado);
         }
     }
+
+    new STORE.DOMObjectLook("op_addClient");
+    new STORE.DOMObjectLook("op_initSession");
 
     $("op_addClient").addEventListener("click",instertClientListener);
     $("op_initSession").addEventListener("click",loginClientListener);

@@ -3,14 +3,12 @@ package controller;
 import client.ComandValidateLogin;
 import dao.GenericDao;
 import dto.Login;
-import dto.PersonalData;
 import error.Error;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import procedures.ProceduresClient;
 import reflection.JsonTransferObject;
-
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -73,7 +71,6 @@ public class ValidateSessionController extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write(s);
     }
-
 
     private void gestionarLoginCorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
         session.setAttribute("pageName", "client");
