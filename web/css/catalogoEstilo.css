@@ -3053,12 +3053,12 @@ input {
 
 
 .ImagenCarrusel {
-  width: 2em;
-  height: 2em; }
+  width: 100%;
+  height: 100%; }
 
 .opcionCarrusel {
-  width: 2em;
-  height: 2em;
+  width: 100%;
+  height: 100%;
   transform-style: preserve-3d;
   transition: all ease 2s;
   margin: auto; }
@@ -3066,7 +3066,93 @@ input {
 .textoCarrusel {
   font-size: 12px; }
 
+#giran {
+  margin: 20px auto;
+  width: 100px;
+  padding: 0px;
+  -webkit-animation-name: girando;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 20s;
+  -webkit-transform-style: preserve-3d; }
+#giran span {
+  position: absolute; }
+#primera {
+  -webkit-transform: rotateY(0deg) translateX(140px) rotatey(90deg); }
+#segunda {
+  -webkit-transform: rotateY(-60deg) translateX(140px) rotatey(90deg); }
+#tercera {
+  -webkit-transform: rotateY(-120deg) translateX(140px) rotatey(90deg); }
+#cuarta {
+  -webkit-transform: rotateY(-180deg) translateX(140px) rotatey(90deg); }
+#quinta {
+  -webkit-transform: rotateY(-240deg) translateX(140px) rotatey(90deg); }
+#sexta {
+  -webkit-transform: rotateY(-300deg) translateX(140px) rotatey(90deg); }
+*/
+#gifcambia1 {
+  border: 2px solid yellow;
+  position: absolute;
+  margin-top: 100px; }
 
+#gifcambia2 {
+  border: 2px solid orange;
+  margin-top: 100px;
+  margin-right: 100px; }
+
+#gifcambia1:hover {
+  cursor: pointer;
+  visibility: hidden; }
+
+@-webkit-keyframes rotar {
+  0% {
+    -webkit-transform: rotatex(180deg); }
+  25% {
+    -webkit-transform: rotatey(180deg); }
+  50% {
+    -webkit-transform: rotatex(-180deg); }
+  100% {
+    -webkit-transform: rotatex(0deg); } }
+@-webkit-keyframes girando {
+  from {
+    -webkit-transform: rotateY(0deg); }
+  to {
+    -webkit-transform: rotateY(-360deg); } }
+@-webkit-keyframes girando2 {
+  from {
+    -webkit-transform: rotatex(0deg); }
+  to {
+    -webkit-transform: rotatex(-360deg); } }
+body {
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.panel {
+  z-index: 1; }
+
+#gifcambia1, #gifcambia2 {
+  visibility: hidden;
+  z-index: 1; }
+
+.caja01 {
+  font-size: 3em;
+  width: 30%;
+  margin: 0 auto; }
+
+.caja02 {
+  font-size: 6em;
+  width: 60%;
+  margin: 0 auto; }
+
+.caja03 {
+  font-size: 20em;
+  width: 80%;
+  margin: 0 auto; }
+
+#espacio {
+  margin: 30px auto;
+  height: 40%;
+  -webkit-perspective: 600px; }
 
 
 
