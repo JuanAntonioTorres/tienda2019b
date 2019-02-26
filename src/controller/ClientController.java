@@ -1,14 +1,16 @@
 package controller;
 
+import dao.GenericDao;
+import dto.PersonalData;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import procedures.ProceduresClient;
 import reflection.JsonTransferObject;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.applet.Applet;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
@@ -24,9 +26,9 @@ public abstract class ClientController extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        iniciarDatos(request, response);
 
         try {
+            iniciarDatos(request, response);
             if (accion()) gestionarAccionCorrecto();
             else gestionarAccionNoCorrecto();
 
@@ -47,7 +49,7 @@ public abstract class ClientController extends HttpServlet {
     }
 
     private void gestionarAccionNoCorrecto() {
-        this.oneJson.put("errorVerificacion", "Error"+ getNombreAccion());
+        this.oneJson.put("errorVerificacion", "Error" + getNombreAccion());
         this.oneJson.put("estado", "ERROR");
     }
 
@@ -56,7 +58,7 @@ public abstract class ClientController extends HttpServlet {
         this.oneJson.put("estado", "OK");
     }
 
-    private void iniciarDatos(HttpServletRequest request, HttpServletResponse response) {
+    private void iniciarDatos(HttpServletRequest request, HttpServletResponse response) throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
         this.session = request.getSession();
         this.oneJson = new JSONObject();
         this.response = response;

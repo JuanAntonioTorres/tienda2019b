@@ -1,6 +1,6 @@
 STORE.namespace('STORE.managementError');
 
-STORE.managementError = function(){
+    STORE.managementError = function(){
 
     'use strict';
 

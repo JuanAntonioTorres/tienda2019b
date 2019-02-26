@@ -7,42 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3eccf59-06cc-414e-9a46-d5560c812b6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/client/ComandValidateLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/client/ComandValidateLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/client/ComandValidatePersonalData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/client/ComandValidatePersonalData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/DeleteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/DeleteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ClientController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/RegisterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/UpdateLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/UpdateLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/UpdatePersonalDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/UpdatePersonalDataController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ValidateSessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ValidateSessionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/PersonalData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/PersonalData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/validators/ClientValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/validators/ClientValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/clientController.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/clientController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/indexController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/insertController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/loginController.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/clientTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/clientTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/client/ComandValidateLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/client/ComandValidateLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/client/ComandValidatePersonalData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/client/ComandValidatePersonalData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/DeleteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/controller/DeleteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/util/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/util/error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/util/prefijos.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/util/prefijos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/controller/ClientController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/controller/RegisterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/UpdateLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/controller/UpdateLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/UpdatePersonalDataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/controller/UpdatePersonalDataController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/ValidateSessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/controller/ValidateSessionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/dto/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/dto/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/dto/PersonalData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/dto/PersonalData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/validators/ClientValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/validators/ClientValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/DeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/UpdateLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/UpdatePersonalDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdatePersonalDataController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ValidateSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ValidateSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/catalogoEstilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/catalogoEstilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/insertController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/loginController.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/util/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/util/error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/util/prefijos.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/util/prefijos.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,12 +150,13 @@
     <session id="39613355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
+          <entry key="project.closed" value="38" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.101" value="1" />
           <entry key="project.open.time.112" value="1" />
           <entry key="project.open.time.123" value="1" />
+          <entry key="project.open.time.137" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -175,7 +166,9 @@
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.62" value="2" />
-          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.65" value="2" />
           <entry key="project.open.time.68" value="2" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.71" value="1" />
@@ -190,18 +183,19 @@
           <entry key="project.open.time.86" value="1" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.open.time.94" value="1" />
+          <entry key="project.open.time.94" value="2" />
           <entry key="project.open.time.97" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="39" />
+          <entry key="project.opened" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="157" value="1" />
           <entry key="class" value="20" />
-          <entry key="java" value="346" />
-          <entry key="js" value="134" />
+          <entry key="css" value="2" />
+          <entry key="java" value="368" />
+          <entry key="js" value="151" />
           <entry key="jsp" value="14" />
           <entry key="ts" value="1" />
         </counts>
@@ -209,25 +203,28 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="20" />
-          <entry key="JAVA" value="346" />
+          <entry key="CSS" value="2" />
+          <entry key="JAVA" value="368" />
           <entry key="JSP" value="14" />
-          <entry key="JavaScript" value="135" />
+          <entry key="JavaScript" value="152" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="5" />
           <entry key="dummy" value="15" />
-          <entry key="java" value="8628" />
-          <entry key="js" value="4586" />
+          <entry key="java" value="9026" />
+          <entry key="js" value="5337" />
           <entry key="jsp" value="366" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8628" />
+          <entry key="CSS" value="5" />
+          <entry key="JAVA" value="9026" />
           <entry key="JSP" value="366" />
-          <entry key="JavaScript" value="4586" />
+          <entry key="JavaScript" value="5337" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
@@ -238,83 +235,67 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="115" column="77" selection-start-line="47" selection-start-column="8" selection-end-line="115" selection-end-column="77" />
+            <state relative-caret-position="1195">
+              <caret line="118" column="51" lean-forward="true" selection-start-line="118" selection-start-column="51" selection-end-line="118" selection-end-column="51" />
               <folding>
                 <element signature="e#197#351#0" />
-                <element signature="e#409#524#0" />
                 <element signature="e#610#1006#0" />
                 <element signature="e#1054#1661#0" />
-                <element signature="e#2085#2838#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/RegisterController.java">
+        <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-131">
+              <caret line="206" column="64" selection-start-line="206" selection-start-column="64" selection-end-line="206" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/DeleteController.java">
+        <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/UpdateAvatarController.java">
+        <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="122" selection-start-line="29" selection-start-column="122" selection-end-line="29" selection-end-column="122" />
+            <state relative-caret-position="51">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/UpdateLoginController.java">
+        <entry file="file://$PROJECT_DIR$/web/css/miscontenedores.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="155">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
+        <entry file="file://$PROJECT_DIR$/web/css/catalogoEstilo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="40" column="48" lean-forward="true" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-              <folding>
-                <element signature="method#doPost#0;class#ClientController#0" />
-                <element signature="method#transferJsonToObject#0;class#ClientController#0" />
-                <element signature="method#gestionarAccionNoCorrecto#0;class#ClientController#0" />
-                <element signature="method#gestionarAccionCorrecto#0;class#ClientController#0" />
-                <element signature="method#iniciarDatos#0;class#ClientController#0" />
-                <element signature="method#llamadaAjax#0;class#ClientController#0" />
-              </folding>
+            <state relative-caret-position="230">
+              <caret line="3068" lean-forward="true" selection-start-line="3068" selection-end-line="3068" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/JSONObject.class">
+        <entry file="file://$PROJECT_DIR$/src/reflection/ObjectTransferSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="102">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -322,8 +303,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reflection/JsonTransferObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="323">
+              <caret line="21" column="9" selection-start-line="12" selection-start-column="7" selection-end-line="21" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/UpdateLoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -331,29 +321,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/UpdatePersonalDataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="255">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding>
-                <element signature="e#102#282#0" />
-                <element signature="e#324#506#0" />
-                <element signature="e#543#855#0" />
-                <element signature="e#897#1035#0" />
-                <element signature="e#1117#1481#0" />
-                <element signature="e#1530#2516#0" />
-                <element signature="e#2561#3118#0" />
-                <element signature="e#3168#3377#0" />
               </folding>
             </state>
           </provider>
@@ -368,8 +339,8 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -384,6 +355,8 @@
       <find>sys</find>
       <find>response.setCharacterEncoding(&quot;UTF-8&quot;)</find>
       <find>response.getWriter().write(</find>
+      <find>Ver</find>
+      <find>carru</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -396,11 +369,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/submit.js" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/error.js" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/util/prefijos.js" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/loginController.js" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/insertController.js" />
         <option value="$PROJECT_DIR$/web/js/jsStore/jsTemplate/clientTemplate.js" />
         <option value="$PROJECT_DIR$/src/validators/DNINIFValidator.java" />
         <option value="$PROJECT_DIR$/src/dto/PostalCode.java" />
@@ -419,7 +387,6 @@
         <option value="$PROJECT_DIR$/src/reflection/ObjectTransferSession.java" />
         <option value="$PROJECT_DIR$/src/dao/GenericDao.java" />
         <option value="$PROJECT_DIR$/src/procedures/ProceduresClient.java" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/util/error.js" />
         <option value="$PROJECT_DIR$/web/js/jsStore/util/submit.js" />
         <option value="$PROJECT_DIR$/src/reflection/ObjectsTransferObject.java" />
         <option value="$PROJECT_DIR$/src/dao/rol/PageCssRol.java" />
@@ -434,19 +401,25 @@
         <option value="$PROJECT_DIR$/web/js/jsStore/util/clienteStrategyOne.js" />
         <option value="$PROJECT_DIR$/src/client/ComandValidateLogin.java" />
         <option value="$PROJECT_DIR$/src/dto/PersonalData.java" />
-        <option value="$PROJECT_DIR$/src/client/ComandValidatePersonalData.java" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" />
         <option value="$PROJECT_DIR$/src/dto/Login.java" />
         <option value="$PROJECT_DIR$/src/controller/RevalidateSessionController.java" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" />
         <option value="$PROJECT_DIR$/src/controller/UpdateAvatarController.java" />
         <option value="$PROJECT_DIR$/src/controller/DeleteController.java" />
-        <option value="$PROJECT_DIR$/src/controller/ValidateSessionController.java" />
         <option value="$PROJECT_DIR$/src/controller/UpdatePersonalDataController.java" />
+        <option value="$PROJECT_DIR$/src/client/ComandValidatePersonalData.java" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/util/error.js" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/util/prefijos.js" />
         <option value="$PROJECT_DIR$/src/controller/UpdateLoginController.java" />
-        <option value="$PROJECT_DIR$/src/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/controller/ValidateSessionController.java" />
         <option value="$PROJECT_DIR$/src/controller/RegisterController.java" />
+        <option value="$PROJECT_DIR$/src/reflection/ObjectTransferMatriz.java" />
         <option value="$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js" />
+        <option value="$PROJECT_DIR$/src/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" />
+        <option value="$PROJECT_DIR$/web/css/catalogoEstilo.css" />
       </list>
     </option>
   </component>
@@ -501,7 +474,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -513,6 +485,12 @@
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="builders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
@@ -530,18 +508,81 @@
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="rol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reflection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="jsController" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,13 +592,13 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550529357776" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551169281534" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../yo" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.35451838" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -1342,12 +1383,17 @@
       <workItem from="1550504740046" duration="23255000" />
       <workItem from="1550563963833" duration="1640000" />
       <workItem from="1550572404378" duration="801000" />
-      <workItem from="1550655599699" duration="1483000" />
+      <workItem from="1550655599699" duration="1931000" />
+      <workItem from="1550750501712" duration="25289000" />
+      <workItem from="1551110845885" duration="26531000" />
+      <workItem from="1551170368018" duration="2393000" />
+      <workItem from="1551177677913" duration="143000" />
+      <workItem from="1551178203222" duration="4252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="862353000" />
+    <option name="totallyTimeSpent" value="921409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1366,12 +1412,12 @@
       <window_info id="Capture Tool" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49848714" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.70574886" weight="0.4762684" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7950076" visible="true" weight="0.3878887" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6959153" visible="true" weight="0.44026187" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7881997" weight="0.34369886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.20499243" side_tool="true" visible="true" weight="0.4091653" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.30408472" side_tool="true" visible="true" weight="0.44026187" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
@@ -1389,7 +1435,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Database" order="10" weight="0.32829046" />
-      <window_info anchor="right" id="Maven Projects" order="11" weight="0.32980332" />
+      <window_info anchor="right" id="Maven Projects" order="11" visible="true" weight="0.2193646" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1402,16 +1448,33 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/ValidateSessionController.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/RegisterController.java</url>
-          <line>45</line>
+          <line>46</line>
           <properties />
           <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/UpdateAvatarController.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/UpdateLoginController.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/ClientController.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js</url>
+          <line>5</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1450,69 +1513,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/validators/ClientValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="101" lean-forward="true" selection-start-line="25" selection-start-column="101" selection-end-line="25" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7191">
-          <caret line="483" column="18" selection-start-line="483" selection-start-column="18" selection-end-line="483" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/poolConexion/MysqlConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/poolConexion/ClienteMySqlConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar!/com/mysql/jdbc/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="656" selection-start-line="656" selection-end-line="656" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/rol/Rol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/rol/PersonalDataRol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/GenericDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/poolConexion/BasicConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -1545,13 +1545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-392">
           <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/procedures/ProceduresClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1625,24 +1618,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/util/error.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jsStore/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/util/validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11152">
-          <caret line="656" selection-start-line="656" selection-end-line="656" />
         </state>
       </provider>
     </entry>
@@ -1674,40 +1653,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/ComandValidatePersonalData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/loginController.js" />
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="113" column="38" selection-start-line="113" selection-end-line="113" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/RevalidateSessionController.java" />
     <entry file="file://$PROJECT_DIR$/web/js/jsStore/util/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ValidateSessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#llamadaAjax#0;class#ValidateSessionController#0" />
-            <element signature="method#iniciarDatos#0;class#ValidateSessionController#0" />
-            <element signature="method#incrementarIntento#0;class#ValidateSessionController#0" />
-            <element signature="method#doGet#0;class#ValidateSessionController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1732,54 +1683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="115" column="77" selection-start-line="47" selection-start-column="8" selection-end-line="115" selection-end-column="77" />
-          <folding>
-            <element signature="e#197#351#0" />
-            <element signature="e#409#524#0" />
-            <element signature="e#610#1006#0" />
-            <element signature="e#1054#1661#0" />
-            <element signature="e#2085#2838#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/DeleteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/UpdateAvatarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="122" selection-start-line="29" selection-start-column="122" selection-end-line="29" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/UpdateLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1787,52 +1690,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reflection/JsonTransferObject.java">
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/util/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="23">
+          <caret line="463" column="26" selection-start-line="463" selection-start-column="8" selection-end-line="463" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/UpdatePersonalDataController.java">
+    <entry file="file://$PROJECT_DIR$/src/client/ComandValidatePersonalData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        <state relative-caret-position="89">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/util/error.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/util/prefijos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/DeleteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="http://localhost:8080/js/jsStore/jsController/clientController.js">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/procedures/ProceduresClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ValidateSessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="63" column="48" lean-forward="true" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/UpdateAvatarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-319">
+          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
+    <entry file="file://$PROJECT_DIR$/src/reflection/ObjectsTransferObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reflection/ObjectTransferMatriz.java" />
+    <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
           <folding>
-            <element signature="e#102#282#0" />
-            <element signature="e#324#506#0" />
-            <element signature="e#543#855#0" />
-            <element signature="e#897#1035#0" />
-            <element signature="e#1117#1481#0" />
-            <element signature="e#1530#2516#0" />
-            <element signature="e#2561#3118#0" />
-            <element signature="e#3168#3377#0" />
+            <element signature="method#transferJsonToObject#0;class#ClientController#0" />
+            <element signature="method#llamadaAjax#0;class#ClientController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ClientController.java">
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="40" column="48" lean-forward="true" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        <state relative-caret-position="629">
+          <caret line="98" column="44" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
           <folding>
-            <element signature="method#doPost#0;class#ClientController#0" />
-            <element signature="method#transferJsonToObject#0;class#ClientController#0" />
-            <element signature="method#gestionarAccionNoCorrecto#0;class#ClientController#0" />
-            <element signature="method#gestionarAccionCorrecto#0;class#ClientController#0" />
-            <element signature="method#iniciarDatos#0;class#ClientController#0" />
-            <element signature="method#llamadaAjax#0;class#ClientController#0" />
+            <element signature="e#102#319#0" />
+            <element signature="e#361#543#0" />
+            <element signature="e#580#892#0" />
+            <element signature="e#934#1072#0" />
+            <element signature="e#1567#2553#0" />
+            <element signature="e#2598#3155#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reflection/ObjectTransferSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reflection/JsonTransferObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="9" selection-start-line="12" selection-start-column="7" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/UpdateLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/UpdatePersonalDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="206" column="64" selection-start-line="206" selection-start-column="64" selection-end-line="206" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1195">
+          <caret line="118" column="51" lean-forward="true" selection-start-line="118" selection-start-column="51" selection-end-line="118" selection-end-column="51" />
+          <folding>
+            <element signature="e#197#351#0" />
+            <element signature="e#610#1006#0" />
+            <element signature="e#1054#1661#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/miscontenedores.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/catalogoEstilo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="3068" lean-forward="true" selection-start-line="3068" selection-end-line="3068" />
         </state>
       </provider>
     </entry>
@@ -1855,7 +1890,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>javaEEApplication (ciclo18b)|JavaEE Application</last-edited>
+          <last-edited>JPA (ciclo18b)|JPA</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1902,7 +1937,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Mojarra-2.2.1</last-edited>
+          <last-edited>javax.json.processing-1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

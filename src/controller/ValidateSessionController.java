@@ -64,6 +64,7 @@ public class ValidateSessionController extends HttpServlet {
             llamadaAjax(oneJson.toJSONString());
             return false;
         }
+        session.setAttribute("nif",login.getNif());
         return true;
     }
 

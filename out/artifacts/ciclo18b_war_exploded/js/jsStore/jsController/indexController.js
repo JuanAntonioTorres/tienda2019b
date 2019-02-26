@@ -6,6 +6,7 @@
     var instertClientListener = function() {
         $("cuerpo").innerHTML = STORE.clientTemplate.insertTemplate;
          activarEstrategias();
+         STORE.managementPrefijos();
          ponerListenerEnSubmit("/register",  funcionControladoraInsert);
     }
 
@@ -87,7 +88,6 @@
 
     var funcionControladoraInsert = function () {
         var estado = JSON.parse(llamada.req.responseText);
-
         if (estado.nif != "undefined") {
             location.reload();
         }

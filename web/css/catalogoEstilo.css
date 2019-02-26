@@ -3042,11 +3042,32 @@ input {
   .labelInput{
     width: 19%;
   }
-/*
 
 
-@import "catalogo";
+.contenedorColumnaCarrusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-size: 1em;
+  padding: 10px; }
 
-*/
+
+.ImagenCarrusel {
+  width: 2em;
+  height: 2em; }
+
+.opcionCarrusel {
+  width: 2em;
+  height: 2em;
+  transform-style: preserve-3d;
+  transition: all ease 2s;
+  margin: auto; }
+
+.textoCarrusel {
+  font-size: 12px; }
+
+
+
+
 
 /*# sourceMappingURL=catalogoEstilo.css.map */

@@ -6,6 +6,7 @@ import dao.GenericDao;
 import dto.Login;
 import dto.PersonalData;
 import error.Error;
+import org.codehaus.jackson.annotate.JsonCreator;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -72,6 +73,7 @@ public class RegisterController extends HttpServlet {
             session.setAttribute("pageName", "client");
             response.setCharacterEncoding("UTF-8");
             oneJson.put("nif" , login.getNif());
+            session.setAttribute("nif",login.getNif());
             response.getWriter().write(oneJson.toJSONString());
         }
     }

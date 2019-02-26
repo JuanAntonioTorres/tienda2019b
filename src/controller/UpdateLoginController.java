@@ -17,7 +17,14 @@ public class UpdateLoginController extends ClientController {
     protected boolean accion() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, org.json.simple.parser.ParseException {
         Login login = new Login(String.valueOf(session.getAttribute("nif")));
         super.transferJsonToObject(login);
-        return ((Integer) new GenericDao().execProcedure(ProceduresClient.UPDATE_LOGIN.getName(), login)) > 0;
+        if(existeLogin(login)){
+            return ((Integer) new GenericDao().execProcedure(ProceduresClient.UPDATE_LOGIN.getName(), login)) > 0;
+        }
+    return false;
+    }
+
+    private boolean existeLogin(Login login) throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException, InvocationTargetException, ParseException {
+        return new GenericDao().execProcedure(ProceduresClient.GET_NIF_LOGIN.getName(),login)==null;
     }
 
     @Override

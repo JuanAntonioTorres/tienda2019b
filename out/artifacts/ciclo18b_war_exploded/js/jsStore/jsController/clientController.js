@@ -41,13 +41,10 @@
             }
         }
 
-
         //
-
 
         var funcionRecogerResultado = function () {
             var estado = JSON.parse(llamada.req.responseText);
-
             if (estado.estado == "OK") {
                 location.reload();
             }
@@ -56,14 +53,19 @@
             }
         };
 
+
         var funcionControladoraRevalidateLogin = function (plantilla, funcionControladora, rutaControlador, oneByOne) {
             var estado = JSON.parse(llamada.req.responseText);
 
             if (estado.nif != undefined) {
                 //TODO cambiar todo lo del nif por un id
                 $("cuerpo").innerHTML = plantilla;
-                if(oneByOne==undefined || oneByOne === true)activarEstrategias();
-                else activarEstrategiasSinOneByOne()
+                if(oneByOne==undefined || oneByOne === true){
+                    activarEstrategias();
+                }
+                else{
+                    activarEstrategiasSinOneByOne();
+                }
                 ponerListenerEnSubmit(rutaControlador, funcionControladora);
             }
 
@@ -74,36 +76,41 @@
 
             else {
                 //bloquear en base de datos
+                alert("deberia bloquearte en base de datos pero no me ha dado tiempo todavia")
             }
         }
 
 //TODO revisar nombre de controladores
 //listeners
         var updateLoginClientListener = function () {
+            $("cuerpo").innerHTML = STORE.clientTemplate.loginTemplate;
             activarEstrategias();
-            ponerListenerEnSubmit(revalidateLoginListener(STORE.clientTemplate.updateLoginClient,funcionRecogerResultado,"/valiCliUpdateLogin"));
+            var nextListener = function(){
+                funcionControladoraRevalidateLogin(STORE.clientTemplate.updateLoginClient,funcionRecogerResultado,"/valiCliUpdateLogin");
+            }
+            ponerListenerEnSubmit("/validateSession",nextListener);
         }
 
         var updateDaperClientListener = function () {
             $("cuerpo").innerHTML = STORE.clientTemplate.loginTemplate;
             activarEstrategias();
-            ponerListenerEnSubmit(revalidateLoginListener(STORE.clientTemplate.updateDaperClient,funcionRecogerResultado,"/updatePersonalData"),false);
+            var nextListener = function(){
+                funcionControladoraRevalidateLogin(STORE.clientTemplate.updateDaperClient,funcionRecogerResultado,"/updatePersonalData",false);
+            }
+            ponerListenerEnSubmit("/validateSession",nextListener);
         };
 
         var updateAvatarClientListener = function () {
-            $("cuerpo").innerHTML = STORE.clientTemplate.loginTemplate;
-            activarEstrategias();
-            ponerListenerEnSubmit(revalidateLoginListener(STORE.clientTemplate.updateAvatarClient,funcionRecogerResultado,"/UpCliAvaCon"));
+            $("cuerpo").innerHTML = STORE.clientTemplate.updateAvatarClient;
         };
 
         var deleteClientListener = function () {
             $("cuerpo").innerHTML = STORE.clientTemplate.loginTemplate;
             activarEstrategias();
-            ponerListenerEnSubmit(revalidateLoginListener(STORE.clientTemplate.deleteClient,funcionRecogerResultado, "/delete"));
-        };
-
-        var revalidateLoginListener = function (plantilla, funcionControladora, rutaControlador,oneByOne) {
-            $("op_initSession").addEventListener("click", funcionControladoraRevalidateLogin(plantilla, funcionControladora, rutaControlador,oneByOne));
+            var nextListener = function(){
+                funcionControladoraRevalidateLogin(STORE.clientTemplate.delete,funcionRecogerResultado,"/delete");
+            }
+            ponerListenerEnSubmit("/validateSession",nextListener);
         };
 
         new STORE.DOMObjectLook("op_updateLoginClient");

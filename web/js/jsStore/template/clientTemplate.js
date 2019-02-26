@@ -39,8 +39,13 @@ STORE.clientTemplate.insertTemplate = "<input type='hidden' id='estrategia'>\n" 
     "\n" +
     "            <div id='div_phone'>\n" +
     "                <label for='phone'>tlf. fijo:</label>\n" +
-    "                <select id='prefijoFijo'></select>\n" +
     "                <input class='etiqueta s8' id='phone' name='phone' type='tel' data-functioncallback='ValidacionExpresionRegular.validarTelefonoFijo' size='20' required placeholder='Tlf Fijo' title='Tlf Fijo'>\n" +
+    "            </div>\n" +
+    "\n" +
+    "            <div id='div_mobile'>\n" +
+    "                <label for='mobile'></label>\n" +
+    "                <select id='prefijo'></select>\n" +
+    "                <input class='etiqueta s8' id='mobile' name='mobile' value='' type='tel' data-functioncallback='ValidacionExpresionRegular.validarTelefonoFijo' size='20' required placeholder='Tlf Movil' title='Tlf Movil'>\n" + /*"ValidacionExpresionRegular.validarNumeroMovil"*/
     "            </div>\n" +
     "\n" +
     "            <div id='div_sex'>\n" +
@@ -112,7 +117,7 @@ STORE.clientTemplate.formSessionLocked = "<div class='contenido01'>" +
     "</div>";
 STORE.namespace('STORE.clientTemplate.updateLoginClient');
 STORE.clientTemplate.updateLoginClient="<div class=\"contenido01\">\n" +
-    "    <div id=\"client_register\" >\n" +
+    "    <div id=\"client_register\">\n" +
     "\n" +
     "        <div class=\"menu s3 caja03\">\n" +
     "            <h4>Update Login</h4>\n" +
@@ -170,6 +175,13 @@ STORE.clientTemplate.updateDaperClient="<input type='hidden' value='unoAuno' id=
     "                <input class='etiqueta s8' id='phone' name='phone' type='tel' data-functioncallback='ValidacionExpresionRegular.validarTelefonoFijo' size='20' required placeholder='Tlf Fijo' title='Tlf Fijo'>\n" +
     "            </div>\n" +
     "\n" +
+    "\n" +
+    "            <div id='div_mobile'>\n" +
+    "                <label for='mobile'></label>\n" +
+    "                <select id='prefijo'></select>\n" +
+    "                <input class='etiqueta s8' id='mobile' name='mobile' value='' type='tel' data-functioncallback='ValidacionExpresionRegular.validarTelefonoFijo' size='20' required placeholder='Tlf Movil' title='Tlf Movil'>\n" + /*"ValidacionExpresionRegular.validarNumeroMovil"*/
+    "            </div>\n" +
+    "\n" +
     "            <div id='div_sex'>\n" +
     "                <label class='labelInput' for='sex'>Sexo:</label>\n" +
     "                <select class='etiqueta s8 file' id='sex' name='sex' data-functioncallback='ValidarListaValores.validarSexo'>\n" +
@@ -192,7 +204,7 @@ STORE.clientTemplate.updateDaperClient="<input type='hidden' value='unoAuno' id=
 STORE.namespace('STORE.clientTemplate.updateAvatarClient');
 STORE.clientTemplate.updateAvatarClient="\n" +
     "<div class=\"contenido01\">\n" +
-    "    <img src= \"../img/fotoClient/<%=session.getAttribute(\"nif\")%>.png?<%=Math.random()*5%>\" alt=\"\" height=\"200px\" width=\"300px\">\n" +
+    "    <img src= \"../img/fotoClient/<%=session.getAttribute('nif')%>.png?<%=Math.random()*5%>\" alt=\"\" height=\"200px\" width=\"300px\">\n" +
     "    <div id=\"client_register\">\n" +
     "        <div class=\"menu s3 caja03\">\n" +
     "            <h4>New Image</h4>\n" +
@@ -208,3 +220,18 @@ STORE.clientTemplate.updateAvatarClient="\n" +
     "        </div>\n" +
     "    </div>\n" +
     "</div>";
+
+STORE.namespace('STORE.clientTemplate.delete');
+STORE.clientTemplate.delete = "<div class='contenido01'>\n" +
+    "    <div id='client_delete'>\n" +
+    "\n" +
+    "        <input type='hidden' name = 'opcion'>\n" +
+    "\n" +
+    "        <div class='menu s8 caja03'>\n" +
+    "            <h4>Session</h4>\n" +
+    "\n" +
+    "            <div class='etiqueta errorColor' id='alertaError'>Error:</div>\n" +
+    "            <button id='submit'>borrar</button>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "</div></div>";
