@@ -31,7 +31,7 @@ public class UpdateAvatarController extends HttpServlet {
 
         request.setAttribute("mensaje", "foto modificada");
 
-        RequestDispatcher rd = request.getRequestDispatcher("client/index.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 
         rd.forward(request, response);
 

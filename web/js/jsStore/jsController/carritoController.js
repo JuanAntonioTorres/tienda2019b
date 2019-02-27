@@ -15,7 +15,7 @@
     sessionStorage.setItem("pag",0);
     sessionStorage.setItem("modelXpag",6);
 
-    llamada = new ajax.CargadorContenidos("/getProductos", function () {
+    llamada = new ajax.CargadorContenidos("/getProducts", function () {
         var i = 0;
         var estado = JSON.parse(llamada.req.responseText);
         estado.forEach(function (model) {

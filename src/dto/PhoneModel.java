@@ -8,7 +8,7 @@ public class PhoneModel {
     private int stockActualModelo;
     private String descripcionModelo;
     private String marca;
-    private String imagen;
+    private String rutaImagen;
 
     public int getIdModelo() {
         return idModelo;
@@ -66,12 +66,12 @@ public class PhoneModel {
         this.marca = marca;
     }
 
-    public String getImagen() {
-        return imagen;
+    public String getRutaImagen() {
+        return rutaImagen;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
+    public void setRutaImagenmagen(String imagen) {
+        this.rutaImagen = imagen;
     }
 
 }

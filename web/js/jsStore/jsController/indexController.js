@@ -47,7 +47,7 @@
 
         if (estado.nif != undefined) {
             //TODO cambiar todo lo del nif por un id
-            sessionStorage.setItem('idCliente', estado.nif);
+            sessionStorage.setItem('nif', estado.nif);
             location.reload();
         }
 
@@ -89,6 +89,7 @@
     var funcionControladoraInsert = function () {
         var estado = JSON.parse(llamada.req.responseText);
         if (estado.nif != "undefined") {
+            sessionStorage.setItem('nif', estado.nif);
             location.reload();
         }
         else {

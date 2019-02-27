@@ -36,7 +36,7 @@ STORE.ProductTemplate = {
         "                       <span>Stock: </span>" +
         "                       <p id='stockActualModelo'> </p> " +
         "                 </div>" +
-        "            <button id='comprar' >Comprar</button>" +
+        "            <button id='submit' >Comprar</button>" +
         "</div>" +
         "      </div>" +
         "           </div>"

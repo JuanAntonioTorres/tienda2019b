@@ -5,6 +5,8 @@ import dto.PhoneModel;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import procedures.ProceduresProductos;
+
+import javax.json.JsonArray;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,8 +18,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
-@WebServlet("/getProductos")
+@WebServlet("/getProducts")
 public class ModelController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     HttpSession session;
@@ -41,9 +44,8 @@ public class ModelController extends HttpServlet {
                 oneJson.put("nombreModelo", modeloEntity.getNombreModelo());
                 oneJson.put("descripcionModelo",modeloEntity.getDescripcionModelo());
                 oneJson.put("marca", modeloEntity.getMarca());
-                oneJson.put("imagen", modeloEntity.getImagen());
+                oneJson.put("imagen", modeloEntity.getRutaImagen());
                 arrayJson.add(oneJson);
-
             });
         } catch (SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException | InvocationTargetException | ParseException e) {
             e.printStackTrace();
