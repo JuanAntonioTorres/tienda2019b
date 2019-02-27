@@ -203,7 +203,7 @@ STORE.clientTemplate.updateDaperClient="<input type='hidden' value='unoAuno' id=
 
 STORE.namespace('STORE.clientTemplate.updateAvatarClient');
 STORE.clientTemplate.updateAvatarClient="\n" +
-    "<div class=\"contenido01\">\n" +
+    "<fo class=\"contenido01\">\n" +
     "    <img src= \"../img/fotoClient/<%=session.getAttribute('nif')%>.png?<%=Math.random()*5%>\" alt=\"\" height=\"200px\" width=\"300px\">\n" +
     "    <div id=\"client_register\">\n" +
     "        <div class=\"menu s3 caja03\">\n" +
@@ -219,7 +219,7 @@ STORE.clientTemplate.updateAvatarClient="\n" +
     "            <button id=\"submit\" type=\"submit\">Enviar</button>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "</div>";
+    "</fo>";
 
 STORE.namespace('STORE.clientTemplate.delete');
 STORE.clientTemplate.delete = "<div class='contenido01'>\n" +

@@ -7,7 +7,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3eccf59-06cc-414e-9a46-d5560c812b6d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controller/ModelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/rol/PhoneModelRol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/PhoneModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/procedures/ProceduresProductos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/CORTINAS (15).gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/abel/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/abel/beatrice.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/abel/flamingo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/abel/nadeko.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/abel/rikka.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/abel/tomoko.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/abel/yuno.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fotoClient/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fotoClient/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fotoClient/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fotoClient/null.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fotos/14709284W.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fotos/76235216Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fotos/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fotos/harni01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/fotos/null.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/41PWRPqW1dL._SL1000_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/51-9kl4ZmdL._SL1000_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/51kYbEwEA3L._SL1080_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/61UnF6OGF-L._SL1300_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/61sR+sTWSCL._SL1500_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/61u+WSZDLAL._SL1142_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/71qv9WaSUxL._SL1500_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/78b3b1bc26466305e18065a2fe39ccbd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AndroidPIT-samsung-galaxy-a8-2018-1200-w782.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/intro-hero-2@2x.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/css/catalogoEstilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/css/catalogoEstilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/clientTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/clientTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jscss/dado.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jscss/dado.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/catalogoEstilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/catalogoEstilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsCss/dado.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsCss/dado.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -137,6 +175,7 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.61" value="1" />
@@ -161,45 +200,49 @@
           <entry key="project.open.time.94" value="2" />
           <entry key="project.open.time.97" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="44" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="157" value="1" />
-          <entry key="class" value="20" />
-          <entry key="css" value="3" />
-          <entry key="java" value="368" />
-          <entry key="js" value="151" />
+          <entry key="class" value="21" />
+          <entry key="css" value="6" />
+          <entry key="gif" value="2" />
+          <entry key="java" value="374" />
+          <entry key="jpg" value="4" />
+          <entry key="js" value="157" />
           <entry key="jsp" value="14" />
+          <entry key="png" value="5" />
           <entry key="ts" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="20" />
-          <entry key="CSS" value="3" />
-          <entry key="JAVA" value="368" />
+          <entry key="CLASS" value="21" />
+          <entry key="CSS" value="6" />
+          <entry key="Image" value="11" />
+          <entry key="JAVA" value="374" />
           <entry key="JSP" value="14" />
-          <entry key="JavaScript" value="152" />
+          <entry key="JavaScript" value="158" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="11" />
+          <entry key="css" value="58" />
           <entry key="dummy" value="15" />
-          <entry key="java" value="9026" />
-          <entry key="js" value="5337" />
+          <entry key="java" value="9338" />
+          <entry key="js" value="5340" />
           <entry key="jsp" value="366" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="11" />
-          <entry key="JAVA" value="9026" />
+          <entry key="CSS" value="58" />
+          <entry key="JAVA" value="9338" />
           <entry key="JSP" value="366" />
-          <entry key="JavaScript" value="5337" />
+          <entry key="JavaScript" value="5340" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
@@ -208,19 +251,72 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
+        <entry file="file://$PROJECT_DIR$/src/controller/ModelController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="172" selection-start-line="6" selection-start-column="159" selection-end-line="6" selection-end-column="172" />
+            <state relative-caret-position="255">
+              <caret line="51" column="15" selection-start-line="51" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dto/PhoneModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
+                <element signature="e#995#996#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
+                <element signature="e#1077#1078#0" expanded="true" />
+                <element signature="e#1119#1120#0" expanded="true" />
+                <element signature="e#1216#1217#0" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
+                <element signature="e#1325#1326#0" expanded="true" />
+                <element signature="e#1385#1386#0" expanded="true" />
+                <element signature="e#1477#1478#0" expanded="true" />
+                <element signature="e#1517#1518#0" expanded="true" />
+                <element signature="e#1580#1581#0" expanded="true" />
+                <element signature="e#1638#1639#0" expanded="true" />
+                <element signature="e#1733#1734#0" expanded="true" />
+                <element signature="e#1773#1774#0" expanded="true" />
+                <element signature="e#1839#1840#0" expanded="true" />
+                <element signature="e#1897#1898#0" expanded="true" />
+                <element signature="e#1968#1969#0" expanded="true" />
+                <element signature="e#1996#1997#0" expanded="true" />
+                <element signature="e#2038#2039#0" expanded="true" />
+                <element signature="e#2072#2073#0" expanded="true" />
+                <element signature="e#2145#2146#0" expanded="true" />
+                <element signature="e#2174#2175#0" expanded="true" />
+                <element signature="e#2218#2219#0" expanded="true" />
+                <element signature="e#2254#2255#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/css/catalogoEstilo.css">
+        <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="3063" column="17" lean-forward="true" selection-start-line="3063" selection-start-column="17" selection-end-line="3063" selection-end-column="17" />
+            <state relative-caret-position="51">
+              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding>
+                <element signature="e#361#543#0" />
+                <element signature="e#580#892#0" />
+                <element signature="e#934#1072#0" />
+                <element signature="e#1567#2553#0" />
+                <element signature="e#2598#3155#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -234,8 +330,8 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -259,6 +355,7 @@
       <find>primeraI</find>
       <find>ImagenCarrusel</find>
       <find>textoCarrusel</find>
+      <find>contenido01</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -271,13 +368,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsTemplate/clientTemplate.js" />
-        <option value="$PROJECT_DIR$/src/validators/DNINIFValidator.java" />
-        <option value="$PROJECT_DIR$/src/dto/PostalCode.java" />
-        <option value="$PROJECT_DIR$/src/validators/LoginValidator.java" />
-        <option value="$PROJECT_DIR$/src/dto/LoginBloqueo.java" />
-        <option value="$PROJECT_DIR$/src/dao/rol/PageRol.java" />
-        <option value="$PROJECT_DIR$/src/dao/rol/LoginRol.java" />
         <option value="$PROJECT_DIR$/src/controller/ClientBlockController.java" />
         <option value="$PROJECT_DIR$/src/client/ComandValidate.java" />
         <option value="$PROJECT_DIR$/src/validators/UserValidator.java" />
@@ -321,7 +411,14 @@
         <option value="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" />
         <option value="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" />
         <option value="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" />
+        <option value="$PROJECT_DIR$/web/js/jsCss/dado.js" />
         <option value="$PROJECT_DIR$/web/css/catalogoEstilo.css" />
+        <option value="$PROJECT_DIR$/src/controller/modelController.java" />
+        <option value="$PROJECT_DIR$/src/dao/rol/PhoneModelRol.java" />
+        <option value="$PROJECT_DIR$/src/dto/PhoneModel.java" />
+        <option value="$PROJECT_DIR$/src/procedures/ProceduresProducto.java" />
+        <option value="$PROJECT_DIR$/src/procedures/ProceduresProductos.java" />
+        <option value="$PROJECT_DIR$/src/controller/ModelController.java" />
       </list>
     </option>
   </component>
@@ -429,6 +526,12 @@
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="procedures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reflection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -446,7 +549,20 @@
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsCss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
@@ -494,7 +610,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551199096969" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551252658574" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -506,6 +622,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="procedures" />
+      <recent name="controller" />
+      <recent name="client" />
+      <recent name="utils" />
+      <recent name="controlador.profesor" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="entity" />
     </key>
@@ -515,31 +638,25 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\img" />
+      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\client" />
+      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src" />
+      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\dto" />
+      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="procedures" />
+      <recent name="dao.rol" />
+      <recent name="controller" />
+      <recent name="reflection" />
+      <recent name="dto" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\js\jsStore\util" />
       <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\lib" />
       <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\util" />
       <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\controlador" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\client" />
-      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src" />
-      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\dto" />
-      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\controller" />
-      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\js\jsStore\util" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="controller" />
-      <recent name="dao.rol" />
-      <recent name="reflection" />
-      <recent name="dto" />
-      <recent name="error" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="controller" />
-      <recent name="client" />
-      <recent name="utils" />
-      <recent name="controlador.profesor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1290,18 +1407,19 @@
       <workItem from="1551110845885" duration="26531000" />
       <workItem from="1551170368018" duration="2393000" />
       <workItem from="1551177677913" duration="143000" />
-      <workItem from="1551178203222" duration="7311000" />
+      <workItem from="1551178203222" duration="9359000" />
+      <workItem from="1551204766692" duration="9029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="924468000" />
+    <option name="totallyTimeSpent" value="935545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48924732" visible="true" weight="0.24583964" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48924732" visible="true" weight="0.18986385" />
       <window_info id="Structure" order="1" sideWeight="0.4942717" weight="0.24962178" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
@@ -1313,13 +1431,13 @@
       <window_info id="Favorites" order="9" side_tool="true" />
       <window_info id="Capture Tool" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49848714" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6959153" visible="true" weight="0.44026187" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7881997" weight="0.34369886" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4977307" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7594554" weight="0.40752864" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7859304" visible="true" weight="0.34369886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.30408472" side_tool="true" visible="true" weight="0.44026187" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.21406959" side_tool="true" visible="true" weight="0.34369886" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
@@ -1337,7 +1455,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Database" order="10" weight="0.32829046" />
-      <window_info anchor="right" id="Maven Projects" order="11" visible="true" weight="0.2193646" />
+      <window_info anchor="right" id="Maven Projects" order="11" visible="true" weight="0.22163388" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1373,10 +1491,11 @@
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js</url>
-          <line>5</line>
-          <option name="timeStamp" value="70" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/ModelController.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1415,139 +1534,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dao/poolConexion/BasicConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar!/com/mysql/jdbc/CallableStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reflection/RsTransferArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testRStransferObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-392">
-          <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/reflect/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="218" column="20" selection-start-line="218" selection-start-column="8" selection-end-line="218" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="3366" column="13" selection-start-line="3366" selection-start-column="13" selection-end-line="3366" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reflection/HasMapTransferObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsCss/dado.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/xampp/tomcat/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4454">
-          <caret line="276" selection-start-line="276" selection-end-line="276" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6018">
-          <caret line="381" column="29" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ref/ReferenceQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="143" selection-start-line="143" selection-end-line="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar!/com/mysql/jdbc/AbandonedConnectionCleanupThread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/net/DualStackPlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4318">
-          <caret line="282" column="22" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/util/clienteStrategyOne.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/Yylex.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="204" selection-start-line="204" selection-end-line="204" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/ComandValidateLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="22" column="74" lean-forward="true" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/parser/JSONParser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -1575,13 +1561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/JSONArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1680,21 +1659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="98" column="44" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
-          <folding>
-            <element signature="e#102#319#0" />
-            <element signature="e#361#543#0" />
-            <element signature="e#580#892#0" />
-            <element signature="e#934#1072#0" />
-            <element signature="e#1567#2553#0" />
-            <element signature="e#2598#3155#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reflection/ObjectTransferSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1726,17 +1690,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="206" column="64" selection-start-line="206" selection-start-column="64" selection-end-line="206" selection-end-column="64" />
+        <state relative-caret-position="51">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsCss/dado.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1195">
-          <caret line="118" column="51" lean-forward="true" selection-start-line="118" selection-start-column="51" selection-end-line="118" selection-end-column="51" />
+        <state relative-caret-position="1326">
+          <caret line="103" column="75" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="75" />
           <folding>
             <element signature="e#197#351#0" />
             <element signature="e#610#1006#0" />
@@ -1745,31 +1716,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="3502">
+          <caret line="206" column="69" selection-start-line="206" selection-start-column="69" selection-end-line="206" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsCss/panel.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/miscontenedores.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="172" selection-start-line="6" selection-start-column="159" selection-end-line="6" selection-end-column="172" />
+        <state relative-caret-position="561">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/catalogoEstilo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="3063" column="17" lean-forward="true" selection-start-line="3063" selection-start-column="17" selection-end-line="3063" selection-end-column="17" />
+        <state relative-caret-position="250">
+          <caret line="1967" selection-start-line="1967" selection-end-line="1967" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/fondo2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/fondo3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/fondo4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/grid.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/harni01.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/rodillo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/fondo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/Escudo_de_Extremadura.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/escudo02.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/CORTINAS (15).gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/escudo02.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/JSONArray.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/procedures/ProceduresProducto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/procedures/ProceduresProductos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" selection-start-line="19" selection-end-line="24" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/procedures/ProceduresPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/rol/PhoneModelRol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dto/PhoneModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1119#1120#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="e#1733#1734#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#1839#1840#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="e#1996#1997#0" expanded="true" />
+            <element signature="e#2038#2039#0" expanded="true" />
+            <element signature="e#2072#2073#0" expanded="true" />
+            <element signature="e#2145#2146#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2218#2219#0" expanded="true" />
+            <element signature="e#2254#2255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ModelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="51" column="15" selection-start-line="51" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding>
+            <element signature="e#361#543#0" />
+            <element signature="e#580#892#0" />
+            <element signature="e#934#1072#0" />
+            <element signature="e#1567#2553#0" />
+            <element signature="e#2598#3155#0" />
+          </folding>
         </state>
       </provider>
     </entry>
