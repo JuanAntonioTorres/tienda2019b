@@ -7,7 +7,7 @@ public class PhoneModel {
     private double actualPrecioModelo;
     private int stockActualModelo;
     private String descripcionModelo;
-    private String marca;
+    private String nombreMarca;
     private String rutaImagen;
 
     public int getIdModelo() {
@@ -58,20 +58,20 @@ public class PhoneModel {
         this.descripcionModelo = descripcionModelo;
     }
 
-    public String getMarca() {
-        return marca;
+    public String getNombreMarcaMarca() {
+        return nombreMarca;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setNombreMarcaMarca(String nombreMarca) {
+        this.nombreMarca = nombreMarca;
     }
 
     public String getRutaImagen() {
         return rutaImagen;
     }
 
-    public void setRutaImagenmagen(String imagen) {
-        this.rutaImagen = imagen;
+    public void setRutaImagenmagen(String rutaImagen) {
+        this.rutaImagen = rutaImagen;
     }
 
 }

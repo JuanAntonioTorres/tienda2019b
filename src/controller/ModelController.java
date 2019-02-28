@@ -5,8 +5,6 @@ import dto.PhoneModel;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import procedures.ProceduresProductos;
-
-import javax.json.JsonArray;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -43,8 +41,8 @@ public class ModelController extends HttpServlet {
                 oneJson.put("stockActualModelo",modeloEntity.getStockActualModelo());
                 oneJson.put("nombreModelo", modeloEntity.getNombreModelo());
                 oneJson.put("descripcionModelo",modeloEntity.getDescripcionModelo());
-                oneJson.put("marca", modeloEntity.getMarca());
-                oneJson.put("imagen", modeloEntity.getRutaImagen());
+                oneJson.put("NombreMarca", modeloEntity.getNombreMarcaMarca());
+                oneJson.put("rutaImagen", modeloEntity.getRutaImagen());
                 arrayJson.add(oneJson);
             });
         } catch (SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException | InvocationTargetException | ParseException e) {

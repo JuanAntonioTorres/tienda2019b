@@ -4,46 +4,78 @@
     new STORE.DOMObjectLook("op_verProducto");
     new STORE.DOMObjectLook("op_verCarrito");
 
-    var carrusel = new Array("carro1", "carro2", "carro3","carro4","carro5","carro6");
-    var carruselModel = new Array("primera", "segunda", "tercera","cuarta","quinta","sexta");
-    var carruselImage = new Array("primeraI", "segundaI", "terceraI","cuartaI","quintaI","sextaI");
-    var carruselId = new Array("primeraH", "segundaH", "terceraH","cuartaH","quintaH","sextaH");
-    var degred = new Array(0, 180, 120, 90, 72, 60);
-
     var ajax = STORE.Ajax;
     var llamada;
+    var modelXPage = 6;
     sessionStorage.setItem("pag",0);
-    sessionStorage.setItem("modelXpag",6);
 
     llamada = new ajax.CargadorContenidos("/getProducts", function () {
         var i = 0;
         var estado = JSON.parse(llamada.req.responseText);
+
         estado.forEach(function (model) {
-            localStorage.setItem("producto:" + i, "model:" + model.IdModelo);
-            localStorage.setItem("model:" + model.IdModelo, JSON.stringify(model));
+            localStorage.setItem("model"+i, JSON.stringify(model));
             i++;
         });
-        sessionStorage.setItem("totalModel",i-1);
-        var numero = sessionStorage.getItem("totalModel")/sessionStorage.getItem("modelXpag");
-        sessionStorage.setItem("restoPagina",parseInt((numero - parseInt(numero)) * 10));
-        if (numero > parseInt(numero)){
-            numero++;
-        }
-        sessionStorage.setItem("totalPagina",parseInt(numero));
+
+        sessionStorage.setItem("restoPagina",i % modelXPage);
+
+        sessionStorage.setItem("totalPagina",i);
 
         alert("pag:" + sessionStorage.getItem("totalPagina") + "Resto:" + sessionStorage.getItem("restoPagina"));
     });
+
+    var iteraciones =modelXPage;
+    if(sessionStorage.getItem("pag")==sessionStorage.getItem("totalPagina")){
+        iteraciones = sessionStorage.getItem("restoPagina");
+    }
+
+    var angulo = 360 / iteraciones;
+
+    for (let i = 0; i < iteraciones ; i++) {
+
+        var nodoElementoCarrusel = document.createElement("div").className = "opcionCarrusel contenedorColumnaCarrusel";
+
+        nodoElementoCarrusel.style.transform = "rotateY(-" + angulo*i +"deg) translateX($translateCarrusel) rotatey(190deg)";
+        console.log("el angulo asignado es: "+angulo*i);
+
+        var nodoImagen = document.createElement("img").className = "ImagenCarrusel";
+
+        var modelo = JSON.parse(localStorage.getItem("model"+(modelXPage*sessionStorage.getItem("pag") + i)));
+
+        nodoImagen.src = model.rutaImagen;
+
+        document.getElementsByClassName("opcionCarrusel")[i].appendChild(nodoImagen);
+
+        var nodoTextoCarrusel = (document.createElement("div").className = "textoCarrusel");
+
+        nodoTextoCarrusel.innerText = modelo.nombreModelo;
+
+        document.getElementsByClassName("opcionCarrusel")[i].appendChild(nodoTextoCarrusel);
+
+        var textoHiddenParaSaberPosicion = document.createElement("p").id = "model"+ (modelXPage*sessionStorage.getItem("pag") + i);
+
+        nodoTextoCarrusel.appendChild(textoHiddenParaSaberPosicion);
+
+        nodoElementoCarrusel.addEventListener("click",function(){
+            STORE.Carrito.formVerProducto(textoHiddenParaSaberPosicion.innerHTML);
+        });
+
+        $('giran').appendChild(nodoElementoCarrusel);
+
+    }
+
 
 
     STORE.namespace('STORE.Carrito.carruselProducto');
     STORE.namespace('STORE.Carrito.formVerProducto');
     STORE.namespace('STORE.Carrito.formVerCarrito');
 
-    STORE.Carrito.formVerProducto = function(id){
+    STORE.Carrito.formVerProducto = function(posicionModeloEnStorage){
 
         $("productoDetalle").innerHTML = STORE.ProductTemplate.verProducto;
 
-        var myModel = JSON.parse(localStorage.getItem("model:" + id));
+        var myModel = JSON.parse(localStorage.getItem("model:" + posicionModeloEnStorage));
 
         $("nombreModelo").innerHTML = myModel.nombreModelo;
         $("stockActualModelo").innerHTML = myModel.stockActualModelo;
@@ -55,28 +87,7 @@
 
     STORE.Carrito.carruselProducto = function() {
 
-
         $("cuerpo").innerHTML = STORE.ProductTemplate.carrusel;
-
-        $("primeraI").addEventListener("click",function(event){
-
-            STORE.Carrito.formVerProducto($("primeraH").innerHTML);
-        });
-        $("segundaI").addEventListener("click",function(){
-            STORE.Carrito.formVerProducto($("segundaH").innerHTML);
-        });
-        $("terceraI").addEventListener("click",function(){
-            STORE.Carrito.formVerProducto($("terceraH").innerHTML);
-        });
-        $("cuartaI").addEventListener("click",function(){
-            STORE.Carrito.formVerProducto($("cuartaH").innerHTML);
-        });
-        $("quintaI").addEventListener("click",function(){
-            STORE.Carrito.formVerProducto($("quintaH").innerHTML);
-        });
-        $("sextaI").addEventListener("click",function(){
-            STORE.Carrito.formVerProducto($("sextaH").innerHTML);
-        });
 
         new STORE.DOMObjectLook("carruselmas");
         new STORE.DOMObjectLook("carruselmenos");
