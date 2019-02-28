@@ -34,18 +34,22 @@
 
     for (let i = 0; i < iteraciones ; i++) {
 
-        var nodoElementoCarrusel = document.createElement("div").className = "opcionCarrusel contenedorColumnaCarrusel";
+        var nodoElementoCarrusel = document.createElement("div")
+        nodoElementoCarrusel.className = "opcionCarrusel contenedorColumnaCarrusel";
+        console.log(nodoElementoCarrusel);
 
         nodoElementoCarrusel.style.transform = "rotateY(-" + angulo*i +"deg) translateX($translateCarrusel) rotatey(190deg)";
         console.log("el angulo asignado es: "+angulo*i);
 
-        var nodoImagen = document.createElement("img").className = "ImagenCarrusel";
+        var nodoImagen = document.createElement("img");
+
+        nodoImagen.className = "ImagenCarrusel";
 
         var modelo = JSON.parse(localStorage.getItem("model"+(modelXPage*sessionStorage.getItem("pag") + i)));
 
-        nodoImagen.src = model.rutaImagen;
+        nodoImagen.src = modelo.rutaImagen;
 
-        document.getElementsByClassName("opcionCarrusel")[i].appendChild(nodoImagen);
+        nodoElementoCarrusel.appendChild(nodoImagen);
 
         var nodoTextoCarrusel = (document.createElement("div").className = "textoCarrusel");
 

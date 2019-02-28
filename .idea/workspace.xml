@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3eccf59-06cc-414e-9a46-d5560c812b6d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/controller/ModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ModelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/PhoneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/PhoneModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,7 +125,7 @@
     <session id="39613355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="39" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.101" value="1" />
@@ -198,7 +195,7 @@
           <entry key="css" value="58" />
           <entry key="dummy" value="15" />
           <entry key="java" value="9440" />
-          <entry key="js" value="6425" />
+          <entry key="js" value="6455" />
           <entry key="jsp" value="366" />
         </counts>
       </usages-collector>
@@ -207,7 +204,7 @@
           <entry key="CSS" value="58" />
           <entry key="JAVA" value="9440" />
           <entry key="JSP" value="366" />
-          <entry key="JavaScript" value="6425" />
+          <entry key="JavaScript" value="6455" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
@@ -271,8 +268,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+            <state relative-caret-position="935">
+              <caret line="64" column="82" lean-forward="true" selection-start-line="64" selection-start-column="82" selection-end-line="64" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -1369,18 +1366,18 @@
       <workItem from="1551178203222" duration="9359000" />
       <workItem from="1551204766692" duration="9325000" />
       <workItem from="1551267128073" duration="1484000" />
-      <workItem from="1551284546529" duration="19322000" />
+      <workItem from="1551284546529" duration="21134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="956647000" />
+    <option name="totallyTimeSpent" value="958459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48924732" visible="true" weight="0.19515885" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48924732" visible="true" weight="0.19515885" />
       <window_info id="Structure" order="1" sideWeight="0.4942717" weight="0.24962178" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
@@ -1393,7 +1390,7 @@
       <window_info id="Capture Tool" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4977307" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7556732" visible="true" weight="0.40752864" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7556732" weight="0.40752864" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7829047" weight="0.34369886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1816,8 +1813,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        <state relative-caret-position="935">
+          <caret line="64" column="82" lean-forward="true" selection-start-line="64" selection-start-column="82" selection-end-line="64" selection-end-column="82" />
         </state>
       </provider>
     </entry>
