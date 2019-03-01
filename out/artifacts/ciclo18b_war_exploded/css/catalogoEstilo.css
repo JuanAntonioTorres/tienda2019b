@@ -1792,6 +1792,7 @@ contendorProductos {
   height: 2em;
   transform-style: preserve-3d;
   transition: all ease 2s;
+  position: absolute;
   margin: auto; }
 
 .textoCarrusel {

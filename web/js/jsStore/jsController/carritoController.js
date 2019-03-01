@@ -9,67 +9,26 @@
     var modelXPage = 6;
     sessionStorage.setItem("pag",0);
 
-    llamada = new ajax.CargadorContenidos("/getProducts", function () {
-        var i = 0;
-        var estado = JSON.parse(llamada.req.responseText);
+    if(sessionStorage.getItem("produtosCargados")!= "undefined"){
 
-        estado.forEach(function (model) {
-            localStorage.setItem("model"+i, JSON.stringify(model));
-            i++;
+        llamada = new ajax.CargadorContenidos("/getProducts", function () {
+            var i = 0;
+            var estado = JSON.parse(llamada.req.responseText);
+
+            estado.forEach(function (model) {
+                localStorage.setItem("model"+i, JSON.stringify(model));
+                i++;
+            });
+
+            sessionStorage.setItem("restoPagina",i % modelXPage);
+
+            sessionStorage.setItem("totalPagina",i);
+
+            sessionStorage.setItem("produtosCargados","si");
+
+            alert("pag:" + sessionStorage.getItem("totalPagina") + "Resto:" + sessionStorage.getItem("restoPagina"));
         });
-
-        sessionStorage.setItem("restoPagina",i % modelXPage);
-
-        sessionStorage.setItem("totalPagina",i);
-
-        alert("pag:" + sessionStorage.getItem("totalPagina") + "Resto:" + sessionStorage.getItem("restoPagina"));
-    });
-
-    var iteraciones =modelXPage;
-    if(sessionStorage.getItem("pag")==sessionStorage.getItem("totalPagina")){
-        iteraciones = sessionStorage.getItem("restoPagina");
     }
-
-    var angulo = 360 / iteraciones;
-
-    for (let i = 0; i < iteraciones ; i++) {
-
-        var nodoElementoCarrusel = document.createElement("div")
-        nodoElementoCarrusel.className = "opcionCarrusel contenedorColumnaCarrusel";
-        console.log(nodoElementoCarrusel);
-
-        nodoElementoCarrusel.style.transform = "rotateY(-" + angulo*i +"deg) translateX($translateCarrusel) rotatey(190deg)";
-        console.log("el angulo asignado es: "+angulo*i);
-
-        var nodoImagen = document.createElement("img");
-
-        nodoImagen.className = "ImagenCarrusel";
-
-        var modelo = JSON.parse(localStorage.getItem("model"+(modelXPage*sessionStorage.getItem("pag") + i)));
-
-        nodoImagen.src = modelo.rutaImagen;
-
-        nodoElementoCarrusel.appendChild(nodoImagen);
-
-        var nodoTextoCarrusel = (document.createElement("div").className = "textoCarrusel");
-
-        nodoTextoCarrusel.innerText = modelo.nombreModelo;
-
-        document.getElementsByClassName("opcionCarrusel")[i].appendChild(nodoTextoCarrusel);
-
-        var textoHiddenParaSaberPosicion = document.createElement("p").id = "model"+ (modelXPage*sessionStorage.getItem("pag") + i);
-
-        nodoTextoCarrusel.appendChild(textoHiddenParaSaberPosicion);
-
-        nodoElementoCarrusel.addEventListener("click",function(){
-            STORE.Carrito.formVerProducto(textoHiddenParaSaberPosicion.innerHTML);
-        });
-
-        $('giran').appendChild(nodoElementoCarrusel);
-
-    }
-
-
 
     STORE.namespace('STORE.Carrito.carruselProducto');
     STORE.namespace('STORE.Carrito.formVerProducto');
@@ -93,11 +52,59 @@
 
         $("cuerpo").innerHTML = STORE.ProductTemplate.carrusel;
 
-        new STORE.DOMObjectLook("carruselmas");
-        new STORE.DOMObjectLook("carruselmenos");
+        var iteraciones =modelXPage;
+        if(sessionStorage.getItem("pag")==sessionStorage.getItem("totalPagina")){
+            var iteraciones = sessionStorage.getItem("restoPagina");
+        }
+
+        var angulo = 360 / iteraciones;
+
+        //for
+        for (let i = 0; i < iteraciones ; i++) {
+
+            var nodoElementoCarrusel = document.createElement("div")
+            nodoElementoCarrusel.className = "opcionCarrusel contenedorColumnaCarrusel";
+            console.log(nodoElementoCarrusel);
+
+            nodoElementoCarrusel.style.transform = "rotateY(-" + angulo*i +"deg) translateX(150px) rotatey(190deg)";
+            console.log("el angulo asignado es: "+angulo*i);
+
+            var nodoImagen = document.createElement("img");
+
+            nodoImagen.className = "ImagenCarrusel";
+
+            var modelo = JSON.parse(localStorage.getItem("model"+(modelXPage*sessionStorage.getItem("pag") + i)));
+
+            var ruta="img/imageModel/"+modelo.rutaImagen;
+            nodoImagen.src = ruta;
+
+            nodoElementoCarrusel.appendChild(nodoImagen);
+
+            var nodoTextoCarrusel = document.createElement("div")
+            nodoTextoCarrusel.className = "textoCarrusel";
+
+            nodoTextoCarrusel.innerText = modelo.nombreModelo;
+
+            nodoElementoCarrusel.appendChild(nodoTextoCarrusel);
+
+            var textoHiddenParaSaberPosicion = document.createElement("p")
+            textoHiddenParaSaberPosicion.id = "model"+ (modelXPage*sessionStorage.getItem("pag") + i);
+
+            nodoElementoCarrusel.appendChild(textoHiddenParaSaberPosicion);
+
+            nodoElementoCarrusel.addEventListener("click",function(){
+                STORE.Carrito.formVerProducto(textoHiddenParaSaberPosicion.innerHTML);
+            });
+
+            $('giran').appendChild(nodoElementoCarrusel);
+
+        }
+ //for
+        STORE.DOMObjectLook("carruselmas");
+        STORE.DOMObjectLook("carruselmenos");
+
         $("carruselmas").addEventListener("click",function(event){
             var pagin = sessionStorage.getItem("pag");
-            pagin++;
             var totalpagin = sessionStorage.getItem("totalPagina");
             if (pagin < totalpagin) {
                 pagin++;
@@ -116,7 +123,7 @@
 
         });
 
-        var ultimoModelo = sessionStorage.getItem("modelXpag");
+        var ultimoModelo = modelXPage;
 
 
         if ((parseInt(sessionStorage.getItem("pag"))+1)  == parseInt(sessionStorage.getItem("totalPagina"))){
@@ -125,33 +132,13 @@
         }
         alert("ultimoModelo" + ultimoModelo);
 
-        var incrementDegred = 0;
-
-        for (var i= sessionStorage.getItem("pag") * sessionStorage.getItem("modelXpag"),j=0;j<ultimoModelo;i++,j++){
-
-            var model = JSON.parse(localStorage.getItem(localStorage.getItem("producto:" + i)));
-
-            $(carruselModel[j]).innerHTML = model.nombreModelo;
-            $(carruselImage[j]).src = "img/imageModel/" + model.imagen;
-            $(carruselId[j]).innerHTML =  model.IdModelo;
-            if(j == 0){
-                $(carrusel[j]).style.transform = "rotateY(-" + 0 +"deg) translateX($translateCarrusel) rotatey(190deg)";
-            }
-            else{
-                incrementDegred += degred[ultimoModelo-1];
-                alert("incrementDegred" + incrementDegred);
-                $(carrusel[j]).style.transform = "rotateY(-" + incrementDegred +"deg) translateX($translateCarrusel) rotatey(190deg)";
-
-            }
-
-        }
         for (var i=6;i>ultimoModelo;i--){
             $(carrusel[i-1]).style.display = "none";
         }
     };
 
     STORE.Carrito.formVerCarrito = function(){
-    alert("fix me");
+        alert("fix me");
     };
 
     $("op_verProducto").addEventListener("click",STORE.Carrito.carruselProducto);
