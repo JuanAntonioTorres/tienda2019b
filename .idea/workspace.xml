@@ -6,78 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3eccf59-06cc-414e-9a46-d5560c812b6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone6s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone6sBack.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone6sFront.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone6sSide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone7Back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone7Front.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone7Side.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone8Back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone8Front.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone8Side.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiP20Lite.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiP20LiteBack.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiP20LiteFront.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiP20LiteSide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart2019Dual.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart2019DualBack.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart2019DualFront.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart2019DualSide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart32Gb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart32GbBack.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart32GbFront.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart32GbSide.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyA82018.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyA82018Back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyA82018Front.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyA82018Side.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyJ52017.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyJ52017Back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyJ52017Front.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyJ52017Side.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyS9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyS9Back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyS9Front.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyS9Side.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ModelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/PhoneModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/PhoneModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/css/catalogoEstilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/css/catalogoEstilo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/fotoClient/53573954P.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/fotoClient/53573954P.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/41PWRPqW1dL._SL1000_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/51-9kl4ZmdL._SL1000_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/51kYbEwEA3L._SL1080_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/61UnF6OGF-L._SL1300_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/61sR+sTWSCL._SL1500_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/61u+WSZDLAL._SL1142_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/71qv9WaSUxL._SL1500_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/78b3b1bc26466305e18065a2fe39ccbd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/AndroidPIT-samsung-galaxy-a8-2018-1200-w782.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/carritoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/carritoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/productTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/productTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/controller/ModelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/dto/PhoneModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/dto/PhoneModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ModelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/PhoneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/PhoneModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/catalogoEstilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/catalogoEstilo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/41PWRPqW1dL._SL1000_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/51-9kl4ZmdL._SL1000_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/51kYbEwEA3L._SL1080_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/61UnF6OGF-L._SL1300_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/61sR+sTWSCL._SL1500_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/61u+WSZDLAL._SL1142_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/71qv9WaSUxL._SL1500_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/78b3b1bc26466305e18065a2fe39ccbd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/AndroidPIT-samsung-galaxy-a8-2018-1200-w782.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/jsStore/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" afterDir="false" />
-    </list>
+    <list default="true" id="b3eccf59-06cc-414e-9a46-d5560c812b6d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -514,60 +443,6 @@
             <path>
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="builders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="rol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="procedures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reflection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -633,7 +508,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551858713352" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551858989720" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -1440,16 +1315,15 @@
       <workItem from="1551455857131" duration="43429000" />
       <workItem from="1551624179869" duration="13230000" />
       <workItem from="1551645824328" duration="869000" />
-      <workItem from="1551858310608" duration="388000" />
+      <workItem from="1551858310608" duration="1065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1031038000" />
+    <option name="totallyTimeSpent" value="1031715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1378" height="728" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48924732" visible="true" weight="0.27921093" />
       <window_info id="Structure" order="1" sideWeight="0.4942717" weight="0.24962178" />
