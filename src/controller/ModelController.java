@@ -23,10 +23,10 @@ public class ModelController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     HttpSession session;
     JSONObject oneJson;
-    JSONArray arrayJson = new JSONArray();
+    JSONArray arrayJson = null;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
+        arrayJson = new JSONArray();
         session = request.getSession();
         response.setCharacterEncoding("UTF-8");
         ArrayList<PhoneModel> listaModels = null;
@@ -42,7 +42,9 @@ public class ModelController extends HttpServlet {
                 oneJson.put("nombreModelo", modeloEntity.getNombreModelo());
                 oneJson.put("descripcionModelo",modeloEntity.getDescripcionModelo());
                 oneJson.put("NombreMarca", modeloEntity.getNombreMarcaMarca());
-                oneJson.put("rutaImagen", modeloEntity.getRutaImagen());
+                oneJson.put("imagenDelantera", modeloEntity.getRutaImagen());
+                oneJson.put("imagenTrasera", modeloEntity.getRutaImagenBack());
+                oneJson.put("imagenLado", modeloEntity.getRutaImagenSide());
                 arrayJson.add(oneJson);
             });
         } catch (SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException | InvocationTargetException | ParseException e) {

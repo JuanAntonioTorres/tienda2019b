@@ -83,3 +83,43 @@ STORE.DOMObjectLook.prototype.customOnMouseOut = function (obj, event) {
     obj.style.cursor = "pointer";
     obj.style.color = "blue";
 };
+
+STORE.namespace('DAM.Ventana');
+
+STORE.Ventana = (function () {
+    'use strict';
+    var API = {};
+
+    API.Calcular = function () {
+        var dimension = [2];
+        if( typeof( window.innerWidth ) == 'number' ) {
+            //No-IE
+            dimension[0] = window.innerWidth;
+            dimension[1] = window.innerHeight;
+
+        } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+            //IE 6+
+            dimension[0] = document.documentElement.clientWidth;
+            dimension[1] = document.documentElement.clientHeight;
+
+        } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+            //IE 4 compatible
+            dimension[0] = document.body.clientWidth;
+            dimension[1] = document.body.clientHeight;
+        }
+        API.Ancho = dimension[0];
+        API.Alto = dimension[1];
+
+    };
+    API.Navegador = function(){
+
+        var ie = navigator.userAgent.toLowerCase().indexOf('msie') != -1;
+        console.log(navigator.userAgent);
+
+        if(ie) return true;
+        else return false;
+    };
+
+    return API;
+
+}());

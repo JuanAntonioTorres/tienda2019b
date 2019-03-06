@@ -7,12 +7,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3eccf59-06cc-414e-9a46-d5560c812b6d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone6s.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone6sBack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone6sFront.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone6sSide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone7Back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone7Front.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone7Side.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone8Back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone8Front.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/AppleIPhone8Side.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiP20Lite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiP20LiteBack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiP20LiteFront.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiP20LiteSide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart2019Dual.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart2019DualBack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart2019DualFront.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart2019DualSide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart32Gb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart32GbBack.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart32GbFront.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/HuaweiPSmart32GbSide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyA82018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyA82018Back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyA82018Front.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyA82018Side.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyJ52017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyJ52017Back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyJ52017Front.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyJ52017Side.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyS9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyS9Back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyS9Front.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/imageModel/SamsungGalaxyS9Side.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ModelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/PhoneModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/PhoneModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/css/catalogoEstilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/css/catalogoEstilo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/fotoClient/53573954P.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/fotoClient/53573954P.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/41PWRPqW1dL._SL1000_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/51-9kl4ZmdL._SL1000_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/51kYbEwEA3L._SL1080_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/61UnF6OGF-L._SL1300_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/61sR+sTWSCL._SL1500_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/61u+WSZDLAL._SL1142_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/71qv9WaSUxL._SL1500_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/78b3b1bc26466305e18065a2fe39ccbd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/AndroidPIT-samsung-galaxy-a8-2018-1200-w782.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/carritoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/carritoController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/productTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/productTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/controller/ModelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/dto/PhoneModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/dto/PhoneModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ModelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/PhoneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/PhoneModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/catalogoEstilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/catalogoEstilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/imageModel/41PWRPqW1dL._SL1000_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/imageModel/51-9kl4ZmdL._SL1000_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/imageModel/51kYbEwEA3L._SL1080_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/imageModel/61UnF6OGF-L._SL1300_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/imageModel/61sR+sTWSCL._SL1500_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/imageModel/61u+WSZDLAL._SL1142_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/imageModel/71qv9WaSUxL._SL1500_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/imageModel/78b3b1bc26466305e18065a2fe39ccbd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/imageModel/AndroidPIT-samsung-galaxy-a8-2018-1200-w782.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -130,11 +194,12 @@
     <session id="39613355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="41" />
+          <entry key="project.closed" value="45" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.101" value="1" />
           <entry key="project.open.time.112" value="1" />
+          <entry key="project.open.time.113" value="1" />
           <entry key="project.open.time.123" value="1" />
           <entry key="project.open.time.137" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -148,7 +213,7 @@
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.61" value="2" />
           <entry key="project.open.time.62" value="2" />
-          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.63" value="2" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.65" value="2" />
           <entry key="project.open.time.68" value="2" />
@@ -158,7 +223,7 @@
           <entry key="project.open.time.75" value="2" />
           <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.78" value="1" />
-          <entry key="project.open.time.79" value="1" />
+          <entry key="project.open.time.79" value="2" />
           <entry key="project.open.time.80" value="3" />
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.85" value="3" />
@@ -166,21 +231,22 @@
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.92" value="1" />
           <entry key="project.open.time.94" value="2" />
+          <entry key="project.open.time.96" value="1" />
           <entry key="project.open.time.97" value="1" />
           <entry key="project.open.time.98" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="50" />
+          <entry key="project.opened" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="157" value="1" />
           <entry key="class" value="22" />
-          <entry key="css" value="7" />
+          <entry key="css" value="9" />
           <entry key="gif" value="2" />
-          <entry key="java" value="381" />
+          <entry key="java" value="384" />
           <entry key="jpg" value="4" />
-          <entry key="js" value="164" />
+          <entry key="js" value="170" />
           <entry key="jsp" value="14" />
           <entry key="png" value="5" />
           <entry key="ts" value="1" />
@@ -189,29 +255,29 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="22" />
-          <entry key="CSS" value="7" />
+          <entry key="CSS" value="9" />
           <entry key="Image" value="11" />
-          <entry key="JAVA" value="381" />
+          <entry key="JAVA" value="384" />
           <entry key="JSP" value="14" />
-          <entry key="JavaScript" value="165" />
+          <entry key="JavaScript" value="171" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="63" />
+          <entry key="css" value="964" />
           <entry key="dummy" value="15" />
-          <entry key="java" value="9440" />
-          <entry key="js" value="6632" />
+          <entry key="java" value="9483" />
+          <entry key="js" value="9043" />
           <entry key="jsp" value="366" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="63" />
-          <entry key="JAVA" value="9440" />
+          <entry key="CSS" value="964" />
+          <entry key="JAVA" value="9483" />
           <entry key="JSP" value="366" />
-          <entry key="JavaScript" value="6632" />
+          <entry key="JavaScript" value="9043" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
@@ -222,24 +288,56 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="105" column="66" lean-forward="true" selection-start-line="105" selection-start-column="66" selection-end-line="105" selection-end-column="66" />
+            <state relative-caret-position="306">
+              <caret line="148" column="107" selection-start-line="148" selection-start-column="107" selection-end-line="148" selection-end-column="107" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
+        <entry file="file://$PROJECT_DIR$/src/controller/ModelController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="510">
+              <caret line="46" column="72" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/catalogoEstilo.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66">
+              <caret line="2027" column="14" lean-forward="true" selection-start-line="2027" selection-start-column="14" selection-end-line="2027" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dto/PhoneModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="29" />
+              <folding>
+                <element signature="e#410#411#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#908#909#0" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -258,7 +356,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header</find>
       <find>\&quot;</find>
       <find>k</find>
       <find>intentos</find>
@@ -269,7 +366,6 @@
       <find>response.getWriter().write(</find>
       <find>Ver</find>
       <find>carru</find>
-      <find>espacio</find>
       <find>gira</find>
       <find>contenedorColumnaCarrusel</find>
       <find>opcionCarrusel</find>
@@ -280,10 +376,21 @@
       <find>Imagen</find>
       <find>50</find>
       <find>carr</find>
+      <find>true</find>
+      <find>espacio</find>
+      <find>gir</find>
+      <find>panel</find>
+      <find>model</find>
+      <find>angulo</find>
+      <find>transla</find>
+      <find>totalPagina</find>
+      <find>rota</find>
+      <find>text</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
       <replace>i</replace>
+      <replace>ultimaPagina</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -292,8 +399,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/controller/ClientBlockController.java" />
-        <option value="$PROJECT_DIR$/src/client/ComandValidate.java" />
         <option value="$PROJECT_DIR$/src/validators/UserValidator.java" />
         <option value="$PROJECT_DIR$/src/controller/InfoSession.java" />
         <option value="$PROJECT_DIR$/src/dto/Page.java" />
@@ -338,9 +443,11 @@
         <option value="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" />
         <option value="$PROJECT_DIR$/src/controller/UpdateAvatarController.java" />
         <option value="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/store.js" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" />
+        <option value="$PROJECT_DIR$/web/js/jsCss/panel.js" />
         <option value="$PROJECT_DIR$/src/dto/PhoneModel.java" />
         <option value="$PROJECT_DIR$/src/controller/ModelController.java" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" />
         <option value="$PROJECT_DIR$/web/css/catalogoEstilo.css" />
         <option value="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" />
       </list>
@@ -365,9 +472,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="width" value="1378" />
-    <option name="height" value="780" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -397,7 +504,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -474,7 +580,20 @@
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsCss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
@@ -504,6 +623,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -513,7 +633,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551339348797" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551858713352" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -525,6 +645,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="procedures" />
+      <recent name="controller" />
+      <recent name="client" />
+      <recent name="utils" />
+      <recent name="controlador.profesor" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="entity" />
     </key>
@@ -534,18 +661,12 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\js\jsStore\util" />
-      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\lib" />
-      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\util" />
-      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\controlador" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\img\imageModel" />
       <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\img" />
       <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\client" />
       <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src" />
       <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\dto" />
-      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\src\controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="procedures" />
@@ -554,12 +675,11 @@
       <recent name="reflection" />
       <recent name="dto" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="procedures" />
-      <recent name="controller" />
-      <recent name="client" />
-      <recent name="utils" />
-      <recent name="controlador.profesor" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jackdaniel\Desktop\DAM2\ACADT_PRSYPLUCIANO\JS2019A\tienda2019b\web\js\jsStore\util" />
+      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\lib" />
+      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\util" />
+      <recent name="C:\2018a\Trabajo2018\ciclo18b\web\js\controlador" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1316,18 +1436,22 @@
       <workItem from="1551284546529" duration="21134000" />
       <workItem from="1551376217185" duration="1194000" />
       <workItem from="1551382156402" duration="8753000" />
-      <workItem from="1551425247569" duration="1000000" />
+      <workItem from="1551425247569" duration="4716000" />
+      <workItem from="1551455857131" duration="43429000" />
+      <workItem from="1551624179869" duration="13230000" />
+      <workItem from="1551645824328" duration="869000" />
+      <workItem from="1551858310608" duration="388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="969406000" />
+    <option name="totallyTimeSpent" value="1031038000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1378" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48924732" weight="0.20121029" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48924732" visible="true" weight="0.27921093" />
       <window_info id="Structure" order="1" sideWeight="0.4942717" weight="0.24962178" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
@@ -1340,8 +1464,8 @@
       <window_info id="Capture Tool" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4977307" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7556732" weight="0.40752864" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7829047" visible="true" weight="0.34369886" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7556732" weight="0.4184874" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7829047" weight="0.37310925" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1440,7 +1564,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/ModelController.java</url>
-          <line>51</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="73" />
         </line-breakpoint>
@@ -1487,13 +1611,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dto/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/org/json/simple/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1592,8 +1709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js" />
-    <entry file="file://$PROJECT_DIR$/web/js/jsCss/panel.js" />
     <entry file="file://$PROJECT_DIR$/web/css/miscontenedores.css" />
     <entry file="file://$PROJECT_DIR$/web/img/fondo2.jpg" />
     <entry file="file://$PROJECT_DIR$/web/img/fondo3.jpg" />
@@ -1636,18 +1751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" />
     <entry file="file://$PROJECT_DIR$/src/dto/PersonalData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dto/PhoneModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="68" column="31" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1662,16 +1769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ModelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1697,22 +1794,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="105" column="66" lean-forward="true" selection-start-line="105" selection-start-column="66" selection-end-line="105" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1857" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsCss/panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="83" column="58" lean-forward="true" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ModelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="46" column="72" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dto/PhoneModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/catalogoEstilo.css">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="2027" column="14" lean-forward="true" selection-start-line="2027" selection-start-column="14" selection-end-line="2027" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="148" column="107" selection-start-line="148" selection-start-column="107" selection-end-line="148" selection-end-column="107" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

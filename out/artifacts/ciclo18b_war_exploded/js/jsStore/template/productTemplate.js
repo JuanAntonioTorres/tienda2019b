@@ -1,17 +1,15 @@
-STORE.namespace('STORE.ProductTemplate');
-STORE.ProductTemplate = {
-    carrusel :"<contendorProductos>" +
+STORE.namespace('STORE.ProductTemplate.carrusel');
+STORE.ProductTemplate.carrusel = "<contendorProductos>" +
         "   <div id='espacio'>" +
         "      <div id='giran' class= 'medio'>" +
         "       </div>" +
         "     </div>" +
-        "  <div class='contenido01'> <span class='cuadrosDeTexto s17' id='carruselmenos'><</span> <spanclass='cuadrosDeTexto s17' id='carruselmas'>></span></div>" +
+        "  <div class='contenido01'> <div><a id='carruselmas'> siguiente </a></div> <div><a id='carruselmenos'> anterior </a></div></div>" +
         "</contendorProductos>" +
+        "<div id='productoDetalle'></div>";
 
-        "<div id='productoDetalle'></div>" ,
-
-    verProducto :
-        "         <div class='contenido01'>" +
+STORE.namespace('STORE.ProductTemplate.verProducto');
+STORE.ProductTemplate.verProducto ="<div class='contenido01'>" +
         "           <div class='menu s3 caja03'>" +
         "                <h4>Movil</h4>" +
         "                <p hidden id='IdModelo'></p>" +
@@ -33,5 +31,4 @@ STORE.ProductTemplate = {
         "            <button id='submit' >Comprar</button>" +
         "</div>" +
         "      </div>" +
-        "           </div>"
-}
+        "           </div>";

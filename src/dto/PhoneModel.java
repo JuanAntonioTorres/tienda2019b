@@ -9,6 +9,36 @@ public class PhoneModel {
     private String descripcionModelo;
     private String nombreMarca;
     private String rutaImagen;
+    private String rutaImagenBack;
+    private String rutaImagenSide;
+
+    public String getNombreMarca() {
+        return nombreMarca;
+    }
+
+    public void setNombreMarca(String nombreMarca) {
+        this.nombreMarca = nombreMarca;
+    }
+
+    public void setRutaImagen(String rutaImagen) {
+        this.rutaImagen = rutaImagen;
+    }
+
+    public String getRutaImagenBack() {
+        return rutaImagenBack;
+    }
+
+    public void setRutaImagenBack(String rutaImagenBack) {
+        this.rutaImagenBack = rutaImagenBack;
+    }
+
+    public String getRutaImagenSide() {
+        return rutaImagenSide;
+    }
+
+    public void setRutaImagenSide(String rutaImagenSide) {
+        this.rutaImagenSide = rutaImagenSide;
+    }
 
     public int getIdModelo() {
         return idModelo;
