@@ -1,6 +1,8 @@
 package reflection;
 
 import org.json.simple.JSONObject;
+import utils.SetterHelper;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -15,7 +17,7 @@ public class JsonTransferObject {
                 for (int j = 0; j < jsons.length; j++) {
                     String nombreParametroBuscado = prepararNombreParametro(metodosMolde[i].getName().substring(3));
                     if (jsons[j].get(nombreParametroBuscado) != null) {
-                        metodosMolde[i].invoke(object, jsons[j].get(nombreParametroBuscado));
+                        new SetterHelper().ejecutarSet(jsons[j].get(nombreParametroBuscado), object, metodosMolde[i]);
                     }
                 }
             }

@@ -11,6 +11,25 @@ public class PhoneModel {
     private String rutaImagen;
     private String rutaImagenBack;
     private String rutaImagenSide;
+    private int inicioCache;
+    private int cantidadCache;
+
+
+    public int getInicioCache() {
+        return inicioCache;
+    }
+
+    public void setInicioCache(int inicioCache) {
+        this.inicioCache = inicioCache;
+    }
+
+    public int getCantidadCache() {
+        return cantidadCache;
+    }
+
+    public void setCantidadCache(int cantidadCache) {
+        this.cantidadCache = cantidadCache;
+    }
 
     public String getNombreMarca() {
         return nombreMarca;

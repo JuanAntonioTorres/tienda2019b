@@ -4,7 +4,10 @@ import dao.GenericDao;
 import dto.PhoneModel;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import procedures.ProceduresProductos;
+import reflection.JsonTransferObject;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -30,8 +33,10 @@ public class ModelController extends HttpServlet {
         session = request.getSession();
         response.setCharacterEncoding("UTF-8");
         ArrayList<PhoneModel> listaModels = null;
+        PhoneModel phoneModel = new PhoneModel();
         try {
-            listaModels = (ArrayList<PhoneModel>) new GenericDao().execProcedure(ProceduresProductos.GET_MODELOS.getName(),new PhoneModel());
+            new JsonTransferObject().transferir(phoneModel, (JSONObject) new JSONParser().parse(request.getParameter("json")));
+            listaModels = (ArrayList<PhoneModel>) new GenericDao().execProcedure(ProceduresProductos.GET_MODELOS.getName(),phoneModel);
             listaModels.forEach(modeloEntity -> {
                 oneJson = new JSONObject();
                 oneJson.put("IdModelo",modeloEntity.getIdModelo());
@@ -48,6 +53,8 @@ public class ModelController extends HttpServlet {
                 arrayJson.add(oneJson);
             });
         } catch (SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException | InvocationTargetException | ParseException e) {
+            e.printStackTrace();
+        } catch (org.json.simple.parser.ParseException e) {
             e.printStackTrace();
         }
 
