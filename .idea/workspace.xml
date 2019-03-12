@@ -7,32 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3eccf59-06cc-414e-9a46-d5560c812b6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/SetterHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/controller/ModelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/PhoneModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/dto/PhoneModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/reflection/HasMapTransferObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/reflection/HasMapTransferObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/reflection/JsonTransferObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/WEB-INF/classes/reflection/JsonTransferObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/abel/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/abel/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/fotoClient/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/fotoClient/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/fotos/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/fotos/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/img/imageModel/Thumbs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/carritoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/carritoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/productTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/template/productTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/controller/ModelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/controller/ModelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/dto/PhoneModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/dto/PhoneModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/reflection/HasMapTransferObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/reflection/HasMapTransferObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ciclo18b/reflection/JsonTransferObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ciclo18b/reflection/JsonTransferObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ModelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/PhoneModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/PhoneModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reflection/HasMapTransferObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reflection/HasMapTransferObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reflection/JsonTransferObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reflection/JsonTransferObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/abel/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/abel/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/fotoClient/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/fotoClient/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/fotos/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/fotos/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/imageModel/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/imageModel/Thumbs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,7 +127,7 @@
     <session id="39613355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="49" />
+          <entry key="project.closed" value="52" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.101" value="1" />
@@ -176,13 +153,16 @@
           <entry key="project.open.time.68" value="3" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.71" value="1" />
+          <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.74" value="3" />
           <entry key="project.open.time.75" value="2" />
+          <entry key="project.open.time.76" value="1" />
           <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.79" value="2" />
-          <entry key="project.open.time.80" value="3" />
-          <entry key="project.open.time.81" value="1" />
+          <entry key="project.open.time.80" value="4" />
+          <entry key="project.open.time.81" value="2" />
+          <entry key="project.open.time.84" value="1" />
           <entry key="project.open.time.85" value="3" />
           <entry key="project.open.time.86" value="1" />
           <entry key="project.open.time.90" value="1" />
@@ -193,7 +173,7 @@
           <entry key="project.open.time.97" value="1" />
           <entry key="project.open.time.98" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="57" />
+          <entry key="project.opened" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -204,7 +184,7 @@
           <entry key="gif" value="2" />
           <entry key="java" value="404" />
           <entry key="jpg" value="4" />
-          <entry key="js" value="176" />
+          <entry key="js" value="177" />
           <entry key="jsp" value="14" />
           <entry key="png" value="5" />
           <entry key="ts" value="1" />
@@ -217,7 +197,7 @@
           <entry key="Image" value="11" />
           <entry key="JAVA" value="404" />
           <entry key="JSP" value="14" />
-          <entry key="JavaScript" value="177" />
+          <entry key="JavaScript" value="178" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
@@ -226,7 +206,7 @@
           <entry key="css" value="964" />
           <entry key="dummy" value="15" />
           <entry key="java" value="9652" />
-          <entry key="js" value="10933" />
+          <entry key="js" value="12278" />
           <entry key="jsp" value="366" />
         </counts>
       </usages-collector>
@@ -235,7 +215,7 @@
           <entry key="CSS" value="964" />
           <entry key="JAVA" value="9652" />
           <entry key="JSP" value="366" />
-          <entry key="JavaScript" value="10933" />
+          <entry key="JavaScript" value="12278" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
@@ -247,18 +227,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reflection/RsTransferArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar!/com/mysql/jdbc/CallableStatement.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
+            <state relative-caret-position="5134">
               <caret line="327" selection-start-line="327" selection-end-line="327" />
             </state>
           </provider>
@@ -267,7 +238,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/ModelController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="323">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -279,7 +250,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/GenericDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
+            <state relative-caret-position="561">
               <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
@@ -288,7 +259,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reflection/HasMapTransferObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="289">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
@@ -297,7 +268,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dto/PhoneModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="34">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="e#468#469#0" expanded="true" />
@@ -316,7 +287,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/SetterHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="697">
               <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -328,16 +299,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="77">
+              <caret line="227" column="54" lean-forward="true" selection-start-line="227" selection-start-column="54" selection-end-line="227" selection-end-column="54" />
               <folding>
-                <element signature="e#362#1328#0" />
-                <element signature="e#2441#2457#0" />
-                <element signature="e#2358#8637#0" />
-                <element signature="e#1439#1567#0" />
-                <element signature="e#1625#1710#0" />
-                <element signature="e#9490#9923#0" />
+                <element signature="e#360#816#0" />
+                <element signature="e#864#1171#0" />
+                <element signature="e#1224#3261#0" />
+                <element signature="e#3333#4849#0" />
+                <element signature="e#11565#11618#0" />
+                <element signature="e#11679#11807#0" />
+                <element signature="e#11865#11950#0" />
+                <element signature="e#12004#12209#0" />
+                <element signature="e#12261#12550#0" />
+                <element signature="e#12602#13035#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -345,8 +329,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="7" column="136" selection-start-line="7" selection-start-column="122" selection-end-line="7" selection-end-column="136" />
+            <state relative-caret-position="119">
+              <caret line="7" column="170" selection-start-line="7" selection-start-column="157" selection-end-line="7" selection-end-column="170" />
             </state>
           </provider>
         </entry>
@@ -376,12 +360,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>k</find>
-      <find>intentos</find>
-      <find>INTENTOS</find>
-      <find>submit</find>
-      <find>sys</find>
-      <find>response.setCharacterEncoding(&quot;UTF-8&quot;)</find>
       <find>response.getWriter().write(</find>
       <find>Ver</find>
       <find>carru</find>
@@ -406,6 +384,12 @@
       <find>rota</find>
       <find>text</find>
       <find>/2</find>
+      <find>ultima</find>
+      <find>funcionDespuesDeCargar</find>
+      <find>cargarProductos</find>
+      <find>ultimaP</find>
+      <find>restoPagina</find>
+      <find>event</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -492,7 +476,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="2" />
     <option name="width" value="1366" />
     <option name="height" value="726" />
@@ -525,6 +509,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -532,87 +517,10 @@
               <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
               <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reflection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="jsCss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
-              <item name="jsController" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -623,7 +531,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551981958895" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552341313495" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -1434,11 +1342,16 @@
       <workItem from="1551876234068" duration="309000" />
       <workItem from="1551886576382" duration="19373000" />
       <workItem from="1551911013352" duration="30075000" />
+      <workItem from="1552033016522" duration="2685000" />
+      <workItem from="1552326468556" duration="13402000" />
+      <workItem from="1552343312525" duration="1008000" />
+      <workItem from="1552346489815" duration="9786000" />
+      <workItem from="1552386975326" duration="4954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1084761000" />
+    <option name="totallyTimeSpent" value="1116596000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1450,10 +1363,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="2" width="1366" height="726" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7265416" visible="true" weight="0.29555896" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7265416" visible="true" weight="0.295764" />
       <window_info id="Structure" order="1" sideWeight="0.4942717" weight="0.24962178" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Designer" order="3" />
@@ -1466,8 +1379,8 @@
       <window_info id="Capture Tool" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4977307" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7556732" weight="0.41821247" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7829047" weight="0.37436762" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7556732" visible="true" weight="0.31751227" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7829047" weight="0.3633388" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
@@ -1707,13 +1620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jsStore/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-194">
@@ -1800,23 +1706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/GenericDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar!/com/mysql/jdbc/CallableStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="327" selection-start-line="327" selection-end-line="327" />
         </state>
       </provider>
     </entry>
@@ -1827,9 +1716,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar!/com/mysql/jdbc/CallableStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5134">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ModelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/GenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reflection/HasMapTransferObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dto/PhoneModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#468#469#0" expanded="true" />
@@ -1844,20 +1764,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reflection/HasMapTransferObject.java">
+    <entry file="file://$PROJECT_DIR$/src/utils/SetterHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ModelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="697">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="170" selection-start-line="7" selection-start-column="157" selection-end-line="7" selection-end-column="170" />
         </state>
       </provider>
     </entry>
@@ -1868,34 +1795,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/SetterHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="7" column="136" selection-start-line="7" selection-start-column="122" selection-end-line="7" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="77">
+          <caret line="227" column="54" lean-forward="true" selection-start-line="227" selection-start-column="54" selection-end-line="227" selection-end-column="54" />
           <folding>
-            <element signature="e#362#1328#0" />
-            <element signature="e#2441#2457#0" />
-            <element signature="e#2358#8637#0" />
-            <element signature="e#1439#1567#0" />
-            <element signature="e#1625#1710#0" />
-            <element signature="e#9490#9923#0" />
+            <element signature="e#360#816#0" />
+            <element signature="e#864#1171#0" />
+            <element signature="e#1224#3261#0" />
+            <element signature="e#3333#4849#0" />
+            <element signature="e#11565#11618#0" />
+            <element signature="e#11679#11807#0" />
+            <element signature="e#11865#11950#0" />
+            <element signature="e#12004#12209#0" />
+            <element signature="e#12261#12550#0" />
+            <element signature="e#12602#13035#0" />
           </folding>
         </state>
       </provider>
