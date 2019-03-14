@@ -45,9 +45,8 @@
     var funcionControladoraLogin = function () {
         var estado = JSON.parse(llamada.req.responseText);
 
-        if (estado.nif != undefined) {
-            //TODO cambiar todo lo del nif por un id
-            sessionStorage.setItem('nif', estado.nif);
+        if (estado.idClient != undefined) {
+            sessionStorage.setItem('idClient', estado.idClient);
             location.reload();
         }
 
@@ -88,8 +87,8 @@
 
     var funcionControladoraInsert = function () {
         var estado = JSON.parse(llamada.req.responseText);
-        if (estado.nif != "undefined") {
-            sessionStorage.setItem('nif', estado.nif);
+        if (estado.idClient != "undefined") {
+            sessionStorage.setItem('idClient', estado.idClient);
             location.reload();
         }
         else {

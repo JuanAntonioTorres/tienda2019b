@@ -9,6 +9,8 @@
     var limiteModelosPorLlamada = 2;
     var paginasMostradas = 5;
 
+    var arrayDeProductosCarrito = [];
+
     sessionStorage.setItem("pag", 0);
 
     var desactivarBotonesNoNecesarios = function () {
@@ -294,8 +296,75 @@
         $("stockActualModelo").innerHTML = myModel.stockActualModelo;
         $("descripcionModelo").innerHTML = myModel.descripcionModelo;
         $("actualPrecioModelo").innerHTML = myModel.actualPrecioModelo;
+
+        $("addCarrito").addEventListener("click",function (model) {
+            arrayDeProductosCarrito.push(model);
+        });
+    }
+
+    ///////////////////////
+    //carrito
+
+    (function() {
+        if (sessionStorage.getItem("carritoCargado") != "true") {
+            llamada = new ajax.CargadorContenidos("/getCarrito", function () {
+                var estado = JSON.parse(llamada.req.responseText);
+                if (estado.length === 0) {
+                    alert("Nada en el carro");
+                } else {
+                    estado.forEach(carrito => {
+                        insertarEnArray(carrito);
+                    })
+                }
+
+                sessionStorage.setItem("carritoCargado", "true");
+            });
+        }
+    })();
+
+    var verCarrito = function (){
+        $("cuerpo").innerHTML = STORE.ProductTemplate.carrito;
+        $("guardarCarrito").addEventListener("click", guardarCarrito);
+        $("comprarCarrito").addEventListener("click", comprarCarrito);
+    }
+
+    var insertarEnArray = function(model){
+        var encontrado = false;
+        arrayDeProductosCarrito.forEach(modelo=>{
+            if(model.id==modelo.id){
+                modelo.cantidadPedida ++;
+                encontrado = true;
+            }
+        })
+        if(!encontrado){
+            arrayDeProductosCarrito.push(model);
+        }
+    }
+
+
+        //mostrar los produtos
+
+
+    var guardarCarrito = function(){
+        if(arrayDeProductosCarrito.length>0){
+            llamada = new ajax.CargadorContenidos("/guardarCarrito", function () {
+                var estado = JSON.parse(llamada.req.responseText);
+                if(estado.length==="ok"){
+                    alert("GUARDADO OK");
+                }else{
+                    alert("GUARDADO HA PETADO");
+                }
+                sessionStorage.setItem("carritoCargado","true");
+            });
+        }
+    }
+
+    var borrarProducto = function(posicionEnLocalStorage){
+
     }
 
     $("op_verProducto").addEventListener("click", mostrarCarrusel);
+    $("op_verCarrito").addEventListener("click", verCarrito);
+
 
 }());
