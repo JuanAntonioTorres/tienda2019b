@@ -2,16 +2,16 @@ package dto;
 
 import java.util.UUID;
 
-public class LoginBloqueo extends Login{
+public class LoginBloqueo extends Login {
     private String clave;
     private String email;
 
-    public LoginBloqueo(){
+    public LoginBloqueo() {
         super();
     }
 
-    public LoginBloqueo(Login login){
-        super(login.getUserName(),login.getUserPassword(),login.getNif());
+    public LoginBloqueo(Login login) {
+        super(login.getIdClient(), login.getUserName(), login.getUserPassword());
         String uuid = UUID.randomUUID().toString();
         this.clave = uuid.substring(0, Math.min(uuid.length(), 50));
     }
@@ -24,7 +24,11 @@ public class LoginBloqueo extends Login{
         this.clave = clave;
     }
 
-    public String getEmail() {return email; }
+    public String getEmail() {
+        return email;
+    }
 
-    public void setEmail(String email) { this.email = email; }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

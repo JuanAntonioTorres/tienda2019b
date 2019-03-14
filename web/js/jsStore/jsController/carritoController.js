@@ -5,9 +5,11 @@
     var ajax = STORE.Ajax;
     var llamada;
     var velocidad = 20;
-    var modelXPage = 2;
-    var limiteModelosPorLlamada = 3;
-    var paginasMostradas = 2;
+    var modelXPage = 3;
+    var limiteModelosPorLlamada = 2;
+    var paginasMostradas = 5;
+
+    var arrayDeProductosCarrito = [];
 
     sessionStorage.setItem("pag", 0);
 
@@ -51,15 +53,13 @@
             //  3           2+1
             inicio = inicio - ((inicio + paginasMostradas) - parseInt(sessionStorage.getItem("ultimaPagina")) - 1);
             if (inicio < 0) inicio = 0;
-            if (fin > sessionStorage.getItem("")) parseInt(sessionStorage.getItem("ultimaPagina")) + 1;
-            //  4    -  ((4+3)- 2) -1 = 4
         }
 
         $("contenedorPaginaNumeros").innerHTML = "";
 
         for (var i = inicio; i < fin; i++) {
             if(sessionStorage.getItem("ultimaPagina")==undefined||
-            i<=parseInt(sessionStorage.getItem("ultimaPagina"))){
+                i<=parseInt(sessionStorage.getItem("ultimaPagina"))){
                 window['divConNumeroDePagina ' + i] = document.createElement("div");
                 window['divConNumeroDePagina ' + i].innerText = i;
                 window['divConNumeroDePagina ' + i].id = "divConNumeroDePagina" + i;
@@ -92,30 +92,30 @@
 
         if (localStorage.getItem("productosCargados") == undefined ||
             parseInt(sessionStorage.getItem("modelosCargados")) <= inicio + modelXPage) {
-                var json = {
-                    inicioCache: inicio,
-                    cantidadCache: limiteModelosPorLlamada
-                };
-                json = JSON.stringify(json);
-                llamada = new ajax.CargadorContenidos("/getProducts", function () {
-                    var i = inicio;
-                    var estado = JSON.parse(llamada.req.responseText);
-                    estado.forEach(function (model) {
-                        localStorage.setItem("model" + i, JSON.stringify(model));
-                        i++;
-                    });
+            var json = {
+                inicioCache: inicio,
+                cantidadCache: limiteModelosPorLlamada
+            };
+            json = JSON.stringify(json);
+            llamada = new ajax.CargadorContenidos("/getProducts", function () {
+                var i = inicio;
+                var estado = JSON.parse(llamada.req.responseText);
+                estado.forEach(function (model) {
+                    localStorage.setItem("model" + i, JSON.stringify(model));
+                    i++;
+                });
 
-                    if(estado.length<limiteModelosPorLlamada){
-                        sessionStorage.setItem("ultimaPagina", Math.ceil(i / modelXPage) - 1);
-                        sessionStorage.setItem("restoPagina", i % modelXPage);
-                    }
+                if(estado.length<limiteModelosPorLlamada){
+                    sessionStorage.setItem("ultimaPagina", Math.ceil(i / modelXPage) - 1);
+                    sessionStorage.setItem("restoPagina", i % modelXPage);
+                }
 
-                    sessionStorage.setItem("modelosCargados", i);
+                sessionStorage.setItem("modelosCargados", i);
 
-                    localStorage.setItem("productosCargados", "true");
+                localStorage.setItem("productosCargados", "true");
 
-                        funcionDespuesDeCargar();
-                }, json);
+                funcionDespuesDeCargar();
+            }, json);
 
         }
         else funcionDespuesDeCargar();
@@ -170,7 +170,7 @@
             nodoImagenIzquierda.className = "nodoImagenIzquierda";
 
             if(localStorage.getItem("model" + (modelXPage * sessionStorage.getItem("pag") + i))==undefined &&
-            localStorage.getItem("ultimaPagina")==undefined){
+                localStorage.getItem("ultimaPagina")==undefined){
                 cargarProductos(pintarCarrusel,modelXPage * sessionStorage.getItem("pag") + i);
                 break;
             }
@@ -296,8 +296,74 @@
         $("stockActualModelo").innerHTML = myModel.stockActualModelo;
         $("descripcionModelo").innerHTML = myModel.descripcionModelo;
         $("actualPrecioModelo").innerHTML = myModel.actualPrecioModelo;
+
+        $("addCarrito").addEventListener("click",function (model) {
+            arrayDeProductosCarrito.push(model);
+        });
+    }
+
+    ///////////////////////
+    //carrito
+
+    var verCarrito = function() {
+
+        $("cuerpo").innerHTML = STORE.ProductTemplate.carrito;
+        $("guardarCarrito").addEventListener("click", guardarCarrito);
+        $("comprarCarrito").addEventListener("click", comprarCarrito);
+
+        if (sessionStorage.getItem("carritoCargado") != "true") {
+            llamada = new ajax.CargadorContenidos("/getCarrito", function () {
+                var estado = JSON.parse(llamada.req.responseText);
+                if (estado.length === 0) {
+                    alert("Nada en el carro");
+                } else {
+                    estado.forEach(carrito => {
+                        insertarEnArray(carrito);
+                    })
+                }
+
+                sessionStorage.setItem("carritoCargado", "true");
+            });
+        }
+    }
+
+    var insertarEnArray = function(model){
+        var encontrado = false;
+        arrayDeProductosCarrito.forEach(modelo=>{
+            if(model.id==modelo.id){
+                modelo.cantidadPedida ++;
+                encontrado = true;
+            }
+        })
+        if(!encontrado){
+            arrayDeProductosCarrito.push(model);
+        }
+    }
+
+
+        //mostrar los produtos
+
+
+    var guardarCarrito = function(){
+        if(arrayDeProductosCarrito.length>0){
+            llamada = new ajax.CargadorContenidos("/guardarCarrito", function () {
+                var estado = JSON.parse(llamada.req.responseText);
+                if(estado.length==="ok"){
+                    alert("GUARDADO OK");
+                }else{
+                    alert("GUARDADO HA PETADO");
+                }
+                sessionStorage.setItem("carritoCargado","true");
+            });
+        }
+    }
+
+    var borrarProducto = function(posicionEnLocalStorage){
+
     }
 
     $("op_verProducto").addEventListener("click", mostrarCarrusel);
+    $("op_verCarrito").addEventListener("click", verCarrito);
+
 
 }());

@@ -3,7 +3,7 @@ package procedures;
 public enum ProceduresClient {
     GET_CLIENTE_lOGIN("getClienteLogin"),
     GET_LISTA_CLIENTES("getListaClientes"),
-    GET_NIF_LOGIN("getNifLogin"),
+    GET_ID_LOGIN("getIdLogin"),
     GET_CP("get_cp"),
     GET_CLIENTE("getCliente"),
     INSERT_CLIENT("insertClient"),

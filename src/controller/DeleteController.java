@@ -13,7 +13,7 @@ public class DeleteController extends ClientController {
 
     @Override
     protected boolean accion() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException {
-        Login login = new Login(String.valueOf(session.getAttribute("nif")));
+        Login login = new Login((int)session.getAttribute("idClient"));
         return ((Integer) new GenericDao().execProcedure(ProceduresClient.DELETE_CLIENT.getName(), login)) > 0;
     }
 

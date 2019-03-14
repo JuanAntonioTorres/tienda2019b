@@ -27,7 +27,7 @@ public class ValidateSessionController extends HttpServlet {
 
     //TODO posibles parametros del Json METER EN ENUM si hay tiempo y hacer lo mismo con los de session
     private static final String ERROR = "mensajeError", ERRORVERIFICACION = "errorVerificacion",
-            MAX_INTENTO = "maxIntento", INTENTO = "intento", NIF = "nif", CONTROL = "control";
+            MAX_INTENTO = "maxIntento", INTENTO = "intento", ID = "idClient", CONTROL = "control";
 
     private static final long serialVersionUID = 1L;
     private static final int INTENTOSPERMITIDOS = 3;
@@ -55,8 +55,8 @@ public class ValidateSessionController extends HttpServlet {
     }
 
     private boolean verificarLogin() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
-        login.setNif(getNifDeDataBase());
-        if (login.getNif() == null) {
+        login.setIdClient(getIdDeDataBase());
+        if (login.getIdClient() == null) {
             oneJson.put(ERRORVERIFICACION, "error de verificacion");
             incrementarIntento();
             oneJson.put(MAX_INTENTO, String.valueOf(INTENTOSPERMITIDOS));
@@ -64,9 +64,10 @@ public class ValidateSessionController extends HttpServlet {
             llamadaAjax(oneJson.toJSONString());
             return false;
         }
-        session.setAttribute("nif",login.getNif());
+        session.setAttribute("idClient",login.getIdClient());
         return true;
     }
+
 
     private void llamadaAjax(String s) throws IOException {
         response.setCharacterEncoding("UTF-8");
@@ -75,7 +76,7 @@ public class ValidateSessionController extends HttpServlet {
 
     private void gestionarLoginCorrecto() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, IOException {
         session.setAttribute("pageName", "client");
-        oneJson.put(NIF, login.getNif());
+        oneJson.put(ID, login.getIdClient());
         llamadaAjax(oneJson.toJSONString());
     }
 
@@ -100,8 +101,8 @@ public class ValidateSessionController extends HttpServlet {
         return true;
     }
 
-    private String getNifDeDataBase() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException, InvocationTargetException, ParseException {
-        return (String) new GenericDao().execProcedure(ProceduresClient.GET_NIF_LOGIN.getName(), login);
+    private Integer getIdDeDataBase() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException, InvocationTargetException, ParseException {
+        return (Integer) new GenericDao().execProcedure(ProceduresClient.GET_ID_LOGIN.getName(), login);
     }
 
     private void incrementarIntento() {

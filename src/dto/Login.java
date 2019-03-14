@@ -9,11 +9,15 @@ import java.lang.reflect.InvocationTargetException;
 
 public class Login {
 
-    private String nif;
+    private int idClient;
     private String userName;
     private String userPassword;
 
     public Login() {
+    }
+
+    public Login(int idClient) {
+        this.idClient = idClient;
     }
 
     public Login(String usuario, String password) {
@@ -21,8 +25,8 @@ public class Login {
         this.userPassword = password;
     }
 
-    public Login(String nif, String userName, String userPassword) {
-        this.nif = nif;
+    public Login(int idClient, String userName, String userPassword) {
+        this.idClient = idClient;
         this.userName = userName;
         this.userPassword = userPassword;
     }
@@ -30,18 +34,6 @@ public class Login {
     public Login(HttpServletRequest request, HttpSession session) throws IllegalAccessException, InvocationTargetException {
         new RequestTransferSession().guardarDatosSesion(request, session);
         new SessionTransferObject(session, this);
-    }
-
-    public Login(String nif) {
-        this.nif = nif;
-    }
-
-    public String getNif() {
-        return nif;
-    }
-
-    public void setNif(String nif) {
-        this.nif = nif;
     }
 
     public String getUserName() {
@@ -58,6 +50,14 @@ public class Login {
 
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
+    }
+
+    public Integer getIdClient() {
+        return idClient;
+    }
+
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
     }
 }
 

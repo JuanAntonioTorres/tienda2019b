@@ -72,8 +72,8 @@ public class RegisterController extends HttpServlet {
         if ((Integer) new GenericDao().execProcedure(ProceduresClient.INSERT_CLIENT.getName(), personalData, login) > 0) {
             session.setAttribute("pageName", "client");
             response.setCharacterEncoding("UTF-8");
-            oneJson.put("nif" , login.getNif());
-            session.setAttribute("nif",login.getNif());
+            oneJson.put("idClient" , login.getIdClient());
+            session.setAttribute("idClient",login.getIdClient());
             response.getWriter().write(oneJson.toJSONString());
         }
     }

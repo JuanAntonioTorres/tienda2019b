@@ -9,6 +9,7 @@ import java.util.Objects;
 
 public class PersonalData {
 
+    private String idClient;
     private String nif;
     private String lastName;
     private String firstName;
@@ -113,6 +114,13 @@ public class PersonalData {
         this.email = email;
     }
 
+    public String getIdClient() {
+        return idClient;
+    }
+
+    public void setIdClient(String idClient) {
+        this.idClient = idClient;
+    }
 
     @Override
     public int hashCode() {

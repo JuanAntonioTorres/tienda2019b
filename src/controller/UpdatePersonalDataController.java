@@ -13,7 +13,7 @@ public class UpdatePersonalDataController extends ClientController {
 
     @Override
     protected boolean accion() throws IllegalAccessException, ParseException, InstantiationException, SQLException, InvocationTargetException, ClassNotFoundException, org.json.simple.parser.ParseException {
-        PersonalData personalData= new PersonalData(String.valueOf(session.getAttribute("nif")));
+        PersonalData personalData= new PersonalData(String.valueOf(session.getAttribute("idClient")));
         super.transferJsonToObject(personalData);
         return ((Integer) new GenericDao().execProcedure(ProceduresClient.UPDATE_CLIENT_DAPER.getName(), personalData)) > 0;
     }
