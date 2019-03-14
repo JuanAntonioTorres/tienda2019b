@@ -305,12 +305,7 @@
     ///////////////////////
     //carrito
 
-    var verCarrito = function() {
-
-        $("cuerpo").innerHTML = STORE.ProductTemplate.carrito;
-        $("guardarCarrito").addEventListener("click", guardarCarrito);
-        $("comprarCarrito").addEventListener("click", comprarCarrito);
-
+    (function() {
         if (sessionStorage.getItem("carritoCargado") != "true") {
             llamada = new ajax.CargadorContenidos("/getCarrito", function () {
                 var estado = JSON.parse(llamada.req.responseText);
@@ -325,6 +320,12 @@
                 sessionStorage.setItem("carritoCargado", "true");
             });
         }
+    })();
+
+    var verCarrito = function (){
+        $("cuerpo").innerHTML = STORE.ProductTemplate.carrito;
+        $("guardarCarrito").addEventListener("click", guardarCarrito);
+        $("comprarCarrito").addEventListener("click", comprarCarrito);
     }
 
     var insertarEnArray = function(model){

@@ -7,24 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3eccf59-06cc-414e-9a46-d5560c812b6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/CarritoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/CarritoGuardarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/rol/CarritoRol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/Carrito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/carritoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ciclo18b_war_exploded/js/jsStore/jsController/carritoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/DeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DeleteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/UpdateLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/UpdatePersonalDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdatePersonalDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ValidateSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ValidateSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/LoginBloqueo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/LoginBloqueo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/PersonalData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/PersonalData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/procedures/ProceduresClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/procedures/ProceduresClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/procedures/ProceduresProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/procedures/ProceduresProductos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/template/productTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -200,7 +186,7 @@
           <entry key="gif" value="2" />
           <entry key="java" value="431" />
           <entry key="jpg" value="4" />
-          <entry key="js" value="181" />
+          <entry key="js" value="183" />
           <entry key="jsp" value="14" />
           <entry key="png" value="5" />
           <entry key="ts" value="2" />
@@ -213,7 +199,7 @@
           <entry key="Image" value="11" />
           <entry key="JAVA" value="431" />
           <entry key="JSP" value="14" />
-          <entry key="JavaScript" value="182" />
+          <entry key="JavaScript" value="184" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
@@ -222,7 +208,7 @@
           <entry key="css" value="964" />
           <entry key="dummy" value="15" />
           <entry key="java" value="10096" />
-          <entry key="js" value="14191" />
+          <entry key="js" value="14276" />
           <entry key="jsp" value="366" />
         </counts>
       </usages-collector>
@@ -231,7 +217,7 @@
           <entry key="CSS" value="964" />
           <entry key="JAVA" value="10096" />
           <entry key="JSP" value="366" />
-          <entry key="JavaScript" value="14191" />
+          <entry key="JavaScript" value="14276" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
@@ -272,11 +258,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1181">
-              <caret line="345" lean-forward="true" selection-start-line="345" selection-end-line="345" />
+            <state relative-caret-position="66">
+              <caret line="286" column="49" selection-start-line="286" selection-start-column="49" selection-end-line="286" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="60" column="56" lean-forward="true" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -300,15 +304,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/UpdateAvatarController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="33" column="73" lean-forward="true" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/CarritoController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -322,21 +317,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="34" column="76" lean-forward="true" selection-start-line="34" selection-start-column="76" selection-end-line="34" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dto/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1342#1343#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
-                <element signature="e#1427#1428#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -392,6 +372,7 @@
       <replace>'</replace>
       <replace>i</replace>
       <replace>ultimaPagina</replace>
+      <replace>idClient</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -417,13 +398,11 @@
         <option value="$PROJECT_DIR$/web/js/jsStore/util/error.js" />
         <option value="$PROJECT_DIR$/web/js/jsStore/util/prefijos.js" />
         <option value="$PROJECT_DIR$/src/reflection/ObjectTransferMatriz.java" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js" />
         <option value="$PROJECT_DIR$/src/controller/ClientController.java" />
         <option value="$PROJECT_DIR$/web/js/jsCss/dado.js" />
         <option value="$PROJECT_DIR$/src/controller/modelController.java" />
         <option value="$PROJECT_DIR$/src/dao/rol/PhoneModelRol.java" />
         <option value="$PROJECT_DIR$/src/procedures/ProceduresProducto.java" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" />
         <option value="$PROJECT_DIR$/src/controller/UpdateAvatarController.java" />
         <option value="$PROJECT_DIR$/web/js/jsStore/template/clientTemplate.js" />
         <option value="$PROJECT_DIR$/web/js/jsStore/store.js" />
@@ -449,8 +428,10 @@
         <option value="$PROJECT_DIR$/src/controller/CarritoController.java" />
         <option value="$PROJECT_DIR$/src/controller/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/controller/CarritoGuardarController.java" />
-        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" />
         <option value="$PROJECT_DIR$/src/controller/DeleteController.java" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js" />
+        <option value="$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js" />
       </list>
     </option>
   </component>
@@ -533,6 +514,30 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="jsStore" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="jsController" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tienda2019b" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tienda2019b" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -546,7 +551,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552567894151" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552568808470" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -1363,12 +1368,12 @@
       <workItem from="1552346489815" duration="9786000" />
       <workItem from="1552386975326" duration="30517000" />
       <workItem from="1552462109789" duration="13933000" />
-      <workItem from="1552563479957" duration="4615000" />
+      <workItem from="1552563479957" duration="5452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1160707000" />
+    <option name="totallyTimeSpent" value="1161544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1381,6 +1386,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7265416" visible="true" weight="0.30030257" />
       <window_info id="Structure" order="1" sideWeight="0.4942717" weight="0.24962178" />
@@ -1602,18 +1608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1428">
-          <caret line="24" column="111" selection-start-line="24" selection-start-column="107" selection-end-line="24" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reflection/RequestTransferSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1829,13 +1823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1181">
-          <caret line="345" lean-forward="true" selection-start-line="345" selection-end-line="345" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/PaginaController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1885,6 +1872,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="38" column="133" selection-start-line="38" selection-start-column="133" selection-end-line="38" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/clientController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="60" column="56" lean-forward="true" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/indexController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jsStore/jsController/carritoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="286" column="49" selection-start-line="286" selection-start-column="49" selection-end-line="286" selection-end-column="49" />
         </state>
       </provider>
     </entry>
