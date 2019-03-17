@@ -102,7 +102,7 @@ public class ValidateSessionController extends HttpServlet {
     }
 
     private Integer getIdDeDataBase() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException, InvocationTargetException, ParseException {
-        return (Integer) new GenericDao().execProcedure(ProceduresClient.GET_ID_LOGIN.getName(), login);
+        return Integer.valueOf((String)new GenericDao().execProcedure(ProceduresClient.GET_ID_LOGIN.getName(), login));
     }
 
     private void incrementarIntento() {

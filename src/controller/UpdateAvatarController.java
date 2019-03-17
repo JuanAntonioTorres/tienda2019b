@@ -27,7 +27,7 @@ public class UpdateAvatarController extends HttpServlet {
 
         Part filePart = request.getPart("image");
 
-        new ImageCharger(filePart,getServletContext().getRealPath("img/fotoClient/"), (String) session.getAttribute("nif")).clientFotoLoad();
+        new ImageCharger(filePart,getServletContext().getRealPath("img/fotoClient/"), session.getAttribute("idClient").toString()).clientFotoLoad();
 
         request.setAttribute("mensaje", "foto modificada");
 

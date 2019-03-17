@@ -21,7 +21,7 @@ import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.ArrayList;
 
-@WebServlet("/getCarrito")
+@WebServlet("/guardarCarrito")
 public class CarritoGuardarController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     HttpSession session;

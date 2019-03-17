@@ -5,12 +5,10 @@
     var ajax = STORE.Ajax;
     var llamada;
     var velocidad = 20;
-    var modelXPage = 3;
-    var limiteModelosPorLlamada = 2;
-    var paginasMostradas = 5;
-
-    var arrayDeProductosCarrito = [];
-
+    var modelXPage = 2;
+    var limiteModelosPorLlamada = 3;
+    var paginasMostradas = 2;
+    var arrayCarrito = [];
     sessionStorage.setItem("pag", 0);
 
     var desactivarBotonesNoNecesarios = function () {
@@ -46,20 +44,22 @@
             inicio = 0;
         }
 
-        if (sessionStorage.getItem("ultimaPagina")!=undefined &&
+        if (sessionStorage.getItem("ultimaPagina") != undefined &&
             inicio + paginasMostradas > parseInt(sessionStorage.getItem("ultimaPagina"))) {
             //   1 +        3         4>2
             fin = parseInt(sessionStorage.getItem("ultimaPagina")) + 1;
             //  3           2+1
             inicio = inicio - ((inicio + paginasMostradas) - parseInt(sessionStorage.getItem("ultimaPagina")) - 1);
             if (inicio < 0) inicio = 0;
+            if (fin > sessionStorage.getItem("")) parseInt(sessionStorage.getItem("ultimaPagina")) + 1;
+            //  4    -  ((4+3)- 2) -1 = 4
         }
 
         $("contenedorPaginaNumeros").innerHTML = "";
 
         for (var i = inicio; i < fin; i++) {
-            if(sessionStorage.getItem("ultimaPagina")==undefined||
-                i<=parseInt(sessionStorage.getItem("ultimaPagina"))){
+            if (sessionStorage.getItem("ultimaPagina") == undefined ||
+                i <= parseInt(sessionStorage.getItem("ultimaPagina"))) {
                 window['divConNumeroDePagina ' + i] = document.createElement("div");
                 window['divConNumeroDePagina ' + i].innerText = i;
                 window['divConNumeroDePagina ' + i].id = "divConNumeroDePagina" + i;
@@ -83,11 +83,11 @@
 
     var cargarProductos = function (funcionDespuesDeCargar, inicioIn) {
         var inicio;
-        if(inicioIn!=null){
-            var inicio = inicioIn +  (parseInt(sessionStorage.getItem("pag") * modelXPage));
+        if (inicioIn != null) {
+            var inicio = inicioIn + (parseInt(sessionStorage.getItem("pag") * modelXPage));
         }
-        else{
-            inicio =parseInt(sessionStorage.getItem("pag") * modelXPage);
+        else {
+            inicio = parseInt(sessionStorage.getItem("pag") * modelXPage);
         }
 
         if (localStorage.getItem("productosCargados") == undefined ||
@@ -105,7 +105,7 @@
                     i++;
                 });
 
-                if(estado.length<limiteModelosPorLlamada){
+                if (estado.length < limiteModelosPorLlamada) {
                     sessionStorage.setItem("ultimaPagina", Math.ceil(i / modelXPage) - 1);
                     sessionStorage.setItem("restoPagina", i % modelXPage);
                 }
@@ -138,121 +138,118 @@
         }
         var angulo = (360 / iteraciones)
         //for
-        for (let i = 0; i < iteraciones; i++) {
+        var i = 0;
+        (function(i){
+            for (let i = 0; i < iteraciones; i++) {
 
-            var nodoPanelMobil = document.createElement("div");
-            nodoPanelMobil.className = "nodoPanelMobil";
+                var nodoPanelMobil = document.createElement("div");
+                nodoPanelMobil.className = "nodoPanelMobil";
 
-            var nodoElementoCarruselDelantero = document.createElement("div");
-            var nodoElementoCarruselTrasero = document.createElement("div");
-            var nodoElementoCarruselLateralDerecho = document.createElement("div");
-            var nodoElementoCarruselLateralIzquierdo = document.createElement("div");
+                var nodoElementoCarruselDelantero = document.createElement("div");
+                var nodoElementoCarruselTrasero = document.createElement("div");
+                var nodoElementoCarruselLateralDerecho = document.createElement("div");
+                var nodoElementoCarruselLateralIzquierdo = document.createElement("div");
 
-            nodoElementoCarruselDelantero.className = "nodoElementoCarruselDelantero";
-            nodoElementoCarruselTrasero.className = "nodoElementoCarruselTrasero";
-            nodoElementoCarruselLateralDerecho.className = "nodoElementoCarruselLateralDerecho";
-            nodoElementoCarruselLateralIzquierdo.className = "nodoElementoCarruselLateralIzquierdo";
+                nodoElementoCarruselDelantero.className = "nodoElementoCarruselDelantero";
+                nodoElementoCarruselTrasero.className = "nodoElementoCarruselTrasero";
+                nodoElementoCarruselLateralDerecho.className = "nodoElementoCarruselLateralDerecho";
+                nodoElementoCarruselLateralIzquierdo.className = "nodoElementoCarruselLateralIzquierdo";
 
-            nodoPanelMobil.appendChild(nodoElementoCarruselDelantero);
-            nodoPanelMobil.appendChild(nodoElementoCarruselTrasero);
-            nodoPanelMobil.appendChild(nodoElementoCarruselLateralDerecho);
-            nodoPanelMobil.appendChild(nodoElementoCarruselLateralIzquierdo);
+                nodoPanelMobil.appendChild(nodoElementoCarruselDelantero);
+                nodoPanelMobil.appendChild(nodoElementoCarruselTrasero);
+                nodoPanelMobil.appendChild(nodoElementoCarruselLateralDerecho);
+                nodoPanelMobil.appendChild(nodoElementoCarruselLateralIzquierdo);
 
-            nodoPanelMobil.style.transform = "rotateY(-" + angulo * i + "deg) translateX(140px) rotatey(0deg)";
+                nodoPanelMobil.style.transform = "rotateY(-" + angulo * i + "deg) translateX(140px) rotatey(0deg)";
 
-            var nodoImagenDelantera = document.createElement("img");
-            var nodoImagenTrasera = document.createElement("img");
-            var nodoImagenDerecha = document.createElement("img");
-            var nodoImagenIzquierda = document.createElement("img");
-            nodoImagenDelantera.className = "nodoImagenDelantera";
-            nodoImagenTrasera.className = "nodoImagenTrasera";
-            nodoImagenDerecha.className = "nodoImagenDerecha";
-            nodoImagenIzquierda.className = "nodoImagenIzquierda";
+                var nodoImagenDelantera = document.createElement("img");
+                var nodoImagenTrasera = document.createElement("img");
+                var nodoImagenDerecha = document.createElement("img");
+                var nodoImagenIzquierda = document.createElement("img");
+                nodoImagenDelantera.className = "nodoImagenDelantera";
+                nodoImagenTrasera.className = "nodoImagenTrasera";
+                nodoImagenDerecha.className = "nodoImagenDerecha";
+                nodoImagenIzquierda.className = "nodoImagenIzquierda";
 
-            if(localStorage.getItem("model" + (modelXPage * sessionStorage.getItem("pag") + i))==undefined &&
-                localStorage.getItem("ultimaPagina")==undefined){
-                cargarProductos(pintarCarrusel,modelXPage * sessionStorage.getItem("pag") + i);
-                break;
+                if (localStorage.getItem("model" + (modelXPage * sessionStorage.getItem("pag") + i)) == undefined &&
+                    localStorage.getItem("ultimaPagina") == undefined) {
+                    cargarProductos(pintarCarrusel, modelXPage * sessionStorage.getItem("pag") + i);
+                    break;
+                }
+                else {
+                    var modelo = JSON.parse(localStorage.getItem("model" + (modelXPage * sessionStorage.getItem("pag") + i)));
+                }
+
+                var rutaImagenDelantera = "img/imageModel/" + modelo.imagenDelantera;
+                var rutaImagenTrasera = "img/imageModel/" + modelo.imagenTrasera;
+                var rutaImagenIzquierda = "img/imageModel/" + modelo.imagenLado;
+                var rutaImagenDerecha = "img/imageModel/" + modelo.imagenLado;
+                nodoImagenDelantera.src = rutaImagenDelantera;
+                nodoImagenTrasera.src = rutaImagenTrasera;
+                nodoImagenIzquierda.src = rutaImagenIzquierda;
+                nodoImagenDerecha.src = rutaImagenDerecha;
+
+                nodoElementoCarruselDelantero.appendChild(nodoImagenDelantera);
+                nodoElementoCarruselTrasero.appendChild(nodoImagenTrasera);
+                nodoElementoCarruselLateralIzquierdo.appendChild(nodoImagenIzquierda);
+                nodoElementoCarruselLateralDerecho.appendChild(nodoImagenDerecha);
+
+                var nodoPanelBase = document.createElement("div");
+                nodoPanelBase.className = "nodoPanelBase";
+
+                var nodoBaseElementoCarruselArriba = document.createElement("div");
+                nodoBaseElementoCarruselArriba.className = "nodoBaseElementoCarruselArriba s4";
+
+                var nodoBaseElementoCarruselAbajo = document.createElement("div");
+                nodoBaseElementoCarruselAbajo.className = "nodoBaseElementoCarruselAbajo s4";
+
+                var nodoBaseElementoCarruselFrontal = document.createElement("div");
+                nodoBaseElementoCarruselFrontal.className = "nodoBaseElementoCarruselFrontal s4";
+
+                var nodoBaseElementoCarruselTrasero = document.createElement("div");
+                nodoBaseElementoCarruselTrasero.className = "nodoBaseElementoCarruselTrasero s4";
+
+                var nodoBaseElementoCarruselLateralIquierdo = document.createElement("div");
+                nodoBaseElementoCarruselLateralIquierdo.className = "nodoBaseElementoCarruselLateralIquierdo s4";
+
+                var nodoBaseElementoCarruselLateralDerecho = document.createElement("div");
+                nodoBaseElementoCarruselLateralDerecho.className = "nodoBaseElementoCarruselLateralDerecho s4";
+
+                nodoPanelBase.appendChild(nodoBaseElementoCarruselArriba);
+                nodoPanelBase.appendChild(nodoBaseElementoCarruselAbajo);
+                nodoPanelBase.appendChild(nodoBaseElementoCarruselFrontal);
+                nodoPanelBase.appendChild(nodoBaseElementoCarruselTrasero);
+                nodoPanelBase.appendChild(nodoBaseElementoCarruselLateralIquierdo);
+                nodoPanelBase.appendChild(nodoBaseElementoCarruselLateralDerecho);
+
+                nodoBaseElementoCarruselLateralDerecho.innerText = modelo.nombreModelo;
+                nodoBaseElementoCarruselLateralIquierdo.innerText = modelo.nombreModelo;
+                nodoBaseElementoCarruselFrontal.innerText = modelo.nombreModelo;
+                nodoBaseElementoCarruselTrasero.innerText = modelo.nombreModelo;
+
+                nodoPanelMobil.appendChild(nodoPanelBase);
+
+
+                var textoHiddenParaSaberPosicion = document.createElement("p")
+                textoHiddenParaSaberPosicion.innerText = (modelXPage * sessionStorage.getItem("pag")) + i;
+
+                nodoPanelMobil.appendChild(textoHiddenParaSaberPosicion);
+
+                nodoPanelMobil.addEventListener("click", function () {
+                    verDetallesProductos(i);
+                });
+
+                $('giran').appendChild(nodoPanelMobil);
+
             }
-            else{
-                var modelo = JSON.parse(localStorage.getItem("model" + (modelXPage * sessionStorage.getItem("pag") + i)));
-            }
-
-            var rutaImagenDelantera = "img/imageModel/" + modelo.imagenDelantera;
-            var rutaImagenTrasera = "img/imageModel/" + modelo.imagenTrasera;
-            var rutaImagenIzquierda = "img/imageModel/" + modelo.imagenLado;
-            var rutaImagenDerecha = "img/imageModel/" + modelo.imagenLado;
-            nodoImagenDelantera.src = rutaImagenDelantera;
-            nodoImagenTrasera.src = rutaImagenTrasera;
-            nodoImagenIzquierda.src = rutaImagenIzquierda;
-            nodoImagenDerecha.src = rutaImagenDerecha;
-
-            nodoElementoCarruselDelantero.appendChild(nodoImagenDelantera);
-            nodoElementoCarruselTrasero.appendChild(nodoImagenTrasera);
-            nodoElementoCarruselLateralIzquierdo.appendChild(nodoImagenIzquierda);
-            nodoElementoCarruselLateralDerecho.appendChild(nodoImagenDerecha);
-
-            var nodoPanelBase = document.createElement("div");
-            nodoPanelBase.className = "nodoPanelBase";
-
-            var nodoBaseElementoCarruselArriba = document.createElement("div");
-            nodoBaseElementoCarruselArriba.className = "nodoBaseElementoCarruselArriba s4";
-
-            var nodoBaseElementoCarruselAbajo = document.createElement("div");
-            nodoBaseElementoCarruselAbajo.className = "nodoBaseElementoCarruselAbajo s4";
-
-            var nodoBaseElementoCarruselFrontal = document.createElement("div");
-            nodoBaseElementoCarruselFrontal.className = "nodoBaseElementoCarruselFrontal s4";
-
-            var nodoBaseElementoCarruselTrasero = document.createElement("div");
-            nodoBaseElementoCarruselTrasero.className = "nodoBaseElementoCarruselTrasero s4";
-
-            var nodoBaseElementoCarruselLateralIquierdo = document.createElement("div");
-            nodoBaseElementoCarruselLateralIquierdo.className = "nodoBaseElementoCarruselLateralIquierdo s4";
-
-            var nodoBaseElementoCarruselLateralDerecho = document.createElement("div");
-            nodoBaseElementoCarruselLateralDerecho.className = "nodoBaseElementoCarruselLateralDerecho s4";
-
-            nodoPanelBase.appendChild(nodoBaseElementoCarruselArriba);
-            nodoPanelBase.appendChild(nodoBaseElementoCarruselAbajo);
-            nodoPanelBase.appendChild(nodoBaseElementoCarruselFrontal);
-            nodoPanelBase.appendChild(nodoBaseElementoCarruselTrasero);
-            nodoPanelBase.appendChild(nodoBaseElementoCarruselLateralIquierdo);
-            nodoPanelBase.appendChild(nodoBaseElementoCarruselLateralDerecho);
-
-            nodoBaseElementoCarruselLateralDerecho.innerText = modelo.nombreModelo;
-            nodoBaseElementoCarruselLateralIquierdo.innerText = modelo.nombreModelo;
-            nodoBaseElementoCarruselFrontal.innerText = modelo.nombreModelo;
-            nodoBaseElementoCarruselTrasero.innerText = modelo.nombreModelo;
-
-            nodoPanelMobil.appendChild(nodoPanelBase);
-
-
-            var textoHiddenParaSaberPosicion = document.createElement("p")
-            textoHiddenParaSaberPosicion.innerText = (modelXPage * sessionStorage.getItem("pag")) + i;
-
-            nodoPanelMobil.appendChild(textoHiddenParaSaberPosicion);
-
-            nodoPanelMobil.addEventListener("click", function (e) {
-                if (e.srcElement)
-                    pulsado = e.srcElement;
-                else if (e.target)
-                    pulsado = e.target;
-
-
-                verDetallesProductos(pulsado.innerText);
-            });
-
-            $('giran').appendChild(nodoPanelMobil);
-
-        }
+        }(i))
 
         ponerListenerEnNumeroPaginas();
 
     }
 
     var mostrarCarrusel = function () {
-        cargarProductos(pintarCarrusel,null);
+        cargarProductos(pintarCarrusel, null);
     }
 
     var funcionControladoraPaginaMenosRapido = function () {
@@ -274,7 +271,7 @@
     var funcionControladoraPaginaMas = function () {
         var pagin = parseInt(sessionStorage.getItem("pag"));
         var totalpagin;
-        if(sessionStorage.getItem("ultimaPagina")!=undefined){
+        if (sessionStorage.getItem("ultimaPagina") != undefined) {
             totalpagin = parseInt(sessionStorage.getItem("ultimaPagina"));
             if (pagin < totalpagin) {
                 pagin++;
@@ -282,7 +279,7 @@
                 mostrarCarrusel();
             }
         }
-        else{
+        else {
             pagin++;
             sessionStorage.setItem("pag", pagin);
             mostrarCarrusel();
@@ -290,81 +287,131 @@
     }
     var verDetallesProductos = function (posicion) {
         $("productoDetalle").innerHTML = STORE.ProductTemplate.verProducto;
-        var myModel = JSON.parse(localStorage.getItem("model:" + posicion));
-
+        var myModel = JSON.parse(localStorage.getItem("model" + posicion));
         $("nombreModelo").innerHTML = myModel.nombreModelo;
         $("stockActualModelo").innerHTML = myModel.stockActualModelo;
         $("descripcionModelo").innerHTML = myModel.descripcionModelo;
         $("actualPrecioModelo").innerHTML = myModel.actualPrecioModelo;
-
-        $("addCarrito").addEventListener("click",function (model) {
-            arrayDeProductosCarrito.push(model);
-        });
+        $("addCarrito").addEventListener("click",function () {
+            insertarEnArray(myModel);
+        })
     }
 
-    ///////////////////////
-    //carrito
-
-    (function() {
-        if (sessionStorage.getItem("carritoCargado") != "true") {
-            llamada = new ajax.CargadorContenidos("/getCarrito", function () {
-                var estado = JSON.parse(llamada.req.responseText);
-                if (estado.length === 0) {
-                    alert("Nada en el carro");
-                } else {
-                    estado.forEach(carrito => {
-                        insertarEnArray(carrito);
-                    })
-                }
-
-                sessionStorage.setItem("carritoCargado", "true");
-            });
-        }
-    })();
-
-    var verCarrito = function (){
-        $("cuerpo").innerHTML = STORE.ProductTemplate.carrito;
-        $("guardarCarrito").addEventListener("click", guardarCarrito);
-        $("comprarCarrito").addEventListener("click", comprarCarrito);
-    }
-
-    var insertarEnArray = function(model){
+    var insertarEnArray = function(model) {
+        model.posicionArray = arrayCarrito.length;
+        model.cantidadPedida = 1;
         var encontrado = false;
-        arrayDeProductosCarrito.forEach(modelo=>{
-            if(model.id==modelo.id){
-                modelo.cantidadPedida ++;
+        arrayCarrito.forEach(modelo => {
+            if (model.IdModelo === modelo.IdModelo) {
+                modelo.cantidadPedida++;
                 encontrado = true;
             }
         })
-        if(!encontrado){
-            arrayDeProductosCarrito.push(model);
+        if (!encontrado) {
+            arrayCarrito.push(model);
         }
     }
+    arrayCarrito = (function() {
+        llamada = new ajax.CargadorContenidos("/getCarrito", function () {
+            var estado = JSON.parse(llamada.req.responseText);
+            if (estado.length === 0) {
+                alert("Nada en el carro");
+            } else {
+                console.log(estado.length + " articulos")
+            }
+            estado.forEach(carrito => {
+                insertarEnArray(carrito);
+            })
+            sessionStorage.setItem("carritoCargado", "true");
+            return estado;
+        });
+    })();
+    var quitarUnidadCarrito = function (datosLineaVenta) {
+        arrayCarrito.
+        alert("quitarUnidadCarrito");
+        console.log(datosLineaVenta)
+    }
+    var addUnidadCarrito = function (datosLineaVenta) {
+        alert("addUnidadCarrito");
+        console.log(datosLineaVenta)
+    }
+    var borrarElementoCarrito = function (datosLineaVenta) {
+        alert("borrarElementoCarrito");
+        console.log(datosLineaVenta)
+    }
+    var mostrarCarrito = function () {
+        $("cuerpo").innerHTML = STORE.ProductTemplate.carrito;
+        var total = 0;
 
+        arrayCarrito.forEach(function (item) {
+            var lineaCarrito = document.createElement("div");
+            lineaCarrito.className = "etiqueta s11 contenedorFila";
+            var lineaCarritoInfo = document.createElement("div");
+            lineaCarritoInfo.className = "etiqueta s11 contenedorFila";
+            var lineaCarritoOpciones = document.createElement("div");
+            lineaCarritoOpciones.className = "etiqueta s11 contenedorFila";
 
-        //mostrar los produtos
+            var infoIdModelo = document.createElement("div");
+            infoIdModelo.className = "etiqueta s11"; //poner clase estilo
+            var infoCantidad = document.createElement("div");
+            infoCantidad.className = "etiqueta s11";
+            var infoPrecioUnidad = document.createElement("div");
+            infoPrecioUnidad.className = "etiqueta s11";
+            var infoSubTotal = document.createElement("div");
+            infoSubTotal.className = "etiqueta s11";
+            var eliminar = document.createElement("div");
+            eliminar.className = "etiqueta s11";
+            eliminar.id="eliminar";
+            var quitarUnidad = document.createElement("div");
+            quitarUnidad.className = "etiqueta s11";
+            quitarUnidad.id="quitarUnidad";
+            var aniadirUnidad = document.createElement("div");
+            aniadirUnidad.className = "etiqueta s11";
+            aniadirUnidad.id="aniadirUnidad";
 
+            lineaCarritoInfo.appendChild(infoIdModelo);
+            lineaCarritoInfo.appendChild(infoCantidad);
+            lineaCarritoInfo.appendChild(infoPrecioUnidad);
+            lineaCarritoInfo.appendChild(infoSubTotal);
+            lineaCarritoOpciones.appendChild(eliminar);
+            lineaCarritoOpciones.appendChild(quitarUnidad);
+            lineaCarritoOpciones.appendChild(aniadirUnidad);
 
-    var guardarCarrito = function(){
-        if(arrayDeProductosCarrito.length>0){
-            llamada = new ajax.CargadorContenidos("/guardarCarrito", function () {
-                var estado = JSON.parse(llamada.req.responseText);
-                if(estado.length==="ok"){
-                    alert("GUARDADO OK");
-                }else{
-                    alert("GUARDADO HA PETADO");
-                }
-                sessionStorage.setItem("carritoCargado","true");
+            aniadirUnidad.addEventListener("click",function(){
+                quitarUnidadCarrito(item)
             });
-        }
+            quitarUnidad.addEventListener("click",function(){
+                addUnidadCarrito(item)
+            });
+            eliminar.addEventListener("click",function(){
+                borrarElementoCarrito(item)
+            });
+
+            eliminar.innerText="Eliminar";
+            aniadirUnidad.innerText="+";
+            quitarUnidad.innerText="-";
+            infoIdModelo.innerText = item.IdModelo;
+            infoCantidad.innerText =  item.cantidadPedida;
+            infoPrecioUnidad.innerText = item.actualPrecioModelo;
+            let subtotal = item.cantidadPedida * item.actualPrecioModelo;
+            infoSubTotal.innerText = subtotal.toString();
+            total += subtotal;
+            lineaCarrito.appendChild(lineaCarritoInfo)
+            lineaCarrito.appendChild(lineaCarritoOpciones)
+            $("lineasCarrito").appendChild(lineaCarrito)
+
+        });
+        $("totalCarrito").innerText=total;
+        $("guardarCarrito").addEventListener("click",guardarCarrito);
+        $("comprarCarrito").addEventListener("click",comprarCarrito);
     }
-
-    var borrarProducto = function(posicionEnLocalStorage){
-
+    var guardarCarrito = function () {
+        alert("programame papi")
     }
-
+    var comprarCarrito = function () {
+        alert("programame papi")
+    }
     $("op_verProducto").addEventListener("click", mostrarCarrusel);
-    $("op_verCarrito").addEventListener("click", verCarrito);
-
+    $("op_verCarrito").addEventListener("click", mostrarCarrito);
 
 }());

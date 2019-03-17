@@ -1,4 +1,4 @@
-var id = sessionStorage.getItem("nif");
+var id = sessionStorage.getItem("idClient");
 if(typeof id === "undefined" || id == null){
     id = '../../fotoSin.png';
 }

@@ -21,7 +21,7 @@ import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.ArrayList;
 
-@WebServlet("/guardarCarrito")
+@WebServlet("/getCarrito")
 public class CarritoController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     HttpSession session;
@@ -39,8 +39,7 @@ public class CarritoController extends HttpServlet {
             listaModels = (ArrayList<Carrito>) new GenericDao().execProcedure(ProceduresProductos.GET_CARRITO.getName(),carrito,login);
             listaModels.forEach(modeloEntity -> {
                 oneJson = new JSONObject();
-                oneJson.put("IDModelo",modeloEntity.getIdModelo());
-                oneJson.put("IDCliente",modeloEntity.getIdCliente());
+                oneJson.put("iDModelo",modeloEntity.getIdModelo());
                 oneJson.put("cantidadPedida",modeloEntity.getCantidadPedida());
                 oneJson.put("actualPrecioModelo", modeloEntity.getActualPrecioModelo());
                 arrayJson.add(oneJson);
@@ -48,6 +47,7 @@ public class CarritoController extends HttpServlet {
         } catch (SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException | InvocationTargetException | ParseException e) {
             e.printStackTrace();
         }
+        System.out.println(arrayJson);
         response.getWriter().write(arrayJson.toJSONString());
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

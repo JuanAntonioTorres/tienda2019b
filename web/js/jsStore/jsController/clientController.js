@@ -58,7 +58,6 @@
             var estado = JSON.parse(llamada.req.responseText);
 
             if (estado.idClient != undefined) {
-                //TODO cambiar todo lo del nif por un id
                 $("cuerpo").innerHTML = plantilla;
                 if(oneByOne==undefined || oneByOne === true){
                     activarEstrategias();
