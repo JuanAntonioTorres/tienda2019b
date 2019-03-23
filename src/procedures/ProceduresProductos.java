@@ -2,8 +2,9 @@ package procedures;
 
 public enum ProceduresProductos {
     GET_MODELOS("getPhoneModels"),
-        GET_CARRITO("getCarrito"),
-        ADD_CARRITO("añadirUnidadCarrito");
+    GET_CARRITO("getLineasCarrito"),
+    ADD_LINEA("addLinea"),
+    DELETE_LINEA("deleteLinea");
 
     private final String name;
 

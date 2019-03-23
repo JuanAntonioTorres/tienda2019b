@@ -2,13 +2,9 @@ package controller;
 
 import dao.GenericDao;
 import dto.Carrito;
-import dto.Login;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import procedures.ProceduresProductos;
-import reflection.JsonTransferObject;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -35,13 +31,14 @@ public class CarritoController extends HttpServlet {
         ArrayList<Carrito> listaModels;
         Carrito carrito = new Carrito();
         try {
-            Login login = new Login((int) session.getAttribute("idClient"));
-            listaModels = (ArrayList<Carrito>) new GenericDao().execProcedure(ProceduresProductos.GET_CARRITO.getName(),carrito,login);
+            carrito.setIdCliente((int)session.getAttribute("idClient"));
+            listaModels = (ArrayList<Carrito>) new GenericDao().execProcedure(ProceduresProductos.GET_CARRITO.getName(),carrito);
             listaModels.forEach(modeloEntity -> {
                 oneJson = new JSONObject();
-                oneJson.put("iDModelo",modeloEntity.getIdModelo());
+                oneJson.put("idModelo",modeloEntity.getIdModelo());
+                oneJson.put("nombreModelo",modeloEntity.getNombreModelo());
                 oneJson.put("cantidadPedida",modeloEntity.getCantidadPedida());
-                oneJson.put("actualPrecioModelo", modeloEntity.getActualPrecioModelo());
+                oneJson.put("precioCompra", modeloEntity.getPrecioCompra());
                 arrayJson.add(oneJson);
             });
         } catch (SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException | InvocationTargetException | ParseException e) {

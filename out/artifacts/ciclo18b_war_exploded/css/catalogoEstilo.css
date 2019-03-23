@@ -1779,28 +1779,7 @@ input {
     font-size: 9px; }
 }
 
-contendorProductos {
-  margin: 0;
-  width: 90%;
-  height: 70%;
-  z-index: 1;
-  background-position: center; }
 
-.ImagenCarrusel {
-  width: 50px;
-  height: 100px;
-}
-
-.opcionCarrusel {
-  width: 25%;
-  height: 25%;
-  transform-style: preserve-3d;
-  transition: all ease 2s;
-  position: absolute;
-  margin: auto; }
-
-.textoCarrusel {
-  font-size: 12px; }
 
 ul {
   list-style-type: none;
@@ -1832,6 +1811,31 @@ body:hover #simb {
 .gif2 {
   margin-left: 20px; }
 */
+
+contendorProductos {
+  margin: 0;
+  width: 90%;
+  height: 70%;
+  z-index: 1;
+  background-position: center; }
+
+.ImagenCarrusel {
+  width: 50px;
+  height: 100px;
+}
+
+.opcionCarrusel {
+  width: 25%;
+  height: 25%;
+  transform-style: preserve-3d;
+  transition: all ease 2s;
+  position: absolute;
+  margin: auto; }
+
+.textoCarrusel {
+  font-size: 12px; }
+
+
 #espacio {
   margin: 30px auto;
   height: 25%;

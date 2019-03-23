@@ -4,10 +4,10 @@ public class Carrito {
     private int idModelo;
     private int idCliente;
     private int cantidadPedida;
-    private int actualPrecioModelo;
+    private float precioCompra;
     private String nombreModelo;
-    public Carrito() {
-    }
+
+    public Carrito() {}
 
     public int getIdModelo() {
         return idModelo;
@@ -25,6 +25,10 @@ public class Carrito {
         this.idCliente = idCliente;
     }
 
+    public void setPrecioCompra(float precioCompra) {
+        this.precioCompra = precioCompra;
+    }
+
     public int getCantidadPedida() {
         return cantidadPedida;
     }
@@ -33,12 +37,12 @@ public class Carrito {
         this.cantidadPedida = cantidadPedida;
     }
 
-    public int getActualPrecioModelo() {
-        return actualPrecioModelo;
+    public float getPrecioCompra() {
+        return precioCompra;
     }
 
     public void setActualPrecioModelo(int actualPrecioModelo) {
-        this.actualPrecioModelo = actualPrecioModelo;
+        this.precioCompra = actualPrecioModelo;
     }
 
     public String getNombreModelo() {

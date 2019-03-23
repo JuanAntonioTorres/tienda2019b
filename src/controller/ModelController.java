@@ -39,14 +39,14 @@ public class ModelController extends HttpServlet {
             listaModels = (ArrayList<PhoneModel>) new GenericDao().execProcedure(ProceduresProductos.GET_MODELOS.getName(),phoneModel);
             listaModels.forEach(modeloEntity -> {
                 oneJson = new JSONObject();
-                oneJson.put("IdModelo",modeloEntity.getIdModelo());
+                oneJson.put("idModelo",modeloEntity.getIdModelo());
                 oneJson.put("nombreModelo", modeloEntity.getNombreModelo());
-                oneJson.put("RefModelo",modeloEntity.getRefModelo());
-                oneJson.put("actualPrecioModelo", modeloEntity.getActualPrecioModelo());
+                oneJson.put("refModelo",modeloEntity.getRefModelo());
+                oneJson.put("precioCompra", modeloEntity.getActualPrecioModelo());
                 oneJson.put("stockActualModelo",modeloEntity.getStockActualModelo());
                 oneJson.put("nombreModelo", modeloEntity.getNombreModelo());
                 oneJson.put("descripcionModelo",modeloEntity.getDescripcionModelo());
-                oneJson.put("NombreMarca", modeloEntity.getNombreMarcaMarca());
+                oneJson.put("nombreMarca", modeloEntity.getNombreMarcaMarca());
                 oneJson.put("imagenDelantera", modeloEntity.getRutaImagen());
                 oneJson.put("imagenTrasera", modeloEntity.getRutaImagenBack());
                 oneJson.put("imagenLado", modeloEntity.getRutaImagenSide());
